@@ -1,7 +1,7 @@
 from Components.config import config, ConfigSubsection, ConfigSlider, ConfigSelection, ConfigBoolean, ConfigNothing, NoSave
 import os
 
-# The "VideoEnhancement" is the interface to /proc/stb/vmpeg/0.
+# The "VideoEnhancement" is the interface to /proc/stb/video/plane.
 
 class VideoEnhancement:
 	firstRun = True
@@ -14,14 +14,14 @@ class VideoEnhancement:
 		config.pep = ConfigSubsection()
 		config.pep.configsteps = NoSave(ConfigSelection(choices=[1, 5, 10, 25], default = 1))
 
-		if os.path.exists("/proc/stb/vmpeg/0/pep_contrast"):
+		if os.path.exists("/proc/stb/video/plane/psi_contrast"):
 			def setContrast(config):
-				myval = int(config.value * 256)
+				myval = int(config.value)
 				try:
-					print "[VideoEnhancement] setting contrast to: %0.8X" % myval
-					open("/proc/stb/vmpeg/0/pep_contrast", "w").write("%0.8X" % myval)
+					print "[VideoEnhancement] setting contrast to: %s" % myval
+					open("/proc/stb/video/plane/psi_contrast", "w").write("%s" % myval)
 				except IOError:
-					print "[VideoEnhancement] couldn't write pep_contrast."
+					print "[VideoEnhancement] couldn't write psi_contrast."
 
 				if not VideoEnhancement.firstRun:
 					self.setConfiguredValues()
@@ -31,14 +31,14 @@ class VideoEnhancement:
 		else:
 			config.pep.contrast = NoSave(ConfigNothing())
 
-		if os.path.exists("/proc/stb/vmpeg/0/pep_saturation"):
+		if os.path.exists("/proc/stb/video/plane/psi_saturation"):
 			def setSaturation(config):
-				myval = int(config.value * 256)
+				myval = int(config.value)
 				try:
-					print "[VideoEnhancement] setting saturation to: %0.8X" % myval
-					open("/proc/stb/vmpeg/0/pep_saturation", "w").write("%0.8X" % myval)
+					print "[VideoEnhancement] setting saturation to: %s" % myval
+					open("/proc/stb/video/plane/psi_saturation", "w").write("%s" % myval)
 				except IOError:
-					print "[VideoEnhancement] couldn't write pep_saturaion."
+					print "[VideoEnhancement] couldn't write psi_saturation."
 
 				if not VideoEnhancement.firstRun:
 					self.setConfiguredValues()
@@ -48,14 +48,14 @@ class VideoEnhancement:
 		else:
 			config.pep.saturation = NoSave(ConfigNothing())
 
-		if os.path.exists("/proc/stb/vmpeg/0/pep_hue"):
+		if os.path.exists("/proc/stb/video/plane/psi_tint"):
 			def setHue(config):
-				myval = int(config.value * 256)
+				myval = int(config.value)
 				try:
-					print "[VideoEnhancement] setting hue to: %0.8X" % myval
-					open("/proc/stb/vmpeg/0/pep_hue", "w").write("%0.8X" % myval)
+					print "[VideoEnhancement] setting hue to: %s" % myval
+					open("/proc/stb/video/plane/psi_tint", "w").write("%s" % myval)
 				except IOError:
-					print "[VideoEnhancement] couldn't write pep_hue."
+					print "[VideoEnhancement] couldn't write psi_tint."
 
 				if not VideoEnhancement.firstRun:
 					self.setConfiguredValues()
@@ -65,17 +65,18 @@ class VideoEnhancement:
 		else:
 			config.pep.hue = NoSave(ConfigNothing())
 
-		if os.path.exists("/proc/stb/vmpeg/0/pep_brightness"):
+		if os.path.exists("/proc/stb/video/plane/psi_brightness"):
 			def setBrightness(config):
-				myval = int(config.value * 256)
+				myval = int(config.value)
 				try:
-					print "[VideoEnhancement] setting brightness to: %0.8X" % myval
-					open("/proc/stb/vmpeg/0/pep_brightness", "w").write("%0.8X" % myval)
+					print "[VideoEnhancement] setting brightness to: %s" % myval
+					open("/proc/stb/video/plane/psi_brightness", "w").write("%s" % myval)
 				except IOError:
-					print "[VideoEnhancement] couldn't write pep_brightness."
+					print "[VideoEnhancement] couldn't write psi_brightness."
 
 				if not VideoEnhancement.firstRun:
 					self.setConfiguredValues()
+
 			config.pep.brightness = ConfigSlider(default=128, limits=(0,255))
 			config.pep.brightness.addNotifier(setBrightness)
 		else:
@@ -291,6 +292,7 @@ class VideoEnhancement:
 		else:
 			config.pep.smooth = NoSave(ConfigNothing())
 
+
 		if VideoEnhancement.firstRun:
 			self.setConfiguredValues()
 
@@ -298,9 +300,9 @@ class VideoEnhancement:
 
 	def setConfiguredValues(self):
 		try:
-			print "[VideoEnhancement] applying pep values"
-			open("/proc/stb/vmpeg/0/pep_apply", "w").write("1")
+			print "[VideoEnhancement] applying psi values"
+			open("/proc/stb/video/plane/psi_apply", "w").write("1")
 		except IOError:
-			print "[VideoEnhancement] couldn't apply pep values."
+			print "[VideoEnhancement] couldn't apply psi values."
 
 VideoEnhancement()

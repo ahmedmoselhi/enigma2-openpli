@@ -32,6 +32,23 @@ class hotkey:
 		(_("Green"), "green", ""),
 		(_("Yellow"), "yellow", ""),
 		(_("Blue"), "blue", ""),
+		( "TV/Sat", "tvsat", ""),
+		( "Vformat", "vmode", ""),
+		( "Picasa", "picasa", ""),
+		( "Shoutcast", "shoutcast", ""),
+		( "Youtube", "youtube", ""),
+		( "Spark", "spark", ""),
+		( "Tv/Radio", "tv", ""),
+		( "Recall", "recall", ""),
+		( "Find", "find", ""),
+		( "Playmode", "playmode", ""),
+		( "Playmode" + _("long"), "playmode_long", ""),
+		( "USB", "usb", ""),
+		( "USB" + _("long"), "usb_long", ""),
+		( "Portal " ,"portal", ""),
+		( "Portal " + _("long"), "portal_long", ""),
+		( "Timeshift", "time", ""),
+		( "Info", "info", "Infobar/openEventView"),
 		("Rec", "rec", ""),
 		("Rec" + " " + _("long"), "rec_long", "Infobar/instantRecord"),
 		("Radio", "radio", ""),
@@ -224,6 +241,7 @@ def getHotkeyFunctions():
 	hotkey.functions.append((_("Usage Setup"), "Setup/usage", "Setup"))
 	hotkey.functions.append((_("User interface"), "Setup/userinterface", "Setup"))
 	hotkey.functions.append((_("Recording Setup"), "Setup/recording", "Setup"))
+	hotkey.functions.append((_("Skin setup"), "Module/Screens.SkinSelector/SkinSelector", "Setup"))
 	hotkey.functions.append((_("Harddisk Setup"), "Setup/harddisk", "Setup"))
 	hotkey.functions.append((_("Subtitles Settings"), "Setup/subtitlesetup", "Setup"))
 	hotkey.functions.append((_("Language"), "Module/Screens.LanguageSelection/LanguageSelection", "Setup"))

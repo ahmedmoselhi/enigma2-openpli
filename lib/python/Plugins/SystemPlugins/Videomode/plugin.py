@@ -68,6 +68,9 @@ class VideoSetup(Screen, ConfigListScreen):
 				self.list.append(getConfigListEntry(_("Resolution"), config.av.videorate[config.av.videomode[config.av.videoport.value].value], _("Configure the screen resolution in PC output mode.")))
 			else:
 				self.list.append(getConfigListEntry(_("Refresh rate"), config.av.videorate[config.av.videomode[config.av.videoport.value].value], _("Configure the refresh rate of the screen.")))
+#+++>
+		self.list.append(getConfigListEntry(_("3D Mode"), config.av.threedmode))
+#+++<
 
 		port = config.av.videoport.value
 		if port not in config.av.videomode:
@@ -110,6 +113,14 @@ class VideoSetup(Screen, ConfigListScreen):
 					self.list.append(getConfigListEntry(_("Allow 12bit"), config.av.allow_12bit,_("This option allows you to enable or disable the 12 bit color mode")))
 					self.list.append(getConfigListEntry(_("Allow 10bit"), config.av.allow_10bit,_("This option allows you to enable or disable the 10 bit color mode")))
 					
+#+++>
+		if config.av.videoport.value == "Component":
+			self.list.append(getConfigListEntry(_("Color Format"), config.av.colorformat_yuv))
+
+		if config.av.videoport.value == "HDMI":
+			self.list.append(getConfigListEntry(_("Color Format"), config.av.colorformat_hdmi))
+			self.list.append(getConfigListEntry(_("Audio Source"), config.av.hdmi_audio_source))
+#+++<
 		if config.av.videoport.value == "Scart":
 			self.list.append(getConfigListEntry(_("Color format"), config.av.colorformat, _("Configure which color format should be used on the SCART output.")))
 			if level >= 1:
