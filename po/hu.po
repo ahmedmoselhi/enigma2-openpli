@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-25 03:18+0200\n"
+"POT-Creation-Date: 2020-06-19 21:50+0200\n"
 "PO-Revision-Date: 2020-02-19 11:12+0100\n"
 "Last-Translator: mcfly82\n"
 "Language-Team: mcfly82 & wysless\n"
@@ -572,21 +572,6 @@ msgstr "9"
 
 msgid ": 0000 - default (disabled)"
 msgstr ": 0000 - alapértelmezett (kikapcsolva)"
-
-msgid "< Current >"
-msgstr "< Jelenlegi >"
-
-msgid "< Default + Picon >"
-msgstr "< Alapértelmezett + Picon >"
-
-msgid "< Default >"
-msgstr "< Alapértelmezett >"
-
-msgid "< Emergency >"
-msgstr "< Vészhelyzet >"
-
-msgid "< Pending restart >"
-msgstr "< Felfüggesztett újraindítás >"
 
 msgid "<Current movielist location>"
 msgstr "<Filmlista aktuális tárhelye>"
@@ -2449,6 +2434,10 @@ msgstr "Kuba"
 msgid "Curacao"
 msgstr "Curaçao"
 
+#, fuzzy
+msgid "Current"
+msgstr "< Jelenlegi >"
+
 msgid "Current CEC address"
 msgstr "Aktuális CEC cím"
 
@@ -2632,6 +2621,10 @@ msgstr "Alapértelmezett beállítások"
 msgid "Default timer type"
 msgstr "Alapértelmezett időzítő típusa"
 
+#, fuzzy
+msgid "Default+Picon"
+msgstr "< Alapértelmezett + Picon >"
+
 msgid "Define the location of the EPG Cache file."
 msgstr "Az EPG cache fájl helyének megadása."
 
@@ -2705,6 +2698,10 @@ msgstr "Törlés"
 msgid "Delete Image"
 msgstr "Image törlése"
 
+#, fuzzy
+msgid "Delete all the text"
+msgstr "Lejátszási lista bejegyzés törlése"
+
 msgid "Delete entry"
 msgstr "Adat törlése"
 
@@ -2722,9 +2719,6 @@ msgstr "Lejátszási lista bejegyzés törlése"
 
 msgid "Delete saved playlist"
 msgstr "Mentett lejátszási lista törlése"
-
-msgid "Delete the all the text"
-msgstr ""
 
 #, fuzzy
 msgid "Delete the character to the left of text cursor"
@@ -3205,6 +3199,10 @@ msgstr "Elektronikus Műsorújság"
 
 msgid "Embedded"
 msgstr "Beágyazott"
+
+#, fuzzy
+msgid "Emergency"
+msgstr "< Vészhelyzet >"
 
 msgid "Empty slot"
 msgstr "Üres hely"
@@ -5931,6 +5929,10 @@ msgstr "Lejátszás megállítása"
 msgid "Pause/Continue playback"
 msgstr "Lejátszás megállítása/folytatása"
 
+#, fuzzy
+msgid "Pending restart"
+msgstr "< Felfüggesztett újraindítás >"
+
 msgid "Percentage left"
 msgstr "Százalék balra"
 
@@ -6411,8 +6413,8 @@ msgstr "Nyomja le a MENÜ gombot a távírányítón további opciókért."
 msgid "Press OK on your remote control to continue."
 msgstr "Nyomja le az OK gombot a távirányítón a folytatáshoz."
 
-#, python-format
-msgid "Press OK to activate the selected%s skin."
+#, fuzzy, python-format
+msgid "Press OK to activate the selected %s skin."
 msgstr "Nyomja le az OK gombot az új %s kinézet aktiválásához."
 
 msgid "Press OK to activate the settings."
@@ -6425,8 +6427,8 @@ msgstr "Az OK gombbal módosíthatja a beállításokat."
 msgid "Press OK to get further details for %s"
 msgstr "Nyomja le az OK gombot több részletért %s kapcsán"
 
-#, python-format
-msgid "Press OK to keep the currently selected%s skin."
+#, fuzzy, python-format
+msgid "Press OK to keep the currently selected %s skin."
 msgstr "Nyomja le az OK gombot a jelenlegi %s kinézet megtartásához."
 
 msgid "Press OK to scan"
@@ -7420,9 +7422,6 @@ msgstr "Felvétel kiválasztása"
 
 msgid "Select a network adapter"
 msgstr "Válasszon hálózati adaptert"
-
-msgid "Select a skin"
-msgstr "Kinézet kiválasztása"
 
 msgid "Select a tuner"
 msgstr "Tuner kiválasztása"

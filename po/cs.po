@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-25 03:18+0200\n"
+"POT-Creation-Date: 2020-06-19 21:50+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ims <ims21@users.sourceforge.net>\n"
 "Language-Team: PLi <ims@openpli.org>\n"
@@ -641,24 +641,6 @@ msgstr "9"
 
 msgid ": 0000 - default (disabled)"
 msgstr ": 0000 - výchozí (zakázáno)"
-
-#
-msgid "< Current >"
-msgstr "< aktuální >"
-
-#
-msgid "< Default + Picon >"
-msgstr "< výchozí + pikony >"
-
-#
-msgid "< Default >"
-msgstr "< výchozí >"
-
-msgid "< Emergency >"
-msgstr "< nouzový >"
-
-msgid "< Pending restart >"
-msgstr "< čekání na restart >"
 
 #
 msgid "<Current movielist location>"
@@ -2787,6 +2769,11 @@ msgstr "Kuba"
 msgid "Curacao"
 msgstr "Curaçao"
 
+#
+#, fuzzy
+msgid "Current"
+msgstr "< aktuální >"
+
 msgid "Current CEC address"
 msgstr "Současná CEC adresa"
 
@@ -3009,6 +2996,11 @@ msgstr "Standardní nastavení"
 msgid "Default timer type"
 msgstr "Výchozí typ časovače"
 
+#
+#, fuzzy
+msgid "Default+Picon"
+msgstr "< výchozí + pikony >"
+
 msgid "Define the location of the EPG Cache file."
 msgstr "Určuje umístění souboru pro EPG cache."
 
@@ -3085,6 +3077,11 @@ msgid "Delete Image"
 msgstr "Odstranit image"
 
 #
+#, fuzzy
+msgid "Delete all the text"
+msgstr "Smazat položku playlistu"
+
+#
 msgid "Delete entry"
 msgstr "smazat položku"
 
@@ -3106,9 +3103,6 @@ msgstr "Smazat položku playlistu"
 #
 msgid "Delete saved playlist"
 msgstr "Smazat uložený playlist"
-
-msgid "Delete the all the text"
-msgstr ""
 
 #, fuzzy
 msgid "Delete the character to the left of text cursor"
@@ -3691,6 +3685,10 @@ msgstr "EPG"
 
 msgid "Embedded"
 msgstr "Vestavěný"
+
+#, fuzzy
+msgid "Emergency"
+msgstr "< nouzový >"
 
 msgid "Empty slot"
 msgstr "volný slot"
@@ -6809,6 +6807,10 @@ msgstr "Pauza/přehrávání"
 msgid "Pause/Continue playback"
 msgstr "Pozastavit/Pokračovat v přehrávání"
 
+#, fuzzy
+msgid "Pending restart"
+msgstr "< čekání na restart >"
+
 msgid "Percentage left"
 msgstr "Procenta vlevo"
 
@@ -7389,8 +7391,8 @@ msgid "Press OK on your remote control to continue."
 msgstr "Stiskněte OK na dálkovém ovladači pro pokračování."
 
 #
-#, python-format
-msgid "Press OK to activate the selected%s skin."
+#, fuzzy, python-format
+msgid "Press OK to activate the selected %s skin."
 msgstr "Stiskněte OK pro aktivaci zvoleného%s skinu."
 
 #
@@ -7407,8 +7409,8 @@ msgid "Press OK to get further details for %s"
 msgstr "Stiskněte OK a získejte detaily pro %s"
 
 #
-#, python-format
-msgid "Press OK to keep the currently selected%s skin."
+#, fuzzy, python-format
+msgid "Press OK to keep the currently selected %s skin."
 msgstr "Stiskněte OK pro zachování zvoleného%s skinu."
 
 #
@@ -8574,10 +8576,6 @@ msgstr "Vyberte film"
 #
 msgid "Select a network adapter"
 msgstr "Vyberte síťový adaptér"
-
-#
-msgid "Select a skin"
-msgstr "Vyberte skin"
 
 #
 msgid "Select a tuner"

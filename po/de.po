@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-25 03:18+0200\n"
-"PO-Revision-Date: 2020-05-26 09:48+0200\n"
+"POT-Creation-Date: 2020-06-19 21:50+0200\n"
+"PO-Revision-Date: 2020-06-19 21:57+0200\n"
 "Last-Translator: kueken\n"
 "Language-Team: kueken\n"
 "Language: de\n"
@@ -572,21 +572,6 @@ msgstr "9"
 
 msgid ": 0000 - default (disabled)"
 msgstr ": 0000 - Standard (deaktiviert)"
-
-msgid "< Current >"
-msgstr "<Aktuell>"
-
-msgid "< Default + Picon >"
-msgstr "< Default + Picon >"
-
-msgid "< Default >"
-msgstr "<Standard>"
-
-msgid "< Emergency >"
-msgstr "<Notfall>"
-
-msgid "< Pending restart >"
-msgstr "<Neustart wird ausgeführt>"
 
 msgid "<Current movielist location>"
 msgstr "<Aktuelles Filmlisten-Verzeichnis>"
@@ -2441,6 +2426,9 @@ msgstr "Kuba"
 msgid "Curacao"
 msgstr "Curacao"
 
+msgid "Current"
+msgstr "Current "
+
 msgid "Current CEC address"
 msgstr "Aktuelle CEC-Adresse"
 
@@ -2626,6 +2614,9 @@ msgstr "Voreinstellungen"
 msgid "Default timer type"
 msgstr "Timertyp"
 
+msgid "Default+Picon"
+msgstr "Default + Picon"
+
 msgid "Define the location of the EPG Cache file."
 msgstr "Definieren Sie den Speicherort der EPG-Cache-Datei."
 
@@ -2698,6 +2689,9 @@ msgstr "Löschen"
 msgid "Delete Image"
 msgstr "Lösche Image"
 
+msgid "Delete all the text"
+msgstr "Löschen des gesammten Text"
+
 msgid "Delete entry"
 msgstr "Eintrag löschen"
 
@@ -2715,9 +2709,6 @@ msgstr "Wiedergabelisteneintrag löschen"
 
 msgid "Delete saved playlist"
 msgstr "Gespeicherte Wiedergabeliste löschen"
-
-msgid "Delete the all the text"
-msgstr "Löschen"
 
 msgid "Delete the character to the left of text cursor"
 msgstr "Löschen Sie das Zeichen links vom Cursor"
@@ -3191,6 +3182,9 @@ msgstr "Elektronischer Programmführer"
 
 msgid "Embedded"
 msgstr "Integriert"
+
+msgid "Emergency"
+msgstr "< Emergency >"
 
 msgid "Empty slot"
 msgstr "Leerer Slot"
@@ -5903,6 +5897,9 @@ msgstr "Wiedergabe pausieren"
 msgid "Pause/Continue playback"
 msgstr "Pause / Wiedergabe fortsetzen"
 
+msgid "Pending restart"
+msgstr "Neustart"
+
 msgid "Percentage left"
 msgstr "Prozentangabe links"
 
@@ -6385,7 +6382,7 @@ msgid "Press OK on your remote control to continue."
 msgstr "OK drücken zum Fortfahren."
 
 #, python-format
-msgid "Press OK to activate the selected%s skin."
+msgid "Press OK to activate the selected %s skin."
 msgstr "OK drücken, um den markierten%s Skin zu aktivieren."
 
 msgid "Press OK to activate the settings."
@@ -6399,7 +6396,7 @@ msgid "Press OK to get further details for %s"
 msgstr "Drücken Sie OK, um weitere Details zu %s zu erhalten."
 
 #, python-format
-msgid "Press OK to keep the currently selected%s skin."
+msgid "Press OK to keep the currently selected %s skin."
 msgstr "OK drücken, um den markierten%s Skin zu aktivieren."
 
 msgid "Press OK to scan"
@@ -7396,9 +7393,6 @@ msgstr "Filmauswahl"
 
 msgid "Select a network adapter"
 msgstr "Netzwerkadapter auswählen"
-
-msgid "Select a skin"
-msgstr "Benutzeroberfläche wählen"
 
 msgid "Select a tuner"
 msgstr "Tuner auswählen"

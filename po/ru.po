@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-16 18:29+0200\n"
-"PO-Revision-Date: 2020-04-20 21:51+0300\n"
+"POT-Creation-Date: 2020-06-19 21:50+0200\n"
+"PO-Revision-Date: 2019-07-25 17:52+0300\n"
 "Last-Translator: Dimitrij <Dima-73@inbox.lv>\n"
 "Language-Team: openPLi Dimitrij\n"
 "Language: ru\n"
@@ -565,21 +565,6 @@ msgstr "9"
 
 msgid ": 0000 - default (disabled)"
 msgstr ": 0000 - по умолчанию (отключено)"
-
-msgid "< Current >"
-msgstr "< Текущий >"
-
-msgid "< Default + Picon >"
-msgstr "<Дефолт + пикон >"
-
-msgid "< Default >"
-msgstr "<Дефолт >"
-
-msgid "< Emergency >"
-msgstr "< Чрезвычайная ситуация >"
-
-msgid "< Pending restart >"
-msgstr "< Ожидание рестарта >"
 
 msgid "<Current movielist location>"
 msgstr "<Текущее место списка видео>"
@@ -2404,6 +2389,10 @@ msgstr "Cuba"
 msgid "Curacao"
 msgstr "Curacao"
 
+#, fuzzy
+msgid "Current"
+msgstr "< Текущий >"
+
 msgid "Current CEC address"
 msgstr "Текущий адрес CEC"
 
@@ -2589,6 +2578,10 @@ msgstr "Дефолтные настройки"
 msgid "Default timer type"
 msgstr "Тип таймера по дефолту"
 
+#, fuzzy
+msgid "Default+Picon"
+msgstr "<Дефолт + пикон >"
+
 msgid "Define the location of the EPG Cache file."
 msgstr "Выбор расположения кеша EPG файла."
 
@@ -2662,6 +2655,10 @@ msgstr "Удалить"
 msgid "Delete Image"
 msgstr "Удалить имидж"
 
+#, fuzzy
+msgid "Delete all the text"
+msgstr "удалить запись из плейлиста"
+
 msgid "Delete entry"
 msgstr "удалить выбранное"
 
@@ -2679,9 +2676,6 @@ msgstr "удалить запись из плейлиста"
 
 msgid "Delete saved playlist"
 msgstr "удалить сохраненный плейлист"
-
-msgid "Delete the all the text"
-msgstr ""
 
 #, fuzzy
 msgid "Delete the character to the left of text cursor"
@@ -3163,6 +3157,10 @@ msgstr "Электронный Программный Гид"
 
 msgid "Embedded"
 msgstr "Встроенные"
+
+#, fuzzy
+msgid "Emergency"
+msgstr "< Чрезвычайная ситуация >"
 
 msgid "Empty slot"
 msgstr "Пустой слот"
@@ -5892,6 +5890,10 @@ msgstr "Пауза воспроизведения"
 msgid "Pause/Continue playback"
 msgstr "Пауза/продолжение воспроизведение"
 
+#, fuzzy
+msgid "Pending restart"
+msgstr "< Ожидание рестарта >"
+
 msgid "Percentage left"
 msgstr "Проценты слева"
 
@@ -6372,8 +6374,8 @@ msgstr "Нажмите кнопку MENU на Вашем пульте Д/У дл
 msgid "Press OK on your remote control to continue."
 msgstr "Нажмите ОК на Вашем пульте Д/У для продолжения."
 
-#, python-format
-msgid "Press OK to activate the selected%s skin."
+#, fuzzy, python-format
+msgid "Press OK to activate the selected %s skin."
 msgstr "Нажмите OK, для активации выбранного%s скина."
 
 msgid "Press OK to activate the settings."
@@ -6386,8 +6388,8 @@ msgstr "Нажмите OK, для измения настройки."
 msgid "Press OK to get further details for %s"
 msgstr "Нажмите ОК, чтобы получить подробную информацию для %s"
 
-#, python-format
-msgid "Press OK to keep the currently selected%s skin."
+#, fuzzy, python-format
+msgid "Press OK to keep the currently selected %s skin."
 msgstr "Нажмите OK, чтобы сохранить выбранный%s скин."
 
 msgid "Press OK to scan"
@@ -7390,9 +7392,6 @@ msgstr "Выбрать видео"
 
 msgid "Select a network adapter"
 msgstr "Выбор сетевого адаптера"
-
-msgid "Select a skin"
-msgstr "Выбрать скин"
 
 msgid "Select a tuner"
 msgstr "Выбор тюнера"

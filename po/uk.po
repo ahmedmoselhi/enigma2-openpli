@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-25 03:18+0200\n"
+"POT-Creation-Date: 2020-06-19 21:50+0200\n"
 "PO-Revision-Date: 2016-11-17 12:51+0200\n"
 "Last-Translator: vovan43<vovan43@ex.ua>, sety <tim1065@mail.ru>, Irkoff <irkoff@gmail.com>\n"
 "Language-Team: gisclub.tv <http://gisclub.tv/>\n"
@@ -583,24 +583,6 @@ msgstr "9"
 
 msgid ": 0000 - default (disabled)"
 msgstr ": 0000 - за замовчуванням (відключено)"
-
-#, fuzzy
-msgid "< Current >"
-msgstr "Поточне значення: "
-
-#, fuzzy
-msgid "< Default + Picon >"
-msgstr "Налаштування за замовчуванням"
-
-#, fuzzy
-msgid "< Default >"
-msgstr "Налаштування за замовчуванням"
-
-msgid "< Emergency >"
-msgstr ""
-
-msgid "< Pending restart >"
-msgstr ""
 
 msgid "<Current movielist location>"
 msgstr "<Поточне місце списку відео>"
@@ -2499,6 +2481,10 @@ msgstr ""
 msgid "Curacao"
 msgstr ""
 
+#, fuzzy
+msgid "Current"
+msgstr "Поточне значення: "
+
 msgid "Current CEC address"
 msgstr "Поточна адреса CEC"
 
@@ -2692,6 +2678,10 @@ msgid "Default timer type"
 msgstr "Видалити таймер"
 
 #, fuzzy
+msgid "Default+Picon"
+msgstr "Налаштування за замовчуванням"
+
+#, fuzzy
 msgid "Define the location of the EPG Cache file."
 msgstr "Налаштування співвідношення сторін екрану."
 
@@ -2765,6 +2755,10 @@ msgstr "Видалити"
 msgid "Delete Image"
 msgstr "Видалити таймер"
 
+#, fuzzy
+msgid "Delete all the text"
+msgstr "Видалити запис з плейлиста"
+
 msgid "Delete entry"
 msgstr "Видалити вибране"
 
@@ -2783,9 +2777,6 @@ msgstr "Видалити запис з плейлиста"
 
 msgid "Delete saved playlist"
 msgstr "Видалити збережений плейлист"
-
-msgid "Delete the all the text"
-msgstr ""
 
 msgid "Delete the character to the left of text cursor"
 msgstr ""
@@ -3282,6 +3273,9 @@ msgstr "Електронний Програмний Гід(ЕПГ)"
 #, fuzzy
 msgid "Embedded"
 msgstr "вбудований"
+
+msgid "Emergency"
+msgstr ""
 
 msgid "Empty slot"
 msgstr ""
@@ -6064,6 +6058,10 @@ msgstr "Пауза відтворення"
 msgid "Pause/Continue playback"
 msgstr "Пауза / Продовжити відтворення"
 
+#, fuzzy
+msgid "Pending restart"
+msgstr "Меню вимкнення"
+
 msgid "Percentage left"
 msgstr "Відсотки зліва"
 
@@ -6558,7 +6556,7 @@ msgid "Press OK on your remote control to continue."
 msgstr "Натисніть OK на пульті, щоб продовжити."
 
 #, fuzzy, python-format
-msgid "Press OK to activate the selected%s skin."
+msgid "Press OK to activate the selected %s skin."
 msgstr "Натисніть OK для активації вибраного скіна."
 
 msgid "Press OK to activate the settings."
@@ -6572,7 +6570,7 @@ msgid "Press OK to get further details for %s"
 msgstr "Натисніть ОК, щоб отримати детальну інформацію для %s"
 
 #, fuzzy, python-format
-msgid "Press OK to keep the currently selected%s skin."
+msgid "Press OK to keep the currently selected %s skin."
 msgstr "Натисніть OK для активації вибраного скіна."
 
 msgid "Press OK to scan"
@@ -7598,9 +7596,6 @@ msgstr "Вибрати відео"
 
 msgid "Select a network adapter"
 msgstr "Вибір мережевого адаптера"
-
-msgid "Select a skin"
-msgstr "Вибрати скін"
 
 msgid "Select a tuner"
 msgstr "Вибрати тюнер"

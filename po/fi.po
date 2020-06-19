@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-25 03:18+0200\n"
+"POT-Creation-Date: 2020-06-19 21:50+0200\n"
 "PO-Revision-Date: 2019-02-13 20:52+0200\n"
 "Last-Translator: jamu\n"
 "Language-Team: BoxFreak/jamu\n"
@@ -609,27 +609,6 @@ msgid "9"
 msgstr "9"
 
 msgid ": 0000 - default (disabled)"
-msgstr ""
-
-#
-#, fuzzy
-msgid "< Current >"
-msgstr "Arvo: "
-
-#
-#, fuzzy
-msgid "< Default + Picon >"
-msgstr "<Oletus Teema>"
-
-#
-#, fuzzy
-msgid "< Default >"
-msgstr "<Oletus Teema>"
-
-msgid "< Emergency >"
-msgstr ""
-
-msgid "< Pending restart >"
 msgstr ""
 
 msgid "<Current movielist location>"
@@ -2679,6 +2658,11 @@ msgstr "Kuuba"
 msgid "Curacao"
 msgstr "Curacao"
 
+#
+#, fuzzy
+msgid "Current"
+msgstr "Arvo: "
+
 msgid "Current CEC address"
 msgstr "Käytettävä CEC-osoite"
 
@@ -2893,6 +2877,11 @@ msgstr "Oletusasetukset"
 msgid "Default timer type"
 msgstr "Poista ajastus"
 
+#
+#, fuzzy
+msgid "Default+Picon"
+msgstr "<Oletus Teema>"
+
 msgid "Define the location of the EPG Cache file."
 msgstr "Määritä ohjelmaoppaan välimuistitiedoston sijainti."
 
@@ -2969,6 +2958,11 @@ msgid "Delete Image"
 msgstr "Poista ohjelmistokuva"
 
 #
+#, fuzzy
+msgid "Delete all the text"
+msgstr "Poista soittolistan valittu kohde"
+
+#
 msgid "Delete entry"
 msgstr "Poista valinta"
 
@@ -2991,9 +2985,6 @@ msgstr "Poista soittolistan valittu kohde"
 #
 msgid "Delete saved playlist"
 msgstr "Poista tallennettu soittolista"
-
-msgid "Delete the all the text"
-msgstr ""
 
 msgid "Delete the character to the left of text cursor"
 msgstr ""
@@ -3557,6 +3548,9 @@ msgid "Electronic Program Guide"
 msgstr "Ohjelmaopas"
 
 msgid "Embedded"
+msgstr ""
+
+msgid "Emergency"
 msgstr ""
 
 msgid "Empty slot"
@@ -6616,6 +6610,11 @@ msgstr "Keskeytä toisto"
 msgid "Pause/Continue playback"
 msgstr "Pysäytä/Jatka toistoa"
 
+#
+#, fuzzy
+msgid "Pending restart"
+msgstr "Sammutusvalikko"
+
 msgid "Percentage left"
 msgstr "Prosentit vasemmalla"
 
@@ -7180,7 +7179,7 @@ msgstr "Jatka painamalla OK-näppäintä."
 
 #
 #, fuzzy, python-format
-msgid "Press OK to activate the selected%s skin."
+msgid "Press OK to activate the selected %s skin."
 msgstr "Ota valittu teema käyttöön painamalla OK."
 
 #
@@ -7198,7 +7197,7 @@ msgstr "Katso %s lisätietoja OK-näppäimellä"
 
 #
 #, fuzzy, python-format
-msgid "Press OK to keep the currently selected%s skin."
+msgid "Press OK to keep the currently selected %s skin."
 msgstr "Ota valittu teema käyttöön painamalla OK."
 
 #
@@ -8346,10 +8345,6 @@ msgstr "Tallennetut ohjelmat"
 #
 msgid "Select a network adapter"
 msgstr "Valitse verkkosovitin"
-
-#
-msgid "Select a skin"
-msgstr "Valitse teema"
 
 #
 msgid "Select a tuner"

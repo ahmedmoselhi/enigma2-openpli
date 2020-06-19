@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-25 03:18+0200\n"
+"POT-Creation-Date: 2020-06-19 21:50+0200\n"
 "PO-Revision-Date: 2020-03-23 11:15+0100\n"
 "Last-Translator: Željko <zeljko2@hi.ht.hr>\n"
 "Language-Team: Željko\n"
@@ -584,21 +584,6 @@ msgstr "9"
 
 msgid ": 0000 - default (disabled)"
 msgstr ": 0000 - zadano (onemogućeno)"
-
-msgid "< Current >"
-msgstr "< Trenutno >"
-
-msgid "< Default + Picon >"
-msgstr "< Zadano + pikon >"
-
-msgid "< Default >"
-msgstr "< Zadano >"
-
-msgid "< Emergency >"
-msgstr "< Hitna pomoć >"
-
-msgid "< Pending restart >"
-msgstr "< U tijeku je ponovno pokretanje >"
 
 msgid "<Current movielist location>"
 msgstr "<Trenutna lokacija popisa videozapisa>"
@@ -2461,6 +2446,10 @@ msgstr "Kuba"
 msgid "Curacao"
 msgstr "Curacao"
 
+#, fuzzy
+msgid "Current"
+msgstr "< Trenutno >"
+
 msgid "Current CEC address"
 msgstr "Trenutna CEC adresa"
 
@@ -2646,6 +2635,10 @@ msgstr "Zadane postavke"
 msgid "Default timer type"
 msgstr "Zadana vrsta tajmera"
 
+#, fuzzy
+msgid "Default+Picon"
+msgstr "< Zadano + pikon >"
+
 msgid "Define the location of the EPG Cache file."
 msgstr "Definirajte mjesto datoteke EPG predmemorije."
 
@@ -2719,6 +2712,10 @@ msgstr "Izbrisati"
 msgid "Delete Image"
 msgstr "Brisanje imagea"
 
+#, fuzzy
+msgid "Delete all the text"
+msgstr "Izbrišite unos s popisa za reprodukciju"
+
 msgid "Delete entry"
 msgstr "Brisanje unosa"
 
@@ -2736,9 +2733,6 @@ msgstr "Izbrišite unos s popisa za reprodukciju"
 
 msgid "Delete saved playlist"
 msgstr "Izbrišite spremljeni popis pjesama"
-
-msgid "Delete the all the text"
-msgstr ""
 
 #, fuzzy
 msgid "Delete the character to the left of text cursor"
@@ -3222,6 +3216,10 @@ msgstr "Elektronski programski vodič (EPG)"
 
 msgid "Embedded"
 msgstr "Ugrađen"
+
+#, fuzzy
+msgid "Emergency"
+msgstr "< Hitna pomoć >"
 
 msgid "Empty slot"
 msgstr "Prazan utor"
@@ -5943,6 +5941,10 @@ msgstr "Zaustavljanje reprodukcije"
 msgid "Pause/Continue playback"
 msgstr "Pauza/nastavak reprodukcije"
 
+#, fuzzy
+msgid "Pending restart"
+msgstr "< U tijeku je ponovno pokretanje >"
+
 msgid "Percentage left"
 msgstr "Postotak lijevo"
 
@@ -6423,8 +6425,8 @@ msgstr "Pritisnite MENU na daljinskom upravljaču za dodatne opcije."
 msgid "Press OK on your remote control to continue."
 msgstr "Pritisnite OK na daljinskom upravljaču za nastavak."
 
-#, python-format
-msgid "Press OK to activate the selected%s skin."
+#, fuzzy, python-format
+msgid "Press OK to activate the selected %s skin."
 msgstr "Pritisnite OK za aktiviranje odabranog%s skina."
 
 msgid "Press OK to activate the settings."
@@ -6437,8 +6439,8 @@ msgstr "Pritisnite OK za uređivanje postavki."
 msgid "Press OK to get further details for %s"
 msgstr "Pritisnite OK za dodatne pojedinosti za %s"
 
-#, python-format
-msgid "Press OK to keep the currently selected%s skin."
+#, fuzzy, python-format
+msgid "Press OK to keep the currently selected %s skin."
 msgstr "Pritisnite OK za zadržavanje trenutno odabranog%s skina."
 
 msgid "Press OK to scan"
@@ -7437,9 +7439,6 @@ msgstr "Odaberite film"
 
 msgid "Select a network adapter"
 msgstr "Odaberite mrežni adapter"
-
-msgid "Select a skin"
-msgstr "Odaberite skin"
 
 msgid "Select a tuner"
 msgstr "Odaberite tjuner"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-25 03:18+0200\n"
+"POT-Creation-Date: 2020-06-19 21:50+0200\n"
 "PO-Revision-Date: 2016-06-17 12:13+0800\n"
 "Last-Translator: nx111 <gdzdz@163.com>\n"
 "Language-Team: NEWBOLT\n"
@@ -564,24 +564,6 @@ msgid "9"
 msgstr ""
 
 msgid ": 0000 - default (disabled)"
-msgstr ""
-
-#, fuzzy
-msgid "< Current >"
-msgstr "当前值:"
-
-#, fuzzy
-msgid "< Default + Picon >"
-msgstr "默认设置"
-
-#, fuzzy
-msgid "< Default >"
-msgstr "默认设置"
-
-msgid "< Emergency >"
-msgstr ""
-
-msgid "< Pending restart >"
 msgstr ""
 
 msgid "<Current movielist location>"
@@ -2438,6 +2420,10 @@ msgstr ""
 msgid "Curacao"
 msgstr ""
 
+#, fuzzy
+msgid "Current"
+msgstr "当前值:"
+
 msgid "Current CEC address"
 msgstr "当前CEC地址"
 
@@ -2626,6 +2612,10 @@ msgstr "默认设置"
 msgid "Default timer type"
 msgstr "影片默认位置"
 
+#, fuzzy
+msgid "Default+Picon"
+msgstr "默认设置"
+
 msgid "Define the location of the EPG Cache file."
 msgstr ""
 
@@ -2699,6 +2689,10 @@ msgstr "删除"
 msgid "Delete Image"
 msgstr "已删除项目"
 
+#, fuzzy
+msgid "Delete all the text"
+msgstr "删除失败."
+
 msgid "Delete entry"
 msgstr "删除项目"
 
@@ -2716,9 +2710,6 @@ msgid "Delete playlist entry"
 msgstr ""
 
 msgid "Delete saved playlist"
-msgstr ""
-
-msgid "Delete the all the text"
 msgstr ""
 
 msgid "Delete the character to the left of text cursor"
@@ -3204,6 +3195,9 @@ msgid "Electronic Program Guide"
 msgstr "电子节目指南"
 
 msgid "Embedded"
+msgstr ""
+
+msgid "Emergency"
 msgstr ""
 
 msgid "Empty slot"
@@ -5946,6 +5940,9 @@ msgstr ""
 msgid "Pause/Continue playback"
 msgstr "继续播放"
 
+msgid "Pending restart"
+msgstr ""
+
 msgid "Percentage left"
 msgstr ""
 
@@ -6435,7 +6432,7 @@ msgid "Press OK on your remote control to continue."
 msgstr "按OK键确认."
 
 #, fuzzy, python-format
-msgid "Press OK to activate the selected%s skin."
+msgid "Press OK to activate the selected %s skin."
 msgstr "按OK键激活所选皮肤."
 
 msgid "Press OK to activate the settings."
@@ -6449,7 +6446,7 @@ msgid "Press OK to get further details for %s"
 msgstr "按OK键获取 %s 详细说明"
 
 #, fuzzy, python-format
-msgid "Press OK to keep the currently selected%s skin."
+msgid "Press OK to keep the currently selected %s skin."
 msgstr "按OK键激活所选皮肤."
 
 msgid "Press OK to scan"
@@ -7461,9 +7458,6 @@ msgid "Select a movie"
 msgstr "选择一部电影"
 
 msgid "Select a network adapter"
-msgstr ""
-
-msgid "Select a skin"
 msgstr ""
 
 msgid "Select a tuner"

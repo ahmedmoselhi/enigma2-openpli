@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Project Slovenia\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-25 03:18+0200\n"
+"POT-Creation-Date: 2020-06-19 21:50+0200\n"
 "PO-Revision-Date: 2015-08-30 09:00+0200\n"
 "Last-Translator: Taykun345 <support@satnigmo.com>\n"
 "Language-Team: Satnigmo <support@satnigmo.com>\n"
@@ -648,27 +648,6 @@ msgid "9"
 msgstr "9"
 
 msgid ": 0000 - default (disabled)"
-msgstr ""
-
-#
-#, fuzzy
-msgid "< Current >"
-msgstr "Trenutna vrednost:"
-
-#
-#, fuzzy
-msgid "< Default + Picon >"
-msgstr "Privzete nastavitve"
-
-#
-#, fuzzy
-msgid "< Default >"
-msgstr "Privzete nastavitve"
-
-msgid "< Emergency >"
-msgstr ""
-
-msgid "< Pending restart >"
 msgstr ""
 
 #
@@ -2807,6 +2786,11 @@ msgstr ""
 msgid "Curacao"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Current"
+msgstr "Trenutna vrednost:"
+
 msgid "Current CEC address"
 msgstr "Trenutni CEC naslov"
 
@@ -3029,6 +3013,11 @@ msgstr "Privzete nastavitve"
 msgid "Default timer type"
 msgstr "Izbris časovnika"
 
+#
+#, fuzzy
+msgid "Default+Picon"
+msgstr "Privzete nastavitve"
+
 #, fuzzy
 msgid "Define the location of the EPG Cache file."
 msgstr "Nastavitev razmerja slike za zaslon."
@@ -3107,6 +3096,11 @@ msgid "Delete Image"
 msgstr "Izbris časovnika"
 
 #
+#, fuzzy
+msgid "Delete all the text"
+msgstr "Izbris vnosov v seznamu predvajanja"
+
+#
 msgid "Delete entry"
 msgstr "Izbris vnosa"
 
@@ -3130,9 +3124,6 @@ msgstr "Izbris vnosov v seznamu predvajanja"
 #
 msgid "Delete saved playlist"
 msgstr "Izbris shranjenega seznama predvajanja"
-
-msgid "Delete the all the text"
-msgstr ""
 
 msgid "Delete the character to the left of text cursor"
 msgstr ""
@@ -3718,6 +3709,9 @@ msgid "Electronic Program Guide"
 msgstr "Elektronski spored programov (EPG)"
 
 msgid "Embedded"
+msgstr ""
+
+msgid "Emergency"
 msgstr ""
 
 msgid "Empty slot"
@@ -6863,6 +6857,11 @@ msgstr "Pavzirajte predvajanje"
 msgid "Pause/Continue playback"
 msgstr "Pavza/Nadaljevanje predvajanja"
 
+#
+#, fuzzy
+msgid "Pending restart"
+msgstr "Možnosti izklopa sprejemnika"
+
 msgid "Percentage left"
 msgstr "Odstotek na levi strani"
 
@@ -7450,7 +7449,7 @@ msgstr "Za nadaljevanje pritisnite OK."
 
 #
 #, fuzzy, python-format
-msgid "Press OK to activate the selected%s skin."
+msgid "Press OK to activate the selected %s skin."
 msgstr "Za aktiviranje izbrane predloge pritisnite OK."
 
 #
@@ -7468,7 +7467,7 @@ msgstr "Za podrobnejše informacije o %s pritisnite OK."
 
 #
 #, fuzzy, python-format
-msgid "Press OK to keep the currently selected%s skin."
+msgid "Press OK to keep the currently selected %s skin."
 msgstr "Za aktiviranje izbrane predloge pritisnite OK."
 
 #
@@ -8660,10 +8659,6 @@ msgstr "Izberite posnetek"
 #
 msgid "Select a network adapter"
 msgstr "Izberite omrežni vmesnik"
-
-#
-msgid "Select a skin"
-msgstr "Izberite preobleko"
 
 #
 msgid "Select a tuner"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-25 03:18+0200\n"
+"POT-Creation-Date: 2020-06-19 21:50+0200\n"
 "PO-Revision-Date: 2008-12-29 16:22+0100\n"
 "Last-Translator: gerrit <gerrit@nedlinux.nl>\n"
 "Language-Team: gerrit <fy@li.org>\n"
@@ -618,25 +618,6 @@ msgid "9"
 msgstr "9"
 
 msgid ": 0000 - default (disabled)"
-msgstr ""
-
-msgid "< Current >"
-msgstr ""
-
-#
-#, fuzzy
-msgid "< Default + Picon >"
-msgstr "Wyzigje ynstellingen"
-
-#
-#, fuzzy
-msgid "< Default >"
-msgstr "Wyzigje ynstellingen"
-
-msgid "< Emergency >"
-msgstr ""
-
-msgid "< Pending restart >"
 msgstr ""
 
 #
@@ -2765,6 +2746,9 @@ msgstr ""
 msgid "Curacao"
 msgstr ""
 
+msgid "Current"
+msgstr ""
+
 msgid "Current CEC address"
 msgstr ""
 
@@ -2998,6 +2982,11 @@ msgstr "Wyzigje ynstellingen"
 msgid "Default timer type"
 msgstr "Tiidsbarren type"
 
+#
+#, fuzzy
+msgid "Default+Picon"
+msgstr "Wyzigje ynstellingen"
+
 msgid "Define the location of the EPG Cache file."
 msgstr ""
 
@@ -3074,6 +3063,11 @@ msgid "Delete Image"
 msgstr "triem ferwiderje"
 
 #
+#, fuzzy
+msgid "Delete all the text"
+msgstr "ofspiellyst rigele ferwiderje"
+
+#
 msgid "Delete entry"
 msgstr "Ferwiderje ynfier"
 
@@ -3100,9 +3094,6 @@ msgstr "ofspiellyst rigele ferwiderje"
 #, fuzzy
 msgid "Delete saved playlist"
 msgstr "ferwiderje opsleine ofspiellyst"
-
-msgid "Delete the all the text"
-msgstr ""
 
 msgid "Delete the character to the left of text cursor"
 msgstr ""
@@ -3672,6 +3663,9 @@ msgid "Electronic Program Guide"
 msgstr "Elektroniske Programma Gids"
 
 msgid "Embedded"
+msgstr ""
+
+msgid "Emergency"
 msgstr ""
 
 msgid "Empty slot"
@@ -6831,6 +6825,11 @@ msgstr "Fierder gean mei ôfspieljen"
 msgid "Pause/Continue playback"
 msgstr "Kontinu spielje"
 
+#
+#, fuzzy
+msgid "Pending restart"
+msgstr "Paraatmode / Nijstart"
+
 msgid "Percentage left"
 msgstr ""
 
@@ -7407,7 +7406,7 @@ msgstr "Druk OK op of ôfstandsbestjinning om fierder te gean."
 
 #
 #, fuzzy, python-format
-msgid "Press OK to activate the selected%s skin."
+msgid "Press OK to activate the selected %s skin."
 msgstr "Druk Ok om ynstellingen aktief te meitsjen."
 
 #
@@ -7425,7 +7424,7 @@ msgstr ""
 
 #
 #, fuzzy, python-format
-msgid "Press OK to keep the currently selected%s skin."
+msgid "Press OK to keep the currently selected %s skin."
 msgstr "Druk OK om dizze ynstellingen te bewurkjen"
 
 #
@@ -8613,11 +8612,6 @@ msgstr "Kies in film"
 #, fuzzy
 msgid "Select a network adapter"
 msgstr "Kies Netwurk Adapter"
-
-#
-#, fuzzy
-msgid "Select a skin"
-msgstr "Kies in film"
 
 #
 #, fuzzy

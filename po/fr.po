@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-25 03:18+0200\n"
+"POT-Creation-Date: 2020-06-19 21:50+0200\n"
 "PO-Revision-Date: 2020-03-22 22:42+0100\n"
 "Last-Translator: Pr2\n"
 "Language-Team: french\n"
@@ -573,21 +573,6 @@ msgstr "9"
 
 msgid ": 0000 - default (disabled)"
 msgstr ": 0000 - par défaut (désactivé)"
-
-msgid "< Current >"
-msgstr "< Actuel >"
-
-msgid "< Default + Picon >"
-msgstr "< Défaut + Picon >"
-
-msgid "< Default >"
-msgstr "< Défaut >"
-
-msgid "< Emergency >"
-msgstr "< Urgence >"
-
-msgid "< Pending restart >"
-msgstr "< En attente de redémarrage >"
 
 msgid "<Current movielist location>"
 msgstr "<Emplacement actuel de la liste des films>"
@@ -2450,6 +2435,10 @@ msgstr "Cuba"
 msgid "Curacao"
 msgstr "Curacao"
 
+#, fuzzy
+msgid "Current"
+msgstr "< Actuel >"
+
 msgid "Current CEC address"
 msgstr "Adresse CEC actuelle"
 
@@ -2635,6 +2624,10 @@ msgstr "Paramètres par défaut"
 msgid "Default timer type"
 msgstr "Type de programmation par défaut"
 
+#, fuzzy
+msgid "Default+Picon"
+msgstr "< Défaut + Picon >"
+
 msgid "Define the location of the EPG Cache file."
 msgstr "Définir la localisation du fichier de cache EPG."
 
@@ -2708,6 +2701,10 @@ msgstr "Supprimer"
 msgid "Delete Image"
 msgstr "Supprimer l’image"
 
+#, fuzzy
+msgid "Delete all the text"
+msgstr "Supprimer l’entrée de la liste de lecture"
+
 msgid "Delete entry"
 msgstr "Supprimer l’entrée"
 
@@ -2725,9 +2722,6 @@ msgstr "Supprimer l’entrée de la liste de lecture"
 
 msgid "Delete saved playlist"
 msgstr "Supprimer la liste de lecture sauvegardée"
-
-msgid "Delete the all the text"
-msgstr ""
 
 #, fuzzy
 msgid "Delete the character to the left of text cursor"
@@ -3208,6 +3202,10 @@ msgstr "Guide électronique programme (EPG)"
 
 msgid "Embedded"
 msgstr "Embarqué"
+
+#, fuzzy
+msgid "Emergency"
+msgstr "< Urgence >"
 
 msgid "Empty slot"
 msgstr "Emplacement vide."
@@ -5926,6 +5924,10 @@ msgstr "Reprise de la lecture"
 msgid "Pause/Continue playback"
 msgstr "Pause/Continue la lecture"
 
+#, fuzzy
+msgid "Pending restart"
+msgstr "< En attente de redémarrage >"
+
 msgid "Percentage left"
 msgstr "Pourcentage gauche"
 
@@ -6406,8 +6408,8 @@ msgstr "Appuyez sur MENU de votre télécommande pour d'autres options."
 msgid "Press OK on your remote control to continue."
 msgstr "Appuyez sur OK de votre télécommande pour continuer."
 
-#, python-format
-msgid "Press OK to activate the selected%s skin."
+#, fuzzy, python-format
+msgid "Press OK to activate the selected %s skin."
 msgstr "Appuyez sur OK pour activer le thème sélectionné %s."
 
 msgid "Press OK to activate the settings."
@@ -6420,8 +6422,8 @@ msgstr "Appuyez sur OK pour éditer les paramètres."
 msgid "Press OK to get further details for %s"
 msgstr "Appuyez sur OK pour avoir des détails sur %s"
 
-#, python-format
-msgid "Press OK to keep the currently selected%s skin."
+#, fuzzy, python-format
+msgid "Press OK to keep the currently selected %s skin."
 msgstr "Appuyez sur OK pour activer le thème sélectionné %s."
 
 msgid "Press OK to scan"
@@ -7417,9 +7419,6 @@ msgstr "Sélectionner un film"
 
 msgid "Select a network adapter"
 msgstr "Sélectionner un adaptateur réseau"
-
-msgid "Select a skin"
-msgstr "Sélectionner un skin/thème"
 
 msgid "Select a tuner"
 msgstr "Sélectionner un tuner"

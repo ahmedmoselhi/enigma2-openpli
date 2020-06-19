@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-25 03:18+0200\n"
+"POT-Creation-Date: 2020-06-19 21:50+0200\n"
 "PO-Revision-Date: 2020-03-23 00:18+0200\n"
 "Last-Translator: Audronis Grincevicius <adga45@gmail.com>\n"
 "Language-Team: Adga (C) <adga45@gmail.com>\n"
@@ -585,21 +585,6 @@ msgstr "9"
 
 msgid ": 0000 - default (disabled)"
 msgstr ": 0000 - numatytasis (išjungta)"
-
-msgid "< Current >"
-msgstr "< Dabartinis >"
-
-msgid "< Default + Picon >"
-msgstr "< Numatytasis + logotipas >"
-
-msgid "< Default >"
-msgstr "< Numatytasis >"
-
-msgid "< Emergency >"
-msgstr "< Skubus atvejis >"
-
-msgid "< Pending restart >"
-msgstr "< Paleidimo iš naujo laukimas >"
 
 msgid "<Current movielist location>"
 msgstr "<Dabartinė filmų sąrašo vieta>"
@@ -2462,6 +2447,10 @@ msgstr "Kuba"
 msgid "Curacao"
 msgstr "Kiurasao"
 
+#, fuzzy
+msgid "Current"
+msgstr "< Dabartinis >"
+
 msgid "Current CEC address"
 msgstr "Dabartinis CEC adresas"
 
@@ -2647,6 +2636,10 @@ msgstr "Numatytosios nuostatos"
 msgid "Default timer type"
 msgstr "Numatytasis laikmačio tipas"
 
+#, fuzzy
+msgid "Default+Picon"
+msgstr "< Numatytasis + logotipas >"
+
 msgid "Define the location of the EPG Cache file."
 msgstr "Nustatykite EPG talpyklos failo vietą."
 
@@ -2720,6 +2713,10 @@ msgstr "Ištrinti"
 msgid "Delete Image"
 msgstr "Ištrinti atvaizdą"
 
+#, fuzzy
+msgid "Delete all the text"
+msgstr "Ištrinti įrašą iš grojaraščio"
+
 msgid "Delete entry"
 msgstr "Ištrinti įrašą"
 
@@ -2737,9 +2734,6 @@ msgstr "Ištrinti įrašą iš grojaraščio"
 
 msgid "Delete saved playlist"
 msgstr "Ištrinti išsaugotą grojaraštį"
-
-msgid "Delete the all the text"
-msgstr ""
 
 #, fuzzy
 msgid "Delete the character to the left of text cursor"
@@ -3223,6 +3217,10 @@ msgstr "Elektroninis programų vadovas"
 
 msgid "Embedded"
 msgstr "Įterpta"
+
+#, fuzzy
+msgid "Emergency"
+msgstr "< Skubus atvejis >"
 
 msgid "Empty slot"
 msgstr "Tuščias lizdas"
@@ -5941,6 +5939,10 @@ msgstr "Sustabdyti atkūrimą"
 msgid "Pause/Continue playback"
 msgstr "Pristabdyti/tęsti atkūrimą"
 
+#, fuzzy
+msgid "Pending restart"
+msgstr "< Paleidimo iš naujo laukimas >"
+
 msgid "Percentage left"
 msgstr "Procentai kairėje"
 
@@ -6421,8 +6423,8 @@ msgstr "Papildomų galimybių pasirinkimui, spauskite 'MENU'."
 msgid "Press OK on your remote control to continue."
 msgstr "Spauskite OK savo valdymo pulte ir tęskite."
 
-#, python-format
-msgid "Press OK to activate the selected%s skin."
+#, fuzzy, python-format
+msgid "Press OK to activate the selected %s skin."
 msgstr "Paspauskite OK, kad suaktyvintumėte pasirinktą %s temą."
 
 msgid "Press OK to activate the settings."
@@ -6435,8 +6437,8 @@ msgstr "Spauskite OK ir redaguokite nustatymus."
 msgid "Press OK to get further details for %s"
 msgstr "Spauskite OK, kad gautumėte tolimesnes detales dėl %s"
 
-#, python-format
-msgid "Press OK to keep the currently selected%s skin."
+#, fuzzy, python-format
+msgid "Press OK to keep the currently selected %s skin."
 msgstr "Paspauskite OK, kad išlaikyti šiuo metu pasirinktą %s temą."
 
 msgid "Press OK to scan"
@@ -7435,9 +7437,6 @@ msgstr "Pasirinkite filmą"
 
 msgid "Select a network adapter"
 msgstr "Pasirinkite tinklo modulį"
-
-msgid "Select a skin"
-msgstr "Pasirinkite temą"
 
 msgid "Select a tuner"
 msgstr "Pasirinkite imtuvą"

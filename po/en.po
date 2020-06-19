@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-25 03:18+0200\n"
+"POT-Creation-Date: 2020-06-19 21:50+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: satdreamgr\n"
 "Language-Team: \n"
@@ -564,24 +564,6 @@ msgid "9"
 msgstr "9"
 
 msgid ": 0000 - default (disabled)"
-msgstr ""
-
-#, fuzzy
-msgid "< Current >"
-msgstr "Current value: "
-
-#, fuzzy
-msgid "< Default + Picon >"
-msgstr "Default settings"
-
-#, fuzzy
-msgid "< Default >"
-msgstr "Default settings"
-
-msgid "< Emergency >"
-msgstr ""
-
-msgid "< Pending restart >"
 msgstr ""
 
 msgid "<Current movielist location>"
@@ -2464,6 +2446,10 @@ msgstr ""
 msgid "Curacao"
 msgstr ""
 
+#, fuzzy
+msgid "Current"
+msgstr "Current value: "
+
 msgid "Current CEC address"
 msgstr "Current CEC address"
 
@@ -2654,6 +2640,10 @@ msgid "Default timer type"
 msgstr "Timer type"
 
 #, fuzzy
+msgid "Default+Picon"
+msgstr "Default settings"
+
+#, fuzzy
 msgid "Define the location of the EPG Cache file."
 msgstr "Configure the aspect ratio of the screen."
 
@@ -2727,6 +2717,10 @@ msgstr "Delete"
 msgid "Delete Image"
 msgstr "Delete file"
 
+#, fuzzy
+msgid "Delete all the text"
+msgstr "Delete playlist entry"
+
 msgid "Delete entry"
 msgstr "Delete entry"
 
@@ -2745,9 +2739,6 @@ msgstr "Delete playlist entry"
 
 msgid "Delete saved playlist"
 msgstr "Delete saved playlist"
-
-msgid "Delete the all the text"
-msgstr ""
 
 msgid "Delete the character to the left of text cursor"
 msgstr ""
@@ -3235,6 +3226,9 @@ msgid "Electronic Program Guide"
 msgstr "Electronic Program Guide"
 
 msgid "Embedded"
+msgstr ""
+
+msgid "Emergency"
 msgstr ""
 
 msgid "Empty slot"
@@ -5987,6 +5981,10 @@ msgstr "Pause playback"
 msgid "Pause/Continue playback"
 msgstr "Continue playback"
 
+#, fuzzy
+msgid "Pending restart"
+msgstr "Standby / restart"
+
 msgid "Percentage left"
 msgstr "Percentage left"
 
@@ -6479,7 +6477,7 @@ msgid "Press OK on your remote control to continue."
 msgstr "Press OK on your remote control to continue."
 
 #, fuzzy, python-format
-msgid "Press OK to activate the selected%s skin."
+msgid "Press OK to activate the selected %s skin."
 msgstr "Press OK to activate the selected skin."
 
 msgid "Press OK to activate the settings."
@@ -6493,7 +6491,7 @@ msgid "Press OK to get further details for %s"
 msgstr "Press OK to get further details for %s"
 
 #, fuzzy, python-format
-msgid "Press OK to keep the currently selected%s skin."
+msgid "Press OK to keep the currently selected %s skin."
 msgstr "Press OK to activate the selected skin."
 
 msgid "Press OK to scan"
@@ -7508,9 +7506,6 @@ msgstr "Select a movie"
 
 msgid "Select a network adapter"
 msgstr "Select a network adapter"
-
-msgid "Select a skin"
-msgstr "Select a skin"
 
 msgid "Select a tuner"
 msgstr "Select a tuner"

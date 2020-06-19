@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-25 03:18+0200\n"
+"POT-Creation-Date: 2020-06-19 21:50+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Frenske <voorzitter@openpli.org>\n"
 "Language-Team: PLiteam <translators@openpli.org>\n"
@@ -573,21 +573,6 @@ msgstr "9"
 
 msgid ": 0000 - default (disabled)"
 msgstr ":0000 - standaard (uitgeschakeld)"
-
-msgid "< Current >"
-msgstr "<Huidige>"
-
-msgid "< Default + Picon >"
-msgstr "<Standaard + Picon>"
-
-msgid "< Default >"
-msgstr "<Standaard skin>"
-
-msgid "< Emergency >"
-msgstr "< Tijdelijke skin >"
-
-msgid "< Pending restart >"
-msgstr "<Wacht op herstart>"
 
 msgid "<Current movielist location>"
 msgstr "<Huidige opnamelijstlocatie>"
@@ -2628,6 +2613,10 @@ msgstr "Cuba"
 msgid "Curacao"
 msgstr "Curacao"
 
+#, fuzzy
+msgid "Current"
+msgstr "<Huidige>"
+
 msgid "Current CEC address"
 msgstr "Huidig CEC adres"
 
@@ -2813,6 +2802,10 @@ msgstr "Standaard instellingen"
 msgid "Default timer type"
 msgstr "Standaard type timer"
 
+#, fuzzy
+msgid "Default+Picon"
+msgstr "<Standaard + Picon>"
+
 msgid "Define the location of the EPG Cache file."
 msgstr "Geef de plaats van het EPG cache bestand aan."
 
@@ -2886,6 +2879,10 @@ msgstr "Verwijderen"
 msgid "Delete Image"
 msgstr "Image verwijderen"
 
+#, fuzzy
+msgid "Delete all the text"
+msgstr "Verwijder een item uit de afspeellijst"
+
 msgid "Delete entry"
 msgstr "Verwijder de invoer"
 
@@ -2903,9 +2900,6 @@ msgstr "Verwijder een item uit de afspeellijst"
 
 msgid "Delete saved playlist"
 msgstr "Verwijder een opgeslagen afspeellijst"
-
-msgid "Delete the all the text"
-msgstr ""
 
 #, fuzzy
 msgid "Delete the character to the left of text cursor"
@@ -3400,6 +3394,10 @@ msgstr "Elektronische Programma Gids"
 
 msgid "Embedded"
 msgstr "Ingebouwd"
+
+#, fuzzy
+msgid "Emergency"
+msgstr "< Tijdelijke skin >"
 
 msgid "Empty slot"
 msgstr "Leeg slot"
@@ -6142,6 +6140,10 @@ msgstr "Zet de weergave op pauze"
 msgid "Pause/Continue playback"
 msgstr "Pauzeer/Hervat afspelen"
 
+#, fuzzy
+msgid "Pending restart"
+msgstr "<Wacht op herstart>"
+
 msgid "Percentage left"
 msgstr "Percentage links"
 
@@ -6647,8 +6649,8 @@ msgstr "Druk MENU op uw afstandsbediening voor meer opties."
 msgid "Press OK on your remote control to continue."
 msgstr "Druk Ok op uw afstandsbediening om verder te gaan."
 
-#, python-format
-msgid "Press OK to activate the selected%s skin."
+#, fuzzy, python-format
+msgid "Press OK to activate the selected %s skin."
 msgstr "Druk Ok om de gekozen%s skin te activeren."
 
 msgid "Press OK to activate the settings."
@@ -6661,8 +6663,8 @@ msgstr "Druk op Ok om te wijzigen."
 msgid "Press OK to get further details for %s"
 msgstr "Druk op Ok voor meer detail over: %s"
 
-#, python-format
-msgid "Press OK to keep the currently selected%s skin."
+#, fuzzy, python-format
+msgid "Press OK to keep the currently selected %s skin."
 msgstr "Druk op Ok om de huidige gekozen%s skin te behouden."
 
 msgid "Press OK to scan"
@@ -7662,9 +7664,6 @@ msgstr "Kies een opname"
 
 msgid "Select a network adapter"
 msgstr "Kies een netwerkadapter"
-
-msgid "Select a skin"
-msgstr "Kies een skin"
 
 msgid "Select a tuner"
 msgstr "Kies een tuner"

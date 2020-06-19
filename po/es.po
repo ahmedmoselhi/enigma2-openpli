@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-25 03:18+0200\n"
+"POT-Creation-Date: 2020-06-19 21:50+0200\n"
 "PO-Revision-Date: 2020-03-17 01:28+0100\n"
 "Last-Translator: Jose Juan <jzapater@gmail.com>\n"
 "Language-Team: ANGELODOS  angelo2807@hotmail.com\n"
@@ -627,24 +627,6 @@ msgstr "9"
 
 msgid ": 0000 - default (disabled)"
 msgstr ": 0000 - por defecto (desactivado)"
-
-#
-msgid "< Current >"
-msgstr "< Valor actual >"
-
-#
-msgid "< Default + Picon >"
-msgstr "< Piel predeterminada + Picon >"
-
-#
-msgid "< Default >"
-msgstr "< Piel predeterminada >"
-
-msgid "< Emergency >"
-msgstr "< Emergencia >"
-
-msgid "< Pending restart >"
-msgstr "<Pendiente de reinicio>"
 
 #
 msgid "<Current movielist location>"
@@ -2719,6 +2701,11 @@ msgstr "Cuba"
 msgid "Curacao"
 msgstr "Curacao"
 
+#
+#, fuzzy
+msgid "Current"
+msgstr "< Valor actual >"
+
 msgid "Current CEC address"
 msgstr "Editar la dirección fuente de actualización."
 
@@ -2932,6 +2919,11 @@ msgstr "Parámetros por Defecto"
 msgid "Default timer type"
 msgstr "Tipo de temporizador predeterminado"
 
+#
+#, fuzzy
+msgid "Default+Picon"
+msgstr "< Piel predeterminada + Picon >"
+
 msgid "Define the location of the EPG Cache file."
 msgstr "Defina la ubicación del archivo EPG Cache."
 
@@ -3007,6 +2999,11 @@ msgid "Delete Image"
 msgstr "Borrar imagen"
 
 #
+#, fuzzy
+msgid "Delete all the text"
+msgstr "borrar entrada en la lista de reproducción"
+
+#
 msgid "Delete entry"
 msgstr "Borrar entrada"
 
@@ -3028,9 +3025,6 @@ msgstr "borrar entrada en la lista de reproducción"
 #
 msgid "Delete saved playlist"
 msgstr "borrar lista de reproducción guardada"
-
-msgid "Delete the all the text"
-msgstr ""
 
 #, fuzzy
 msgid "Delete the character to the left of text cursor"
@@ -3580,6 +3574,10 @@ msgstr "Guía de Programación Electrónica"
 
 msgid "Embedded"
 msgstr "Incrustado"
+
+#, fuzzy
+msgid "Emergency"
+msgstr "< Emergencia >"
 
 msgid "Empty slot"
 msgstr "Slot vacío"
@@ -6616,6 +6614,10 @@ msgstr "Pusar la reproducción"
 msgid "Pause/Continue playback"
 msgstr "Pausar / continuar la reproducción"
 
+#, fuzzy
+msgid "Pending restart"
+msgstr "<Pendiente de reinicio>"
+
 msgid "Percentage left"
 msgstr "Porcentaje a la izquierda"
 
@@ -7172,8 +7174,8 @@ msgid "Press OK on your remote control to continue."
 msgstr "Pulse OK en el mando a distancia para continuar."
 
 #
-#, python-format
-msgid "Press OK to activate the selected%s skin."
+#, fuzzy, python-format
+msgid "Press OK to activate the selected %s skin."
 msgstr "Presione OK para activar la piel% s seleccionada."
 
 #
@@ -7190,8 +7192,8 @@ msgid "Press OK to get further details for %s"
 msgstr "Pulse OK para obtener más detalles para %s"
 
 #
-#, python-format
-msgid "Press OK to keep the currently selected%s skin."
+#, fuzzy, python-format
+msgid "Press OK to keep the currently selected %s skin."
 msgstr "Presione OK para mantener la piel% s seleccionada actualmente."
 
 #
@@ -8322,10 +8324,6 @@ msgstr "Seleccionar una película"
 #
 msgid "Select a network adapter"
 msgstr "Seleccione un adaptador de red"
-
-#
-msgid "Select a skin"
-msgstr "Seleccione un skin"
 
 #
 msgid "Select a tuner"
