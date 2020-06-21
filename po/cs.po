@@ -3085,11 +3085,6 @@ msgid "Delete all the text"
 msgstr "Smazat vše"
 
 #
-#, fuzzy
-msgid "Delete all the text"
-msgstr "Smazat položku playlistu"
-
-#
 msgid "Delete entry"
 msgstr "smazat položku"
 
