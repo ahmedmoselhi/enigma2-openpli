@@ -3081,9 +3081,6 @@ msgstr "Smazat"
 msgid "Delete Image"
 msgstr "Odstranit image"
 
-msgid "Delete all the text"
-msgstr "Smazat vše"
-
 #
 msgid "Delete entry"
 msgstr "smazat položku"

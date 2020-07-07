@@ -316,7 +316,7 @@ class NetworkWizard(WizardLanguage, Rc):
 			self.w = iWlan.getInterface()
 			aps = iWlan.getNetworkList()
 			if aps is not None:
-				print("[NetworkWizard] got Accespoints!")
+				print "[NetworkWizard.py] got Accespoints!"
 				tmplist = []
 				complist = []
 				for ap in aps:
