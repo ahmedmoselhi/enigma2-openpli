@@ -361,8 +361,6 @@ lib/python/Plugins/SystemPlugins/VFD-Icons/Makefile
 lib/python/Plugins/SystemPlugins/VFD-Icons/meta/Makefile
 lib/python/Plugins/SystemPlugins/SH4OSDAdjustment/Makefile
 lib/python/Plugins/SystemPlugins/SH4OSDAdjustment/meta/Makefile
-lib/python/Plugins/SystemPlugins/SH4BoosterControl/Makefile
-lib/python/Plugins/SystemPlugins/SH4BoosterControl/meta/Makefile
 lib/python/Plugins/SystemPlugins/SparkUnionTunerType/Makefile
 lib/python/Plugins/SystemPlugins/SparkUnionTunerType/meta/Makefile
 lib/python/Tools/Makefile

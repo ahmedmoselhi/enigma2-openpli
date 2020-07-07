@@ -5,7 +5,7 @@ SUBDIRS = SoftwareManager PositionerSetup Satfinder \
 	DefaultServicesScanner DiseqcTester CommonInterfaceAssignment \
 	CableScan FastScan OSDPositionSetup OSD3DSetup HdmiCEC VideoClippingSetup \
 	VideoEnhancement WirelessLan NetworkWizard \
-	VFD-Icons SH4BoosterControl SH4OSDAdjustment WirelessLan
+	VFD-Icons SH4OSDAdjustment WirelessLan
 
 if ENABLE_SPARK7162
 SUBDIRS += SparkUnionTunerType
