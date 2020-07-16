@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-19 21:50+0200\n"
+"POT-Creation-Date: 2020-07-16 00:59+0200\n"
 "PO-Revision-Date: 2017-01-18 16:38+0100\n"
 "Last-Translator: lupine <a_ecklon@hotmail.com>\n"
 "Language-Team: \n"
@@ -215,6 +215,12 @@ msgid "%d core"
 msgid_plural "%d cores"
 msgstr[0] "%d kerne"
 msgstr[1] "%d kerner"
+
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
 
 #, python-format
 msgid "%d file"
@@ -3426,8 +3432,10 @@ msgstr "Vil du afslutte overscan guiden?"
 msgid "Do you want to reboot your receiver?"
 msgstr "Vil du genstarte din receiver?"
 
-msgid "Do you want to remove all the crahs logfiles"
-msgstr ""
+#
+#, fuzzy
+msgid "Do you want to remove all the crash logfiles"
+msgstr "Vil du fjerne pakken:\n"
 
 #
 msgid "Do you want to remove the package:\n"
@@ -4573,6 +4581,10 @@ msgstr "Gå til 0"
 msgid "Goto X"
 msgstr "Gå til X"
 
+#, fuzzy
+msgid "Goto down service"
+msgstr "Gå til sidste kanal"
+
 msgid "Goto index position"
 msgstr "Gå til indeks"
 
@@ -4597,6 +4609,10 @@ msgstr "Gå til primetime / nu"
 
 msgid "Goto specific date/time"
 msgstr "Gå til en specifik dato/tid"
+
+#, fuzzy
+msgid "Goto up service"
+msgstr "Gå til sidste kanal"
 
 msgid "Goto:"
 msgstr "Gå til:"
@@ -6051,9 +6067,6 @@ msgstr "NEJ"
 #
 msgid "NOW"
 msgstr "NU"
-
-msgid "NTP"
-msgstr ""
 
 #
 msgid "NTSC"
@@ -7605,6 +7618,10 @@ msgstr "Opdater boksen og genstart nu?"
 #
 msgid "Reboot"
 msgstr "Genstart"
+
+#, fuzzy
+msgid "Rec"
+msgstr "Rød"
 
 msgid "Recall to previous service"
 msgstr ""
@@ -9273,6 +9290,9 @@ msgstr "Vis ekstra infobar"
 msgid "Show service list"
 msgstr "Vis serviceliste"
 
+msgid "Show service name and event description among each other instead of side by side."
+msgstr ""
+
 msgid "Show service type icons"
 msgstr "Vis kanal type ikoner"
 
@@ -9312,6 +9332,9 @@ msgstr "Vis TV afspiller..."
 #
 msgid "Show transponder info"
 msgstr "Vis transponer info"
+
+msgid "Show two lines per entry"
+msgstr ""
 
 #
 #, fuzzy
@@ -10061,15 +10084,19 @@ msgstr "Skift kanal ned"
 msgid "Switch channel up"
 msgstr "Skift kanal op"
 
-msgid "Switch off the display during Standby Mode"
-msgstr ""
-
-msgid "Switch off the display during Suspend Mode"
-msgstr ""
+#
+#, fuzzy
+msgid "Switch on the display during Standby Mode"
+msgstr "Vis oplistning af tilgængelige visnings- og brugerinterface udvidelser."
 
 #
 #, fuzzy
-msgid "Switch off the display during operation."
+msgid "Switch on the display during Suspend Mode"
+msgstr "Vis oplistning af tilgængelige visnings- og brugerinterface udvidelser."
+
+#
+#, fuzzy
+msgid "Switch on the display during operation."
 msgstr "Vis oplistning af tilgængelige visnings- og brugerinterface udvidelser."
 
 msgid "Switch to TV mode"
@@ -10950,11 +10977,6 @@ msgstr "Transponder"
 
 #
 #, fuzzy
-msgid "Transponder time"
-msgstr "Transponder"
-
-#
-#, fuzzy
 msgid "Transport Stream Type"
 msgstr "Transponder type"
 
@@ -11291,6 +11313,10 @@ msgstr "Opdaterer softwarekatalog"
 
 msgid "Upper case"
 msgstr ""
+
+#, fuzzy
+msgid "Uptime"
+msgstr "Sleeptimer"
 
 msgid "Uruguay"
 msgstr ""
@@ -12065,13 +12091,15 @@ msgstr "Med fejlene:"
 msgid "With popup"
 msgstr "Med popup"
 
-msgid "With this option you can switch off the display during operation."
+#
+#, fuzzy
+msgid "With this option you can switch on the display during operation."
+msgstr "Vis oplistning af tilgængelige visnings- og brugerinterface udvidelser."
+
+msgid "With this option you can switch on the display in Deep Standby Mode."
 msgstr ""
 
-msgid "With this option you can switch off the display in Deep Standby Mode."
-msgstr ""
-
-msgid "With this option you can switch off the display in Standby Mode."
+msgid "With this option you can switch on the display in Standby Mode."
 msgstr ""
 
 msgid "With this option you can switch the LED color or deactivate the LED."

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma 2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-19 21:50+0200\n"
+"POT-Creation-Date: 2020-07-16 00:59+0200\n"
 "PO-Revision-Date: 2019-11-19 08:58+0700\n"
 "Last-Translator: krong\n"
 "Language-Team: none\n"
@@ -206,6 +206,12 @@ msgid "%d core"
 msgid_plural "%d cores"
 msgstr[0] "%d lõi"
 msgstr[1] "%d lõi"
+
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
 
 #, python-format
 msgid "%d file"
@@ -3023,7 +3029,8 @@ msgstr "Bạn có muốn thoát khỏi thuật sĩ quét quá mức?"
 msgid "Do you want to reboot your receiver?"
 msgstr "Bạn có muốn khởi động lại máy thu của bạn?"
 
-msgid "Do you want to remove all the crahs logfiles"
+#, fuzzy
+msgid "Do you want to remove all the crash logfiles"
 msgstr "Bạn muốn xóa tất cả các tệp nhật ký sự cố"
 
 msgid "Do you want to remove the package:\n"
@@ -4042,6 +4049,10 @@ msgstr "Đi 0"
 msgid "Goto X"
 msgstr "Đi X"
 
+#, fuzzy
+msgid "Goto down service"
+msgstr "Đi đến dịch vụ cuối cùng"
+
 msgid "Goto index position"
 msgstr "Vị trí chỉ số Goto"
 
@@ -4065,6 +4076,10 @@ msgstr "Giờ nguyên thủy / bây giờ"
 
 msgid "Goto specific date/time"
 msgstr "Ngày / giờ cụ thể"
+
+#, fuzzy
+msgid "Goto up service"
+msgstr "Đi đến dịch vụ cuối cùng"
 
 msgid "Goto:"
 msgstr "Đi đến:"
@@ -5329,9 +5344,6 @@ msgstr "KHÔNG"
 
 msgid "NOW"
 msgstr "HIỆN NAY"
-
-msgid "NTP"
-msgstr ""
 
 msgid "NTSC"
 msgstr "NTSC"
@@ -6651,6 +6663,10 @@ msgstr "Thực sự nâng cấp hộp giải quyết của bạn và khởi đ�
 
 msgid "Reboot"
 msgstr "Khởi động lại"
+
+#, fuzzy
+msgid "Rec"
+msgstr "Màu đỏ"
 
 msgid "Recall to previous service"
 msgstr "Nhớ lại dịch vụ trước"
@@ -8102,6 +8118,9 @@ msgstr "Hiển thị thông tin thứ hai"
 msgid "Show service list"
 msgstr "Hiển thị danh sách dịch vụ"
 
+msgid "Show service name and event description among each other instead of side by side."
+msgstr ""
+
 msgid "Show service type icons"
 msgstr "Hiển thị biểu tượng loại dịch vụ"
 
@@ -8137,6 +8156,9 @@ msgstr "Hiển thị trình phát tv ..."
 
 msgid "Show transponder info"
 msgstr "Hiển thị thông tin transponder"
+
+msgid "Show two lines per entry"
+msgstr ""
 
 msgid "Show underline characters in filenames"
 msgstr "Hiển thị các ký tự gạch chân trong tên tệp"
@@ -8788,14 +8810,16 @@ msgstr "Chuyển kênh xuống"
 msgid "Switch channel up"
 msgstr "Chuyển kênh lên"
 
-msgid "Switch off the display during Standby Mode"
-msgstr ""
-
-msgid "Switch off the display during Suspend Mode"
-msgstr ""
+#, fuzzy
+msgid "Switch on the display during Standby Mode"
+msgstr "Xem danh sách các phần mở rộng hiển thị và giao diện người dùng."
 
 #, fuzzy
-msgid "Switch off the display during operation."
+msgid "Switch on the display during Suspend Mode"
+msgstr "Xem danh sách các phần mở rộng hiển thị và giao diện người dùng."
+
+#, fuzzy
+msgid "Switch on the display during operation."
 msgstr "Xem danh sách các phần mở rộng hiển thị và giao diện người dùng."
 
 msgid "Switch to TV mode"
@@ -9566,10 +9590,6 @@ msgstr "Chế độ truyền"
 msgid "Transponder"
 msgstr "Bộ tiếp sóng"
 
-#, fuzzy
-msgid "Transponder time"
-msgstr "Bộ tiếp sóng"
-
 msgid "Transport Stream Type"
 msgstr "Loại luồng vận chuyển"
 
@@ -9856,6 +9876,10 @@ msgstr "Cập nhật danh mục phần mềm"
 
 msgid "Upper case"
 msgstr "Chữ hoa"
+
+#, fuzzy
+msgid "Uptime"
+msgstr "Hẹn giờ ngủ"
 
 msgid "Uruguay"
 msgstr "Uruguay"
@@ -10547,14 +10571,15 @@ msgid "With popup"
 msgstr "Với cửa sổ bật lên"
 
 #, fuzzy
-msgid "With this option you can switch off the display during operation."
+msgid "With this option you can switch on the display during operation."
 msgstr "Tùy chọn này cho phép bạn tắt nguồn màn hình."
 
-msgid "With this option you can switch off the display in Deep Standby Mode."
-msgstr ""
+#, fuzzy
+msgid "With this option you can switch on the display in Deep Standby Mode."
+msgstr "Tùy chọn này cho phép bạn tắt nguồn màn hình."
 
 #, fuzzy
-msgid "With this option you can switch off the display in Standby Mode."
+msgid "With this option you can switch on the display in Standby Mode."
 msgstr "Tùy chọn này cho phép bạn tắt nguồn màn hình."
 
 msgid "With this option you can switch the LED color or deactivate the LED."

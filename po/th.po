@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1-En-Th\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-19 21:50+0200\n"
+"POT-Creation-Date: 2020-07-16 00:59+0200\n"
 "PO-Revision-Date: 2010-04-08 18:13+0700\n"
 "Last-Translator: Tony - Thaidreambox\n"
 "Language-Team: Tony @ Thai Dreambox <tonyboyth@gmail.com>\n"
@@ -205,6 +205,12 @@ msgstr[1] "บริการนี้ %d ไม่มี!"
 #, python-format
 msgid "%d core"
 msgid_plural "%d cores"
+msgstr[0] ""
+msgstr[1] ""
+
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -3104,8 +3110,9 @@ msgstr ""
 msgid "Do you want to reboot your receiver?"
 msgstr ""
 
-msgid "Do you want to remove all the crahs logfiles"
-msgstr ""
+#, fuzzy
+msgid "Do you want to remove all the crash logfiles"
+msgstr "ท่านต้องการที่จะลบส่วนประกอบนี้:\n"
 
 msgid "Do you want to remove the package:\n"
 msgstr "ท่านต้องการที่จะลบส่วนประกอบนี้:\n"
@@ -4136,6 +4143,10 @@ msgstr "ไปยัง 0"
 msgid "Goto X"
 msgstr ""
 
+#, fuzzy
+msgid "Goto down service"
+msgstr "ป้องกันบริการ"
+
 msgid "Goto index position"
 msgstr ""
 
@@ -4159,6 +4170,10 @@ msgstr ""
 
 msgid "Goto specific date/time"
 msgstr ""
+
+#, fuzzy
+msgid "Goto up service"
+msgstr "ป้องกันบริการ"
 
 msgid "Goto:"
 msgstr ""
@@ -5485,9 +5500,6 @@ msgstr ""
 
 msgid "NOW"
 msgstr "ตอนนี้"
-
-msgid "NTP"
-msgstr ""
 
 msgid "NTSC"
 msgstr "NTSC"
@@ -6866,6 +6878,10 @@ msgstr ""
 
 msgid "Reboot"
 msgstr "เริ่มระบบใหม่ (Reboot)"
+
+#, fuzzy
+msgid "Rec"
+msgstr "บันทึก"
 
 msgid "Recall to previous service"
 msgstr ""
@@ -8385,6 +8401,9 @@ msgstr ""
 msgid "Show service list"
 msgstr ""
 
+msgid "Show service name and event description among each other instead of side by side."
+msgstr ""
+
 msgid "Show service type icons"
 msgstr ""
 
@@ -8420,6 +8439,9 @@ msgstr "แสดงเครื่องเล่นโทรทัศน์...
 
 msgid "Show transponder info"
 msgstr "แสดงข้อมูล Transponder"
+
+msgid "Show two lines per entry"
+msgstr ""
 
 #, fuzzy
 msgid "Show underline characters in filenames"
@@ -9109,14 +9131,16 @@ msgstr ""
 msgid "Switch channel up"
 msgstr ""
 
-msgid "Switch off the display during Standby Mode"
-msgstr ""
-
-msgid "Switch off the display during Suspend Mode"
-msgstr ""
+#, fuzzy
+msgid "Switch on the display during Standby Mode"
+msgstr "แสดงรายการส่วนเพิ่มเติมสำหรับส่วนติดต่อผู้ใช้"
 
 #, fuzzy
-msgid "Switch off the display during operation."
+msgid "Switch on the display during Suspend Mode"
+msgstr "แสดงรายการส่วนเพิ่มเติมสำหรับส่วนติดต่อผู้ใช้"
+
+#, fuzzy
+msgid "Switch on the display during operation."
 msgstr "แสดงรายการส่วนเพิ่มเติมสำหรับส่วนติดต่อผู้ใช้"
 
 msgid "Switch to TV mode"
@@ -9883,10 +9907,6 @@ msgid "Transponder"
 msgstr "ทรานสปอนเดอร์"
 
 #, fuzzy
-msgid "Transponder time"
-msgstr "ทรานสปอนเดอร์"
-
-#, fuzzy
 msgid "Transport Stream Type"
 msgstr "ประเภทของทรานสปอนเดอร์"
 
@@ -10179,6 +10199,9 @@ msgid "Updating software catalog"
 msgstr ""
 
 msgid "Upper case"
+msgstr ""
+
+msgid "Uptime"
 msgstr ""
 
 msgid "Uruguay"
@@ -10888,13 +10911,14 @@ msgstr ""
 msgid "With popup"
 msgstr ""
 
-msgid "With this option you can switch off the display during operation."
+#, fuzzy
+msgid "With this option you can switch on the display during operation."
+msgstr "แสดงรายการส่วนเพิ่มเติมสำหรับส่วนติดต่อผู้ใช้"
+
+msgid "With this option you can switch on the display in Deep Standby Mode."
 msgstr ""
 
-msgid "With this option you can switch off the display in Deep Standby Mode."
-msgstr ""
-
-msgid "With this option you can switch off the display in Standby Mode."
+msgid "With this option you can switch on the display in Standby Mode."
 msgstr ""
 
 msgid "With this option you can switch the LED color or deactivate the LED."

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-19 21:50+0200\n"
+"POT-Creation-Date: 2020-07-16 00:59+0200\n"
 "PO-Revision-Date: 2020-02-10 12:49+0100\n"
 "Last-Translator: Andrej Tobola <andrej.tobola@gmail.com>\n"
 "Language-Team: \n"
@@ -209,6 +209,13 @@ msgid_plural "%d cores"
 msgstr[0] "%d jadro"
 msgstr[1] "%d jadrá"
 msgstr[2] "%d jadier"
+
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #, python-format
 msgid "%d file"
@@ -3032,7 +3039,8 @@ msgstr "Chcete ukončiť sprievodcu nastavením veľkosti obrazu?"
 msgid "Do you want to reboot your receiver?"
 msgstr "Chcete reštartovať prijímač?"
 
-msgid "Do you want to remove all the crahs logfiles"
+#, fuzzy
+msgid "Do you want to remove all the crash logfiles"
 msgstr "Chcete vymazať všetky súbory o zlyhaní?"
 
 msgid "Do you want to remove the package:\n"
@@ -4052,6 +4060,10 @@ msgstr "Otočiť na 0"
 msgid "Goto X"
 msgstr "Otočiť na X"
 
+#, fuzzy
+msgid "Goto down service"
+msgstr "Prejsť na poslednú stanicu"
+
 msgid "Goto index position"
 msgstr "Prejsť na východziu pozíciu"
 
@@ -4075,6 +4087,10 @@ msgstr "Prejsť na hlavný vysielací čas"
 
 msgid "Goto specific date/time"
 msgstr "Prejsť na konkrétny dátum/čas"
+
+#, fuzzy
+msgid "Goto up service"
+msgstr "Prejsť na poslednú stanicu"
 
 msgid "Goto:"
 msgstr "Prejsť na:"
@@ -5338,9 +5354,6 @@ msgstr "NIE"
 
 msgid "NOW"
 msgstr "TERAZ"
-
-msgid "NTP"
-msgstr ""
 
 msgid "NTSC"
 msgstr "NTSC"
@@ -6659,6 +6672,10 @@ msgstr "Naozaj aktualizovať a reštartovať prijímač?"
 
 msgid "Reboot"
 msgstr "Reštart"
+
+#, fuzzy
+msgid "Rec"
+msgstr "Červená"
 
 msgid "Recall to previous service"
 msgstr "Návrat na predchádzajúcu stanicu"
@@ -8109,6 +8126,9 @@ msgstr "Zobraziť druhú informačnú lištu"
 msgid "Show service list"
 msgstr "Zobraziť zoznam služieb"
 
+msgid "Show service name and event description among each other instead of side by side."
+msgstr ""
+
 msgid "Show service type icons"
 msgstr "Zobrazovať ikony typu služby"
 
@@ -8144,6 +8164,9 @@ msgstr "Prehrávanie TV..."
 
 msgid "Show transponder info"
 msgstr "Zobraziť infor. o transpondéri"
+
+msgid "Show two lines per entry"
+msgstr ""
 
 msgid "Show underline characters in filenames"
 msgstr "Zobraziť podčiarknuté znaky v názvoch súborov"
@@ -8794,14 +8817,16 @@ msgstr "Prepnúť kanál dozadu"
 msgid "Switch channel up"
 msgstr "Prepnúť kanál dopredu"
 
-msgid "Switch off the display during Standby Mode"
-msgstr ""
-
-msgid "Switch off the display during Suspend Mode"
-msgstr ""
+#, fuzzy
+msgid "Switch on the display during Standby Mode"
+msgstr "Zobraziť zoznam dostupných rozšírení zobrazenia a užívateľského rozhrania."
 
 #, fuzzy
-msgid "Switch off the display during operation."
+msgid "Switch on the display during Suspend Mode"
+msgstr "Zobraziť zoznam dostupných rozšírení zobrazenia a užívateľského rozhrania."
+
+#, fuzzy
+msgid "Switch on the display during operation."
 msgstr "Zobraziť zoznam dostupných rozšírení zobrazenia a užívateľského rozhrania."
 
 msgid "Switch to TV mode"
@@ -9574,10 +9599,6 @@ msgstr "Režim prenosu"
 msgid "Transponder"
 msgstr "Transpondér"
 
-#, fuzzy
-msgid "Transponder time"
-msgstr "Transpondér"
-
 msgid "Transport Stream Type"
 msgstr "Typ Transport streamu"
 
@@ -9865,6 +9886,10 @@ msgstr "Aktualizácia katalógu softvéru"
 
 msgid "Upper case"
 msgstr "Veľké písmená"
+
+#, fuzzy
+msgid "Uptime"
+msgstr "Časovač vypnutia"
 
 msgid "Uruguay"
 msgstr "Uruguay"
@@ -10554,14 +10579,15 @@ msgid "With popup"
 msgstr "S vyskakovacím oknom"
 
 #, fuzzy
-msgid "With this option you can switch off the display during operation."
+msgid "With this option you can switch on the display during operation."
 msgstr "Táto voľba umožňuje vypnutie obrazovky."
 
-msgid "With this option you can switch off the display in Deep Standby Mode."
-msgstr ""
+#, fuzzy
+msgid "With this option you can switch on the display in Deep Standby Mode."
+msgstr "Táto voľba umožňuje vypnutie obrazovky."
 
 #, fuzzy
-msgid "With this option you can switch off the display in Standby Mode."
+msgid "With this option you can switch on the display in Standby Mode."
 msgstr "Táto voľba umožňuje vypnutie obrazovky."
 
 msgid "With this option you can switch the LED color or deactivate the LED."

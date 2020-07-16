@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-20 17:32+0200\n"
+"POT-Creation-Date: 2020-07-16 00:59+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ims <ims21@users.sourceforge.net>\n"
 "Language-Team: PLi <ims@openpli.org>\n"
@@ -3466,7 +3466,8 @@ msgstr "Opravdu chcete ukončit overscan průvodce?"
 msgid "Do you want to reboot your receiver?"
 msgstr "Chcete přijímač restartovat?"
 
-msgid "Do you want to remove all the crahs logfiles"
+#, fuzzy
+msgid "Do you want to remove all the crash logfiles"
 msgstr "Chcete odstranit všechny protokoly pádu systému"
 
 #
@@ -4624,6 +4625,10 @@ msgstr "Jít na pozici 0"
 msgid "Goto X"
 msgstr "Přejít na X"
 
+#, fuzzy
+msgid "Goto down service"
+msgstr "Přejít na poslední program"
+
 msgid "Goto index position"
 msgstr "Přejít na indexovou pozici"
 
@@ -4648,6 +4653,10 @@ msgstr "Přejít na primetime / aktuální čas"
 
 msgid "Goto specific date/time"
 msgstr "Přejít na zadané datum/čas"
+
+#, fuzzy
+msgid "Goto up service"
+msgstr "Přejít na poslední program"
 
 msgid "Goto:"
 msgstr "Na:"
@@ -6097,9 +6106,6 @@ msgstr ""
 #
 msgid "NOW"
 msgstr "NYNÍ"
-
-msgid "NTP"
-msgstr ""
 
 #
 msgid "NTSC"
@@ -7655,6 +7661,11 @@ msgstr "Skutečně aktualizovat přijímač a restartovat"
 
 msgid "Reboot"
 msgstr "Restart"
+
+#
+#, fuzzy
+msgid "Rec"
+msgstr "Nahrávání a přehrávání"
 
 msgid "Recall to previous service"
 msgstr "Vyvolat předchozí program"
@@ -9323,6 +9334,9 @@ msgstr "Zobrazovat druhý infobar"
 msgid "Show service list"
 msgstr "Přehled programů"
 
+msgid "Show service name and event description among each other instead of side by side."
+msgstr ""
+
 msgid "Show service type icons"
 msgstr "Zobrazovat ikony typu kanálu"
 
@@ -9361,6 +9375,9 @@ msgstr "Zobrazit TV..."
 #
 msgid "Show transponder info"
 msgstr "Zobrazit info o transpondéru"
+
+msgid "Show two lines per entry"
+msgstr ""
 
 #
 msgid "Show underline characters in filenames"
@@ -10114,14 +10131,17 @@ msgstr "Přepnout kanál dolů"
 msgid "Switch channel up"
 msgstr "Přepnout kanál nahoru"
 
-msgid "Switch off the display during Standby Mode"
+#, fuzzy
+msgid "Switch on the display during Standby Mode"
 msgstr "Vypnout display v pohotovostním režimu"
 
-msgid "Switch off the display during Suspend Mode"
+#, fuzzy
+msgid "Switch on the display during Suspend Mode"
 msgstr "Vypnout display v režimu pozastavení"
 
 #
-msgid "Switch off the display during operation."
+#, fuzzy
+msgid "Switch on the display during operation."
 msgstr "Vypnout display během provozu."
 
 msgid "Switch to TV mode"
@@ -10226,9 +10246,6 @@ msgstr "TS soubor je příliš velký pro ISO9660 level 1!"
 
 msgid "TSID"
 msgstr "TSID"
-
-msgid "TUNER:"
-msgstr "TUNER:"
 
 msgid "TUNING"
 msgstr ""
@@ -10978,11 +10995,6 @@ msgstr "Přenosový mód"
 
 #
 msgid "Transponder"
-msgstr "Transpondér"
-
-#
-#, fuzzy
-msgid "Transponder time"
 msgstr "Transpondér"
 
 msgid "Transport Stream Type"
@@ -12085,13 +12097,16 @@ msgstr "S chybami:"
 msgid "With popup"
 msgstr "S dialogem"
 
-msgid "With this option you can switch off the display during operation."
+#, fuzzy
+msgid "With this option you can switch on the display during operation."
 msgstr "Toto nastavení umožňuje vypnout display během provozu."
 
-msgid "With this option you can switch off the display in Deep Standby Mode."
+#, fuzzy
+msgid "With this option you can switch on the display in Deep Standby Mode."
 msgstr "Toto nastavení umožňuje vypnout displej v hlubokém spánku."
 
-msgid "With this option you can switch off the display in Standby Mode."
+#, fuzzy
+msgid "With this option you can switch on the display in Standby Mode."
 msgstr "Toto nastavení umožňuje vypnout displej v pohotovostním režimu."
 
 msgid "With this option you can switch the LED color or deactivate the LED."

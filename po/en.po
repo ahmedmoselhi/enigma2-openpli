@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-19 21:50+0200\n"
+"POT-Creation-Date: 2020-07-16 00:59+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: satdreamgr\n"
 "Language-Team: \n"
@@ -199,6 +199,12 @@ msgstr[1] "%d services found!"
 #, python-format
 msgid "%d core"
 msgid_plural "%d cores"
+msgstr[0] ""
+msgstr[1] ""
+
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -3041,8 +3047,9 @@ msgstr ""
 msgid "Do you want to reboot your receiver?"
 msgstr "Do you want to reboot your receiver?"
 
-msgid "Do you want to remove all the crahs logfiles"
-msgstr ""
+#, fuzzy
+msgid "Do you want to remove all the crash logfiles"
+msgstr "Do you want to remove the package:\n"
 
 msgid "Do you want to remove the package:\n"
 msgstr "Do you want to remove the package:\n"
@@ -4053,6 +4060,10 @@ msgstr "Goto 0"
 msgid "Goto X"
 msgstr "Goto X"
 
+#, fuzzy
+msgid "Goto down service"
+msgstr "Go to last service"
+
 msgid "Goto index position"
 msgstr "Goto index position"
 
@@ -4076,6 +4087,10 @@ msgstr ""
 
 msgid "Goto specific date/time"
 msgstr ""
+
+#, fuzzy
+msgid "Goto up service"
+msgstr "Go to last service"
 
 msgid "Goto:"
 msgstr "Goto:"
@@ -5359,9 +5374,6 @@ msgstr ""
 
 msgid "NOW"
 msgstr "NOW"
-
-msgid "NTP"
-msgstr ""
 
 msgid "NTSC"
 msgstr "NTSC"
@@ -6705,6 +6717,10 @@ msgstr "Really update your settop box and reboot now?"
 
 msgid "Reboot"
 msgstr "Reboot"
+
+#, fuzzy
+msgid "Rec"
+msgstr "Record"
 
 msgid "Recall to previous service"
 msgstr ""
@@ -8180,6 +8196,9 @@ msgstr "Show second infobar"
 msgid "Show service list"
 msgstr ""
 
+msgid "Show service name and event description among each other instead of side by side."
+msgstr ""
+
 msgid "Show service type icons"
 msgstr "Show service type icons"
 
@@ -8216,6 +8235,9 @@ msgstr "Show the tv player..."
 
 msgid "Show transponder info"
 msgstr "Show transponder info"
+
+msgid "Show two lines per entry"
+msgstr ""
 
 #, fuzzy
 msgid "Show underline characters in filenames"
@@ -8880,14 +8902,16 @@ msgstr ""
 msgid "Switch channel up"
 msgstr ""
 
-msgid "Switch off the display during Standby Mode"
-msgstr ""
-
-msgid "Switch off the display during Suspend Mode"
-msgstr ""
+#, fuzzy
+msgid "Switch on the display during Standby Mode"
+msgstr "View list of available display and userinterface extensions."
 
 #, fuzzy
-msgid "Switch off the display during operation."
+msgid "Switch on the display during Suspend Mode"
+msgstr "View list of available display and userinterface extensions."
+
+#, fuzzy
+msgid "Switch on the display during operation."
 msgstr "View list of available display and userinterface extensions."
 
 msgid "Switch to TV mode"
@@ -9649,10 +9673,6 @@ msgid "Transponder"
 msgstr "Transponder"
 
 #, fuzzy
-msgid "Transponder time"
-msgstr "Transponder"
-
-#, fuzzy
 msgid "Transport Stream Type"
 msgstr "Transponder type"
 
@@ -9945,6 +9965,9 @@ msgid "Updating software catalog"
 msgstr "Updating software catalog"
 
 msgid "Upper case"
+msgstr ""
+
+msgid "Uptime"
 msgstr ""
 
 msgid "Uruguay"
@@ -10644,13 +10667,14 @@ msgstr ""
 msgid "With popup"
 msgstr "With popup"
 
-msgid "With this option you can switch off the display during operation."
+#, fuzzy
+msgid "With this option you can switch on the display during operation."
+msgstr "View list of available display and userinterface extensions."
+
+msgid "With this option you can switch on the display in Deep Standby Mode."
 msgstr ""
 
-msgid "With this option you can switch off the display in Deep Standby Mode."
-msgstr ""
-
-msgid "With this option you can switch off the display in Standby Mode."
+msgid "With this option you can switch on the display in Standby Mode."
 msgstr ""
 
 msgid "With this option you can switch the LED color or deactivate the LED."

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-19 21:50+0200\n"
+"POT-Creation-Date: 2020-07-16 00:59+0200\n"
 "PO-Revision-Date: 2011-04-14 00:02+0200\n"
 "Last-Translator: majevica <jovanovic@gmx.ch>\n"
 "Language-Team: veselin & majevica CRNABERZA <jovanovic@gmx.ch>\n"
@@ -215,6 +215,13 @@ msgstr[2] "%d kanala pronađeno!"
 #, python-format
 msgid "%d core"
 msgid_plural "%d cores"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
@@ -3503,8 +3510,10 @@ msgstr ""
 msgid "Do you want to reboot your receiver?"
 msgstr ""
 
-msgid "Do you want to remove all the crahs logfiles"
-msgstr ""
+#
+#, fuzzy
+msgid "Do you want to remove all the crash logfiles"
+msgstr "Da li želite da uklonite paket:\n"
 
 #
 msgid "Do you want to remove the package:\n"
@@ -4670,6 +4679,11 @@ msgstr "Pođi do 0"
 msgid "Goto X"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Goto down service"
+msgstr "Zaštiti kanale"
+
 msgid "Goto index position"
 msgstr ""
 
@@ -4694,6 +4708,11 @@ msgstr ""
 
 msgid "Goto specific date/time"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Goto up service"
+msgstr "Zaštiti kanale"
 
 msgid "Goto:"
 msgstr ""
@@ -6188,9 +6207,6 @@ msgstr ""
 #
 msgid "NOW"
 msgstr "SADA"
-
-msgid "NTP"
-msgstr ""
 
 #
 msgid "NTSC"
@@ -7774,6 +7790,10 @@ msgstr ""
 #
 msgid "Reboot"
 msgstr "Podići"
+
+#, fuzzy
+msgid "Rec"
+msgstr "Snimanje "
 
 msgid "Recall to previous service"
 msgstr ""
@@ -9496,6 +9516,9 @@ msgstr ""
 msgid "Show service list"
 msgstr ""
 
+msgid "Show service name and event description among each other instead of side by side."
+msgstr ""
+
 msgid "Show service type icons"
 msgstr ""
 
@@ -9534,6 +9557,9 @@ msgstr "Prikaži tv plejer..."
 #
 msgid "Show transponder info"
 msgstr "Prikaži info transpondera"
+
+msgid "Show two lines per entry"
+msgstr ""
 
 #
 #, fuzzy
@@ -10317,15 +10343,19 @@ msgstr ""
 msgid "Switch channel up"
 msgstr ""
 
-msgid "Switch off the display during Standby Mode"
-msgstr ""
-
-msgid "Switch off the display during Suspend Mode"
-msgstr ""
+#
+#, fuzzy
+msgid "Switch on the display during Standby Mode"
+msgstr "Vidi listu mogućih proširenja za displej i korisnički interfejs"
 
 #
 #, fuzzy
-msgid "Switch off the display during operation."
+msgid "Switch on the display during Suspend Mode"
+msgstr "Vidi listu mogućih proširenja za displej i korisnički interfejs"
+
+#
+#, fuzzy
+msgid "Switch on the display during operation."
 msgstr "Vidi listu mogućih proširenja za displej i korisnički interfejs"
 
 msgid "Switch to TV mode"
@@ -11194,11 +11224,6 @@ msgstr "Transponder"
 
 #
 #, fuzzy
-msgid "Transponder time"
-msgstr "Transponder"
-
-#
-#, fuzzy
 msgid "Transport Stream Type"
 msgstr "Tip Transpondera"
 
@@ -11531,6 +11556,9 @@ msgid "Updating software catalog"
 msgstr "Ažuriranje kataloga softvera"
 
 msgid "Upper case"
+msgstr ""
+
+msgid "Uptime"
 msgstr ""
 
 msgid "Uruguay"
@@ -12314,13 +12342,15 @@ msgstr ""
 msgid "With popup"
 msgstr ""
 
-msgid "With this option you can switch off the display during operation."
+#
+#, fuzzy
+msgid "With this option you can switch on the display during operation."
+msgstr "Vidi listu mogućih proširenja za displej i korisnički interfejs"
+
+msgid "With this option you can switch on the display in Deep Standby Mode."
 msgstr ""
 
-msgid "With this option you can switch off the display in Deep Standby Mode."
-msgstr ""
-
-msgid "With this option you can switch off the display in Standby Mode."
+msgid "With this option you can switch on the display in Standby Mode."
 msgstr ""
 
 msgid "With this option you can switch the LED color or deactivate the LED."

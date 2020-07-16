@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-19 21:50+0200\n"
+"POT-Creation-Date: 2020-07-16 00:59+0200\n"
 "PO-Revision-Date: 2020-03-23 00:18+0200\n"
 "Last-Translator: Audronis Grincevicius <adga45@gmail.com>\n"
 "Language-Team: Adga (C) <adga45@gmail.com>\n"
@@ -209,6 +209,13 @@ msgid_plural "%d cores"
 msgstr[0] "%d branduolys"
 msgstr[1] "%d branduoliai"
 msgstr[2] "%d branduolių"
+
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #, python-format
 msgid "%d file"
@@ -3034,7 +3041,8 @@ msgstr "Ar norite išeiti iš rodomos vaizdo kraštinės vedlio?"
 msgid "Do you want to reboot your receiver?"
 msgstr "Ar norite iš naujo paleisti savo imtuvą?"
 
-msgid "Do you want to remove all the crahs logfiles"
+#, fuzzy
+msgid "Do you want to remove all the crash logfiles"
 msgstr "Ar norite pašalinti visus \"lūžimo\" žurnalų failus"
 
 msgid "Do you want to remove the package:\n"
@@ -4043,6 +4051,10 @@ msgstr "Eiti į 0"
 msgid "Goto X"
 msgstr "Eiti į X"
 
+#, fuzzy
+msgid "Goto down service"
+msgstr "Į paskutinį kanalą"
+
 msgid "Goto index position"
 msgstr "Į žymės poziciją"
 
@@ -4066,6 +4078,10 @@ msgstr "Į geriausią laiką / dabar"
 
 msgid "Goto specific date/time"
 msgstr "Į konkrečią datą/laiką"
+
+#, fuzzy
+msgid "Goto up service"
+msgstr "Į paskutinį kanalą"
 
 msgid "Goto:"
 msgstr "Eiti į:"
@@ -5329,9 +5345,6 @@ msgstr "NE"
 
 msgid "NOW"
 msgstr "DABAR"
-
-msgid "NTP"
-msgstr ""
 
 msgid "NTSC"
 msgstr "NTSC"
@@ -6650,6 +6663,10 @@ msgstr "Tikrai atnaujinti jūsų priedėlį ir perkrauti dabar?"
 
 msgid "Reboot"
 msgstr "Paleisti iš naujo"
+
+#, fuzzy
+msgid "Rec"
+msgstr "Raudonas"
 
 msgid "Recall to previous service"
 msgstr "Grįžti į ankstesnį kanalą"
@@ -8102,6 +8119,9 @@ msgstr "Rodyti antrą info juostą"
 msgid "Show service list"
 msgstr "Rodyti kanalų sąrašą"
 
+msgid "Show service name and event description among each other instead of side by side."
+msgstr ""
+
 msgid "Show service type icons"
 msgstr "Rodyti kanalo tipo piktogramas"
 
@@ -8137,6 +8157,9 @@ msgstr "Rodyti TV grotuvą..."
 
 msgid "Show transponder info"
 msgstr "Rodyti transponderio informaciją"
+
+msgid "Show two lines per entry"
+msgstr ""
 
 msgid "Show underline characters in filenames"
 msgstr "Rodyti failų pavadinimų pabraukimo simbolius"
@@ -8787,13 +8810,16 @@ msgstr "Perjungti kanalą žemyn"
 msgid "Switch channel up"
 msgstr "Perjungti kanalą aukštyn"
 
-msgid "Switch off the display during Standby Mode"
+#, fuzzy
+msgid "Switch on the display during Standby Mode"
 msgstr "Budėjimo režime išjunkite ekraną"
 
-msgid "Switch off the display during Suspend Mode"
+#, fuzzy
+msgid "Switch on the display during Suspend Mode"
 msgstr "Laukimo režime išjunkite ekraną"
 
-msgid "Switch off the display during operation."
+#, fuzzy
+msgid "Switch on the display during operation."
 msgstr "Veikimo metu išjunkite ekraną."
 
 msgid "Switch to TV mode"
@@ -9563,10 +9589,6 @@ msgstr "Perdavimo būdas"
 msgid "Transponder"
 msgstr "Transponderis"
 
-#, fuzzy
-msgid "Transponder time"
-msgstr "Transponderis"
-
 msgid "Transport Stream Type"
 msgstr "Transporto srauto tipas"
 
@@ -9854,6 +9876,10 @@ msgstr "Atnaujinamas programinės įrangos katalogas"
 
 msgid "Upper case"
 msgstr "Didžiosios raidės"
+
+#, fuzzy
+msgid "Uptime"
+msgstr "Miego laikmatis"
 
 msgid "Uruguay"
 msgstr "Urugvajus"
@@ -10544,13 +10570,16 @@ msgstr "Su klaidomis:"
 msgid "With popup"
 msgstr "Su iškylančiu pranešimu"
 
-msgid "With this option you can switch off the display during operation."
+#, fuzzy
+msgid "With this option you can switch on the display during operation."
 msgstr "Naudodami šią parinktį, galite išjungti ekraną veikimo metu."
 
-msgid "With this option you can switch off the display in Deep Standby Mode."
+#, fuzzy
+msgid "With this option you can switch on the display in Deep Standby Mode."
 msgstr "Naudodami šią parinktį galite išjungti ekraną gilaus budėjimo režime."
 
-msgid "With this option you can switch off the display in Standby Mode."
+#, fuzzy
+msgid "With this option you can switch on the display in Standby Mode."
 msgstr "Naudodami šią parinktį galite išjungti ekraną budėjimo režime."
 
 msgid "With this option you can switch the LED color or deactivate the LED."

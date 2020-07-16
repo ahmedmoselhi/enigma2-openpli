@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-19 21:50+0200\n"
+"POT-Creation-Date: 2020-07-16 00:59+0200\n"
 "PO-Revision-Date: 2019-07-25 17:52+0300\n"
 "Last-Translator: Dimitrij <Dima-73@inbox.lv>\n"
 "Language-Team: openPLi Dimitrij\n"
@@ -205,6 +205,13 @@ msgid_plural "%d cores"
 msgstr[0] "%d ядро"
 msgstr[1] "%d ядра"
 msgstr[2] "%d ядра"
+
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #, python-format
 msgid "%d file"
@@ -2974,6 +2981,7 @@ msgstr "Вы хотите выйти из мастера настройки пе
 msgid "Do you want to reboot your receiver?"
 msgstr "Вы хотите перезагрузить Ваш ресивер?"
 
+#, fuzzy
 msgid "Do you want to remove all the crash logfiles"
 msgstr "Вы действительно хотите удалить все креш-файлы?"
 
@@ -3995,6 +4003,10 @@ msgstr "Переход на позицию 0"
 msgid "Goto X"
 msgstr "Переход на позицию Х"
 
+#, fuzzy
+msgid "Goto down service"
+msgstr "Перейти на последний сервис"
+
 msgid "Goto index position"
 msgstr "Переход на номер позиции"
 
@@ -4018,6 +4030,10 @@ msgstr "Переход прайм-тайм/сейчас"
 
 msgid "Goto specific date/time"
 msgstr "Переход на конкретную дату/время"
+
+#, fuzzy
+msgid "Goto up service"
+msgstr "Перейти на последний сервис"
 
 msgid "Goto:"
 msgstr "Куда:"
@@ -6605,8 +6621,9 @@ msgstr "Действительно обновить Ваш ресивер и в�
 msgid "Reboot"
 msgstr "Перезагрузка"
 
+#, fuzzy
 msgid "Rec"
-msgstr "Rec"
+msgstr "Красная"
 
 msgid "Recall to previous service"
 msgstr "Возврат на предыдущий сервис"
@@ -8047,6 +8064,9 @@ msgstr "Показать второй инфобар"
 msgid "Show service list"
 msgstr "Показать список сервисов"
 
+msgid "Show service name and event description among each other instead of side by side."
+msgstr ""
+
 msgid "Show service type icons"
 msgstr "Показать иконки типа сервиса"
 
@@ -8082,6 +8102,9 @@ msgstr "Показать тв плеер..."
 
 msgid "Show transponder info"
 msgstr "Показать инфо транспондера"
+
+msgid "Show two lines per entry"
+msgstr ""
 
 msgid "Show underline characters in filenames"
 msgstr "Показывать символы подчеркивания в именах файлов записей"
@@ -8711,15 +8734,15 @@ msgstr "Сменить канал вверх"
 
 #, fuzzy
 msgid "Switch on the display during Standby Mode"
-msgstr "Выключить дисплей в режиме ожидания"
+msgstr "Просмотр списка доступных дополнений настроек экрана и интерфейса."
 
 #, fuzzy
 msgid "Switch on the display during Suspend Mode"
-msgstr "Выключить дисплей в режиме глубокого ожидания"
+msgstr "Просмотр списка доступных дополнений настроек экрана и интерфейса."
 
 #, fuzzy
 msgid "Switch on the display during operation."
-msgstr "Выключить дисплей во время работы."
+msgstr "Просмотр списка доступных дополнений настроек экрана и интерфейса."
 
 msgid "Switch to TV mode"
 msgstr "Перейти к режиму ТВ"
@@ -9755,6 +9778,10 @@ msgstr "Обновление каталога ПО"
 msgid "Upper case"
 msgstr "Верхний регистр"
 
+#, fuzzy
+msgid "Uptime"
+msgstr "Таймер сна"
+
 msgid "Uruguay"
 msgstr "Uruguay"
 
@@ -10458,15 +10485,15 @@ msgstr "С сообщением"
 
 #, fuzzy
 msgid "With this option you can switch on the display during operation."
-msgstr "С помощью этой опции вы можете отключить дисплей во время работы."
+msgstr "Эта опция позволяет отключить дисплей."
 
 #, fuzzy
 msgid "With this option you can switch on the display in Deep Standby Mode."
-msgstr "С помощью этой опции вы можете отключить дисплей в режиме глубокого ожидания."
+msgstr "Эта опция позволяет отключить дисплей."
 
 #, fuzzy
 msgid "With this option you can switch on the display in Standby Mode."
-msgstr "С помощью этой опции вы можете отключить дисплей в режиме ожидания."
+msgstr "Эта опция позволяет отключить дисплей."
 
 msgid "With this option you can switch the LED color or deactivate the LED."
 msgstr "С помощью этой опции вы можете переключить цвет LED или отключить LED."

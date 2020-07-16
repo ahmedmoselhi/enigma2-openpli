@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OPENPLi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-19 21:50+0200\n"
+"POT-Creation-Date: 2020-07-16 00:59+0200\n"
 "PO-Revision-Date: 2015-12-18 21:05+0200\n"
 "Last-Translator: Yetkin AYDIN <yetkina@gmail.com>\n"
 "Language-Team: http://www.hurforum.com <yetkina@gmail.com>\n"
@@ -209,6 +209,11 @@ msgstr[0] "%d kanal bulundu."
 msgid "%d core"
 msgid_plural "%d cores"
 msgstr[0] "%d Çekirdek"
+
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
 
 #, python-format
 msgid "%d file"
@@ -3054,8 +3059,9 @@ msgstr ""
 msgid "Do you want to reboot your receiver?"
 msgstr "Yeniden başlatmak istiyor musunuz?"
 
-msgid "Do you want to remove all the crahs logfiles"
-msgstr ""
+#, fuzzy
+msgid "Do you want to remove all the crash logfiles"
+msgstr "Seçilen paketi kaldırmak istiyor musunuz?:\n"
 
 msgid "Do you want to remove the package:\n"
 msgstr "Seçilen paketi kaldırmak istiyor musunuz?:\n"
@@ -4076,6 +4082,10 @@ msgstr "0 a git"
 msgid "Goto X"
 msgstr "X e git"
 
+#, fuzzy
+msgid "Goto down service"
+msgstr "Son servise git"
+
 msgid "Goto index position"
 msgstr "Index pozisyonuna git"
 
@@ -4099,6 +4109,10 @@ msgstr "En iyi zamana git / şimdi"
 
 msgid "Goto specific date/time"
 msgstr "Belirli bir tarihe/saate git"
+
+#, fuzzy
+msgid "Goto up service"
+msgstr "Son servise git"
 
 msgid "Goto:"
 msgstr "Git:"
@@ -5385,9 +5399,6 @@ msgstr ""
 
 msgid "NOW"
 msgstr "ŞİMDİ"
-
-msgid "NTP"
-msgstr ""
 
 msgid "NTSC"
 msgstr "NTSC"
@@ -6738,6 +6749,10 @@ msgstr "Uydu alıcınız güncellensin ve yeniden başlatılsın mı?"
 
 msgid "Reboot"
 msgstr "Yeniden başlat"
+
+#, fuzzy
+msgid "Rec"
+msgstr "Kırmızı"
 
 msgid "Recall to previous service"
 msgstr "Önceki servisi çağır"
@@ -8216,6 +8231,9 @@ msgstr "İkinci bilgi çubuğunu göster"
 msgid "Show service list"
 msgstr "Servis listesini göster"
 
+msgid "Show service name and event description among each other instead of side by side."
+msgstr ""
+
 msgid "Show service type icons"
 msgstr "Servis Tipi Simgelerini göster"
 
@@ -8251,6 +8269,9 @@ msgstr "TV kanal listesini göster..."
 
 msgid "Show transponder info"
 msgstr "Transponder bilgisini göster"
+
+msgid "Show two lines per entry"
+msgstr ""
 
 #, fuzzy
 msgid "Show underline characters in filenames"
@@ -8916,14 +8937,16 @@ msgstr "Kanal Aşağı"
 msgid "Switch channel up"
 msgstr "Kanal Yukarı"
 
-msgid "Switch off the display during Standby Mode"
-msgstr ""
-
-msgid "Switch off the display during Suspend Mode"
-msgstr ""
+#, fuzzy
+msgid "Switch on the display during Standby Mode"
+msgstr "Ekran ve kullanıcı arayüzü eklentilerini listele."
 
 #, fuzzy
-msgid "Switch off the display during operation."
+msgid "Switch on the display during Suspend Mode"
+msgstr "Ekran ve kullanıcı arayüzü eklentilerini listele."
+
+#, fuzzy
+msgid "Switch on the display during operation."
 msgstr "Ekran ve kullanıcı arayüzü eklentilerini listele."
 
 msgid "Switch to TV mode"
@@ -9700,10 +9723,6 @@ msgid "Transponder"
 msgstr "Geçerli transponder"
 
 #, fuzzy
-msgid "Transponder time"
-msgstr "Geçerli transponder"
-
-#, fuzzy
 msgid "Transport Stream Type"
 msgstr "Transponder tipi"
 
@@ -10004,6 +10023,10 @@ msgstr "Yazılım kataloğu güncelleniyor"
 
 msgid "Upper case"
 msgstr ""
+
+#, fuzzy
+msgid "Uptime"
+msgstr "Uyku Zamanlayıcı"
 
 msgid "Uruguay"
 msgstr ""
@@ -10703,13 +10726,14 @@ msgstr ""
 msgid "With popup"
 msgstr "Açılır Pencerede ile"
 
-msgid "With this option you can switch off the display during operation."
+#, fuzzy
+msgid "With this option you can switch on the display during operation."
+msgstr "Ekran ve kullanıcı arayüzü eklentilerini listele."
+
+msgid "With this option you can switch on the display in Deep Standby Mode."
 msgstr ""
 
-msgid "With this option you can switch off the display in Deep Standby Mode."
-msgstr ""
-
-msgid "With this option you can switch off the display in Standby Mode."
+msgid "With this option you can switch on the display in Standby Mode."
 msgstr ""
 
 msgid "With this option you can switch the LED color or deactivate the LED."

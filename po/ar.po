@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-19 21:50+0200\n"
+"POT-Creation-Date: 2020-07-16 00:59+0200\n"
 "PO-Revision-Date: 2018-12-17 02:51+0200\n"
 "Last-Translator: Hazem <moustafagamal@hotmail.com>\n"
 "Language-Team: Arabic <moustafagamal@hotmail.com>\n"
@@ -218,6 +218,16 @@ msgstr[5] "%d تم العثور على"
 #, python-format
 msgid "%d core"
 msgid_plural "%d cores"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
@@ -3199,8 +3209,9 @@ msgstr ""
 msgid "Do you want to reboot your receiver?"
 msgstr "هل تريد إعادة تشغيل جهاز الاستقبال؟"
 
-msgid "Do you want to remove all the crahs logfiles"
-msgstr ""
+#, fuzzy
+msgid "Do you want to remove all the crash logfiles"
+msgstr "هل تريد فعلا حذف الحزمة:\n"
 
 msgid "Do you want to remove the package:\n"
 msgstr "هل تريد فعلا حذف الحزمة:\n"
@@ -4280,6 +4291,10 @@ msgstr "الذهاب الى 0"
 msgid "Goto X"
 msgstr ""
 
+#, fuzzy
+msgid "Goto down service"
+msgstr "إحمى القنوات"
+
 msgid "Goto index position"
 msgstr ""
 
@@ -4303,6 +4318,10 @@ msgstr ""
 
 msgid "Goto specific date/time"
 msgstr ""
+
+#, fuzzy
+msgid "Goto up service"
+msgstr "إحمى القنوات"
 
 msgid "Goto:"
 msgstr ""
@@ -5690,9 +5709,6 @@ msgstr ""
 
 msgid "NOW"
 msgstr "الان"
-
-msgid "NTP"
-msgstr ""
 
 #
 msgid "NTSC"
@@ -7120,6 +7136,10 @@ msgstr ""
 
 msgid "Reboot"
 msgstr "إعادة تشغيل"
+
+#, fuzzy
+msgid "Rec"
+msgstr "أحمر"
 
 msgid "Recall to previous service"
 msgstr ""
@@ -8690,6 +8710,9 @@ msgstr ""
 msgid "Show service list"
 msgstr ""
 
+msgid "Show service name and event description among each other instead of side by side."
+msgstr ""
+
 msgid "Show service type icons"
 msgstr ""
 
@@ -8727,6 +8750,9 @@ msgstr "إظهار مشغل التليفزيون"
 
 msgid "Show transponder info"
 msgstr "إظهار بيانات التردد"
+
+msgid "Show two lines per entry"
+msgstr ""
 
 #, fuzzy
 msgid "Show underline characters in filenames"
@@ -9448,14 +9474,16 @@ msgstr ""
 msgid "Switch channel up"
 msgstr ""
 
-msgid "Switch off the display during Standby Mode"
-msgstr ""
-
-msgid "Switch off the display during Suspend Mode"
-msgstr ""
+#, fuzzy
+msgid "Switch on the display during Standby Mode"
+msgstr "عرض قائمة بملحقات(إضافات) العرض وواجهة المستخدم المتاحة"
 
 #, fuzzy
-msgid "Switch off the display during operation."
+msgid "Switch on the display during Suspend Mode"
+msgstr "عرض قائمة بملحقات(إضافات) العرض وواجهة المستخدم المتاحة"
+
+#, fuzzy
+msgid "Switch on the display during operation."
 msgstr "عرض قائمة بملحقات(إضافات) العرض وواجهة المستخدم المتاحة"
 
 msgid "Switch to TV mode"
@@ -10288,11 +10316,6 @@ msgstr "التردد"
 
 #
 #, fuzzy
-msgid "Transponder time"
-msgstr "التردد"
-
-#
-#, fuzzy
 msgid "Transport Stream Type"
 msgstr "نوع التردد"
 
@@ -10602,6 +10625,9 @@ msgid "Updating software catalog"
 msgstr "جارى تحديث فهرس النظام"
 
 msgid "Upper case"
+msgstr ""
+
+msgid "Uptime"
 msgstr ""
 
 msgid "Uruguay"
@@ -11327,13 +11353,14 @@ msgstr ""
 msgid "With popup"
 msgstr ""
 
-msgid "With this option you can switch off the display during operation."
+#, fuzzy
+msgid "With this option you can switch on the display during operation."
+msgstr "عرض قائمة بملحقات(إضافات) العرض وواجهة المستخدم المتاحة"
+
+msgid "With this option you can switch on the display in Deep Standby Mode."
 msgstr ""
 
-msgid "With this option you can switch off the display in Deep Standby Mode."
-msgstr ""
-
-msgid "With this option you can switch off the display in Standby Mode."
+msgid "With this option you can switch on the display in Standby Mode."
 msgstr ""
 
 msgid "With this option you can switch the LED color or deactivate the LED."

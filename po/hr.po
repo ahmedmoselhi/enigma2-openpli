@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-19 21:50+0200\n"
+"POT-Creation-Date: 2020-07-16 00:59+0200\n"
 "PO-Revision-Date: 2020-03-23 11:15+0100\n"
 "Last-Translator: Željko <zeljko2@hi.ht.hr>\n"
 "Language-Team: Željko\n"
@@ -208,6 +208,13 @@ msgid_plural "%d cores"
 msgstr[0] "%d jezgra"
 msgstr[1] "%d jezgre"
 msgstr[2] "%d jezgri"
+
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #, python-format
 msgid "%d file"
@@ -3031,7 +3038,8 @@ msgstr "Želite li izaći iz vodiča za skeniranje?"
 msgid "Do you want to reboot your receiver?"
 msgstr "Želite li ponovno pokrenuti prijemnik?"
 
-msgid "Do you want to remove all the crahs logfiles"
+#, fuzzy
+msgid "Do you want to remove all the crash logfiles"
 msgstr "Želite li ukloniti sve datoteke dnevnika rušenja?"
 
 msgid "Do you want to remove the package:\n"
@@ -4046,6 +4054,10 @@ msgstr "Idi na 0"
 msgid "Goto X"
 msgstr "Idi na Х"
 
+#, fuzzy
+msgid "Goto down service"
+msgstr "Idite na zadnju uslugu"
+
 msgid "Goto index position"
 msgstr "Idi na poziciju mjesta"
 
@@ -4069,6 +4081,10 @@ msgstr "Idi na trenutno vrijeme / sada"
 
 msgid "Goto specific date/time"
 msgstr "Idite na određeni datum/vrijeme"
+
+#, fuzzy
+msgid "Goto up service"
+msgstr "Idite na zadnju uslugu"
 
 msgid "Goto:"
 msgstr "Idi na:"
@@ -5331,9 +5347,6 @@ msgstr "NE"
 
 msgid "NOW"
 msgstr "SADA"
-
-msgid "NTP"
-msgstr ""
 
 msgid "NTSC"
 msgstr "NTSC"
@@ -6652,6 +6665,10 @@ msgstr "Dali stvarno želite ažurirati svoj STB i ponovno pokrenuti sustav?"
 
 msgid "Reboot"
 msgstr "Ponovno podizanje"
+
+#, fuzzy
+msgid "Rec"
+msgstr "Crvena"
 
 msgid "Recall to previous service"
 msgstr "Povratak na prethodnu uslugu"
@@ -8102,6 +8119,9 @@ msgstr "Prikažite drugu info traku"
 msgid "Show service list"
 msgstr "Prikažite popis usluga"
 
+msgid "Show service name and event description among each other instead of side by side."
+msgstr ""
+
 msgid "Show service type icons"
 msgstr "Prikažite ikone vrste usluga"
 
@@ -8137,6 +8157,9 @@ msgstr "Prikažite tv player..."
 
 msgid "Show transponder info"
 msgstr "Prikaži informacije o transponderu"
+
+msgid "Show two lines per entry"
+msgstr ""
 
 msgid "Show underline characters in filenames"
 msgstr "Prikažite podcrtane znakove u nazivima datoteka"
@@ -8787,13 +8810,16 @@ msgstr "Promijenite kanal prema dolje"
 msgid "Switch channel up"
 msgstr "Promijenite kanal prema gore"
 
-msgid "Switch off the display during Standby Mode"
+#, fuzzy
+msgid "Switch on the display during Standby Mode"
 msgstr "Isključite zaslon tijekom stanja čekanja"
 
-msgid "Switch off the display during Suspend Mode"
+#, fuzzy
+msgid "Switch on the display during Suspend Mode"
 msgstr "Isključite zaslon tijekom obustave"
 
-msgid "Switch off the display during operation."
+#, fuzzy
+msgid "Switch on the display during operation."
 msgstr "Isključite zaslon tijekom rada."
 
 msgid "Switch to TV mode"
@@ -9561,10 +9587,6 @@ msgstr "Način prijenosa"
 msgid "Transponder"
 msgstr "Transponder"
 
-#, fuzzy
-msgid "Transponder time"
-msgstr "Transponder"
-
 msgid "Transport Stream Type"
 msgstr "Vrsta web prijenosa"
 
@@ -9852,6 +9874,10 @@ msgstr "Ažuriranje kataloga softvera"
 
 msgid "Upper case"
 msgstr "Velika slova"
+
+#, fuzzy
+msgid "Uptime"
+msgstr "Tajmer spavanja"
 
 msgid "Uruguay"
 msgstr "Urugvaj"
@@ -10542,13 +10568,16 @@ msgstr "S pogreškama:"
 msgid "With popup"
 msgstr "S porukom"
 
-msgid "With this option you can switch off the display during operation."
+#, fuzzy
+msgid "With this option you can switch on the display during operation."
 msgstr "S ovom opcijom možete isključiti zaslon tijekom rada."
 
-msgid "With this option you can switch off the display in Deep Standby Mode."
+#, fuzzy
+msgid "With this option you can switch on the display in Deep Standby Mode."
 msgstr "S ovom opcijom možete isključiti zaslon u načinu dubokog stanja čekanja."
 
-msgid "With this option you can switch off the display in Standby Mode."
+#, fuzzy
+msgid "With this option you can switch on the display in Standby Mode."
 msgstr "S ovom opcijom možete isključiti zaslon u stanje čekanja."
 
 msgid "With this option you can switch the LED color or deactivate the LED."

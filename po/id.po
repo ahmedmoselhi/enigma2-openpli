@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-19 21:50+0200\n"
+"POT-Creation-Date: 2020-07-16 00:59+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Budiarno Pedode\n"
 "Language-Team: \n"
@@ -205,6 +205,12 @@ msgid "%d core"
 msgid_plural "%d cores"
 msgstr[0] "%d inti"
 msgstr[1] "%d inti"
+
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
 
 #, python-format
 msgid "%d file"
@@ -3077,7 +3083,8 @@ msgstr "Anda ingin keluar dari wizar overscan?"
 msgid "Do you want to reboot your receiver?"
 msgstr "Anda ingin mereboot Rx anda?"
 
-msgid "Do you want to remove all the crahs logfiles"
+#, fuzzy
+msgid "Do you want to remove all the crash logfiles"
 msgstr "Anda ingin menghapus semua berkas log crash"
 
 msgid "Do you want to remove the package:\n"
@@ -4128,6 +4135,10 @@ msgstr "Menuju 0"
 msgid "Goto X"
 msgstr "Menuju X"
 
+#, fuzzy
+msgid "Goto down service"
+msgstr "Menuju layanan terkahir"
+
 msgid "Goto index position"
 msgstr "Menuju letak indeks"
 
@@ -4151,6 +4162,10 @@ msgstr "Menuju jam tayang utama / sekarang"
 
 msgid "Goto specific date/time"
 msgstr "Menuju tanggal/jam tertentu"
+
+#, fuzzy
+msgid "Goto up service"
+msgstr "Menuju layanan terkahir"
 
 msgid "Goto:"
 msgstr "Menuju:"
@@ -5451,9 +5466,6 @@ msgstr "TIDAK"
 
 msgid "NOW"
 msgstr "Sekarang"
-
-msgid "NTP"
-msgstr ""
 
 msgid "NTSC"
 msgstr "NTSC"
@@ -6801,6 +6813,10 @@ msgstr "Yakin meningkatkan Rx anda dan reboot sekarang?"
 
 msgid "Reboot"
 msgstr "Reboot"
+
+#, fuzzy
+msgid "Rec"
+msgstr "Merah"
 
 msgid "Recall to previous service"
 msgstr "Kembali ke layanan sebelumnya"
@@ -8283,6 +8299,9 @@ msgstr "Tampilkan bilah info kedua"
 msgid "Show service list"
 msgstr "Tampilkan daftar layanan"
 
+msgid "Show service name and event description among each other instead of side by side."
+msgstr ""
+
 msgid "Show service type icons"
 msgstr "Tampilkan ikon jenis layanan"
 
@@ -8319,6 +8338,9 @@ msgstr "Tampilkan pemutar tv..."
 
 msgid "Show transponder info"
 msgstr "Tampilkan info transponder"
+
+msgid "Show two lines per entry"
+msgstr ""
 
 #, fuzzy
 msgid "Show underline characters in filenames"
@@ -8985,14 +9007,16 @@ msgstr "Ganti kanal bawah"
 msgid "Switch channel up"
 msgstr "Ganti kanal atas"
 
-msgid "Switch off the display during Standby Mode"
-msgstr ""
-
-msgid "Switch off the display during Suspend Mode"
-msgstr ""
+#, fuzzy
+msgid "Switch on the display during Standby Mode"
+msgstr "Tinjau daftar ketersedaan ekstensi penampil dan antarmuka pengguna."
 
 #, fuzzy
-msgid "Switch off the display during operation."
+msgid "Switch on the display during Suspend Mode"
+msgstr "Tinjau daftar ketersedaan ekstensi penampil dan antarmuka pengguna."
+
+#, fuzzy
+msgid "Switch on the display during operation."
 msgstr "Tinjau daftar ketersedaan ekstensi penampil dan antarmuka pengguna."
 
 msgid "Switch to TV mode"
@@ -9775,10 +9799,6 @@ msgid "Transponder"
 msgstr "Transponder"
 
 #, fuzzy
-msgid "Transponder time"
-msgstr "Transponder"
-
-#, fuzzy
 msgid "Transport Stream Type"
 msgstr "Jenis transponder"
 
@@ -10079,6 +10099,10 @@ msgstr "Memperbarui katalog perangkat lunak"
 
 msgid "Upper case"
 msgstr "Huruf besar"
+
+#, fuzzy
+msgid "Uptime"
+msgstr "Pewaktu tidur"
 
 msgid "Uruguay"
 msgstr ""
@@ -10780,14 +10804,15 @@ msgid "With popup"
 msgstr "Dengan popup"
 
 #, fuzzy
-msgid "With this option you can switch off the display during operation."
+msgid "With this option you can switch on the display during operation."
 msgstr "Pilihan ini memungkinkan anda untuk mematikan layar."
 
-msgid "With this option you can switch off the display in Deep Standby Mode."
-msgstr ""
+#, fuzzy
+msgid "With this option you can switch on the display in Deep Standby Mode."
+msgstr "Pilihan ini memungkinkan anda untuk mematikan layar."
 
 #, fuzzy
-msgid "With this option you can switch off the display in Standby Mode."
+msgid "With this option you can switch on the display in Standby Mode."
 msgstr "Pilihan ini memungkinkan anda untuk mematikan layar."
 
 msgid "With this option you can switch the LED color or deactivate the LED."

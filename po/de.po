@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-19 21:50+0200\n"
-"PO-Revision-Date: 2020-06-19 21:57+0200\n"
+"POT-Creation-Date: 2020-07-16 00:59+0200\n"
+"PO-Revision-Date: 2020-07-16 01:08+0200\n"
 "Last-Translator: kueken\n"
 "Language-Team: kueken\n"
 "Language: de\n"
@@ -207,6 +207,12 @@ msgid "%d core"
 msgid_plural "%d cores"
 msgstr[0] "%d Prozessor-Kern"
 msgstr[1] "%d Prozessor-Kerne"
+
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d Tag"
+msgstr[1] "%d days"
 
 #, python-format
 msgid "%d file"
@@ -3000,8 +3006,8 @@ msgstr "Wollen Sie den Overscan-Assistenten beenden?"
 msgid "Do you want to reboot your receiver?"
 msgstr "Wollen Sie Ihren Receiver neu starten?"
 
-msgid "Do you want to remove all the crahs logfiles"
-msgstr "Wollen Sie alle Crash-Logs entfernen?"
+msgid "Do you want to remove all the crash logfiles"
+msgstr "Wollen Sie alle Crash-Logs entfernen"
 
 msgid "Do you want to remove the package:\n"
 msgstr "Wollen Sie das Paket entfernen:\n"
@@ -4011,6 +4017,9 @@ msgstr "Gehe zu 0"
 msgid "Goto X"
 msgstr "Gehe zu X"
 
+msgid "Goto down service"
+msgstr "Gehe zu Service"
+
 msgid "Goto index position"
 msgstr "Gehe zur Index Position"
 
@@ -4034,6 +4043,9 @@ msgstr "Springe zur Primetime / Jetzt"
 
 msgid "Goto specific date/time"
 msgstr "Springe zum angegebenen Datum/Uhrzeit"
+
+msgid "Goto up service"
+msgstr "Gehe zu Service"
 
 msgid "Goto:"
 msgstr "Gehe zu:"
@@ -5286,9 +5298,6 @@ msgstr "NEIN"
 
 msgid "NOW"
 msgstr "Jetzt"
-
-msgid "NTP"
-msgstr "NTP"
 
 msgid "NTSC"
 msgstr "NTSC"
@@ -6608,6 +6617,9 @@ msgstr "Wollen Sie Ihren Receiver wirklich aktualisieren und anschließend neu s
 
 msgid "Reboot"
 msgstr "Neustart"
+
+msgid "Rec"
+msgstr "Rec"
 
 msgid "Recall to previous service"
 msgstr "Zurück zum letzten Sender"
@@ -8050,6 +8062,9 @@ msgstr "Zweite Infoleiste anzeigen"
 msgid "Show service list"
 msgstr "Senderliste anzeigen"
 
+msgid "Show service name and event description among each other instead of side by side."
+msgstr ""
+
 msgid "Show service type icons"
 msgstr "Servicetyp-Symbole anzeigen"
 
@@ -8085,6 +8100,9 @@ msgstr "TV-Wiedergabemodus…"
 
 msgid "Show transponder info"
 msgstr "Transponder-Info anzeigen"
+
+msgid "Show two lines per entry"
+msgstr "Zeige 2 Zeilen je Eintrag an"
 
 msgid "Show underline characters in filenames"
 msgstr "Zusatzinfo der Aufnahme-Dateinamen"
@@ -8732,13 +8750,15 @@ msgstr "Kanal umschalten"
 msgid "Switch channel up"
 msgstr "Kanal hochschalten"
 
-msgid "Switch off the display during Standby Mode"
+#, fuzzy
+msgid "Switch on the display during Standby Mode"
 msgstr "Display Ausschalten im Standby"
 
-msgid "Switch off the display during Suspend Mode"
+#, fuzzy
+msgid "Switch on the display during Suspend Mode"
 msgstr "Display Ausschalten im Standby"
 
-msgid "Switch off the display during operation."
+msgid "Switch on the display during operation."
 msgstr "Display Ausschalten im Standby"
 
 msgid "Switch to TV mode"
@@ -9506,9 +9526,6 @@ msgstr "Übertragungstyp"
 msgid "Transponder"
 msgstr "Transponder"
 
-msgid "Transponder time"
-msgstr "Transponder-Zeit"
-
 msgid "Transport Stream Type"
 msgstr "Transportstreamtyp"
 
@@ -9793,6 +9810,9 @@ msgstr "Softwarekatalog wird aktualisiert."
 
 msgid "Upper case"
 msgstr "Großbuchstaben"
+
+msgid "Uptime"
+msgstr "Betriebszeit"
 
 msgid "Uruguay"
 msgstr "Uruguay"
@@ -10489,13 +10509,13 @@ msgstr "Mit Fehlern:"
 msgid "With popup"
 msgstr "mit Popup"
 
-msgid "With this option you can switch off the display during operation."
-msgstr "Mit dieser Option können Sie das Display ausschalten"
+msgid "With this option you can switch on the display during operation."
+msgstr "Mit dieser Option können Sie das Display ausschalten."
 
-msgid "With this option you can switch off the display in Deep Standby Mode."
+msgid "With this option you can switch on the display in Deep Standby Mode."
 msgstr "Mit dieser Option kann das Display im DeepStandby deaktiviert werden"
 
-msgid "With this option you can switch off the display in Standby Mode."
+msgid "With this option you can switch on the display in Standby Mode."
 msgstr "Display aus im Standby"
 
 msgid "With this option you can switch the LED color or deactivate the LED."

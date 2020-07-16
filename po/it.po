@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi-enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-19 21:50+0200\n"
+"POT-Creation-Date: 2020-07-16 00:59+0200\n"
 "PO-Revision-Date: 2018-05-22 13:54+0200\n"
 "Last-Translator: Gringo <openpli@tiscali.it>\n"
 "Language-Team: www.linsat.net <spaeleus@croci.org>\n"
@@ -213,6 +213,12 @@ msgid "%d core"
 msgid_plural "%d cores"
 msgstr[0] "%d core"
 msgstr[1] "%d core"
+
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
 
 #, python-format
 msgid "%d file"
@@ -3017,7 +3023,8 @@ msgstr "Uscire dalla regolazione guidata dell'overscan?"
 msgid "Do you want to reboot your receiver?"
 msgstr "Riavviare il ricevitore?"
 
-msgid "Do you want to remove all the crahs logfiles"
+#, fuzzy
+msgid "Do you want to remove all the crash logfiles"
 msgstr "Eliminare tutti i file di registro dei crash?"
 
 msgid "Do you want to remove the package:\n"
@@ -4035,6 +4042,10 @@ msgstr "Andare a 0"
 msgid "Goto X"
 msgstr "Andare a X"
 
+#, fuzzy
+msgid "Goto down service"
+msgstr "Andare all'ultimo canale"
+
 msgid "Goto index position"
 msgstr "Andare alla posizione indice"
 
@@ -4058,6 +4069,10 @@ msgstr "Andare alla Prima serata / Ora"
 
 msgid "Goto specific date/time"
 msgstr "Andare alla data/ora specificata"
+
+#, fuzzy
+msgid "Goto up service"
+msgstr "Andare all'ultimo canale"
 
 msgid "Goto:"
 msgstr "A:"
@@ -5324,9 +5339,6 @@ msgstr "NO"
 
 msgid "NOW"
 msgstr "IN ONDA"
-
-msgid "NTP"
-msgstr ""
 
 msgid "NTSC"
 msgstr "NTSC"
@@ -6646,6 +6658,10 @@ msgstr "Aggiornare adesso il ricevitore e riavviare?"
 
 msgid "Reboot"
 msgstr "Riavvio del ricevitore"
+
+#, fuzzy
+msgid "Rec"
+msgstr "Rosso"
 
 msgid "Recall to previous service"
 msgstr "Ritorno al canale precedente"
@@ -8096,6 +8112,9 @@ msgstr "Mostrare la seconda infobar"
 msgid "Show service list"
 msgstr "Mostrare la lista canali"
 
+msgid "Show service name and event description among each other instead of side by side."
+msgstr ""
+
 msgid "Show service type icons"
 msgstr "Mostrare l'indicatore del tipo di canale"
 
@@ -8131,6 +8150,9 @@ msgstr "Mostrare il lettore TV..."
 
 msgid "Show transponder info"
 msgstr "Mostrare le informazioni sul transponder"
+
+msgid "Show two lines per entry"
+msgstr ""
 
 msgid "Show underline characters in filenames"
 msgstr "Mostrare i caratteri di sottolineatura nei nomi dei file"
@@ -8782,14 +8804,16 @@ msgstr "Passare al canale precedente"
 msgid "Switch channel up"
 msgstr "Passare al canale successivo"
 
-msgid "Switch off the display during Standby Mode"
-msgstr ""
-
-msgid "Switch off the display during Suspend Mode"
-msgstr ""
+#, fuzzy
+msgid "Switch on the display during Standby Mode"
+msgstr "Mostrare l'elenco delle estensioni disponibili per lo schermo e l'interfaccia utente."
 
 #, fuzzy
-msgid "Switch off the display during operation."
+msgid "Switch on the display during Suspend Mode"
+msgstr "Mostrare l'elenco delle estensioni disponibili per lo schermo e l'interfaccia utente."
+
+#, fuzzy
+msgid "Switch on the display during operation."
 msgstr "Mostrare l'elenco delle estensioni disponibili per lo schermo e l'interfaccia utente."
 
 msgid "Switch to TV mode"
@@ -9575,10 +9599,6 @@ msgstr "Modalità di trasmissione"
 msgid "Transponder"
 msgstr "Transponder"
 
-#, fuzzy
-msgid "Transponder time"
-msgstr "Transponder"
-
 msgid "Transport Stream Type"
 msgstr "Tipo di flusso da trasmettere"
 
@@ -9869,6 +9889,10 @@ msgstr "Aggiornamento del catalogo software in corso..."
 
 msgid "Upper case"
 msgstr ""
+
+#, fuzzy
+msgid "Uptime"
+msgstr "Timer di spegnimento"
 
 msgid "Uruguay"
 msgstr "Uruguay"
@@ -10560,14 +10584,15 @@ msgid "With popup"
 msgstr "Con un popup"
 
 #, fuzzy
-msgid "With this option you can switch off the display during operation."
+msgid "With this option you can switch on the display during operation."
 msgstr "Questa opzione consente di spegnere il display."
 
-msgid "With this option you can switch off the display in Deep Standby Mode."
-msgstr ""
+#, fuzzy
+msgid "With this option you can switch on the display in Deep Standby Mode."
+msgstr "Questa opzione consente di spegnere il display."
 
 #, fuzzy
-msgid "With this option you can switch off the display in Standby Mode."
+msgid "With this option you can switch on the display in Standby Mode."
 msgstr "Questa opzione consente di spegnere il display."
 
 msgid "With this option you can switch the LED color or deactivate the LED."

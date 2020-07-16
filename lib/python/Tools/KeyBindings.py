@@ -1,9 +1,8 @@
-
-keyBindings = { }
-
 from keyids import KEYIDS
 from Components.config import config
 from Components.RcModel import rc_model
+
+keyBindings = {}
 
 keyDescriptions = [{
 		KEYIDS["BTN_0"]: ("UP", "fp"),
@@ -356,42 +355,60 @@ keyDescriptions = [{
 def addKeyBinding(domain, key, context, action, flags):
 	keyBindings.setdefault((context, action), []).append((key, domain, flags))
 
-# returns a list of (key, flags) for a specified action
+def removeKeyBinding(key, context, action, wild=True):
+	if wild and action == "*":
+		for ctx, action in keyBindings.keys():
+			if ctx == context:
+				removeKeyBinding(key, context, action, False)
+		return
+	contextAction = (context, action)
+	if contextAction in keyBindings:
+		bind = [x for x in keyBindings[contextAction] if x[0] != key]
+		if bind:
+			keyBindings[contextAction] = bind
+		else:
+			del keyBindings[contextAction]
+
+# Returns a list of (key, flags) for a specified action.
+#
 def queryKeyBinding(context, action):
 	if (context, action) in keyBindings:
 		return [(x[0], x[2]) for x in keyBindings[(context, action)]]
 	else:
-		return [ ]
+		return []
 
 def getKeyDescription(key):
 	if rc_model.rcIsDefault():
 		idx = config.misc.rcused.value
 	else:
-		rctype = config.plugins.remotecontroltype.rctype.value
+		rcType = config.plugins.remotecontroltype.rctype.value
 		print "[Keybindings.py] RC type is:", rctype
 		rctype = 11
-		if rctype == 10:	# Spark
+		if rcType == 10:	# Spark
 			idx = 3
-		elif rctype == 7:	# Fortis FS9000/FS9200/HS8200
+		elif rcType == 7:	# Fortis FS9000/FS9200/HS8200
 			idx = 4
-		elif rctype == 8:	# Fortis HS9510/HS7420/HS7429/HS7810A/HS7819
+		elif rcType == 8:	# Fortis HS9510/HS7420/HS7429/HS7810A/HS7819
 			idx = 4
-		elif rctype == 9:	# Fortis HS7110/HS7119
+		elif rcType == 9:	# Fortis HS7110/HS7119
 			idx = 4
-		elif rctype == 11:	# Topfield TF77X0HDPVR
+		elif rcType == 11:	# Topfield TF77X0HDPVR
 			idx = 5
-		elif rctype == 12:	# Kathrein UFS912
+		elif rcType == 12:	# Kathrein UFS912
 			idx = 6
-		elif rctype == 13:	# CubeRevo Universal
+		elif rcType == 13:	# CubeRevo Universal
 			idx = 7
-#		elif rctype == 14:	# ...
+#		elif rcType == 14:	# ...
 #			idx = 8
 		else:
 			idx = 2
-	if key in keyDescriptions[idx]:
-		return keyDescriptions[idx].get(key, [ ])
+	return keyDescriptions[idx].get(key)
 
+def getKeyBindingKeys(filterfn=lambda key: True):
+	return filter(filterfn, keyBindings)
+
+# Remove all entries of domain "domain".
+#
 def removeKeyBindings(domain):
-	# remove all entries of domain 'domain'
 	for x in keyBindings:
 		keyBindings[x] = filter(lambda e: e[1] != domain, keyBindings[x])

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-19 21:50+0200\n"
+"POT-Creation-Date: 2020-07-16 00:59+0200\n"
 "PO-Revision-Date: 2018-02-14 16:51+0330\n"
 "Last-Translator: Persian Prince <persianprince@pe4k.com>\n"
 "Language-Team: Persian Professionals <persianpros@yahoo.com>\n"
@@ -202,6 +202,11 @@ msgstr[0] "%d کانال یافت شد"
 msgid "%d core"
 msgid_plural "%d cores"
 msgstr[0] "%d هسته"
+
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
 
 #, python-format
 msgid "%d file"
@@ -3093,8 +3098,9 @@ msgstr ""
 msgid "Do you want to reboot your receiver?"
 msgstr ""
 
-msgid "Do you want to remove all the crahs logfiles"
-msgstr ""
+#, fuzzy
+msgid "Do you want to remove all the crash logfiles"
+msgstr "آیا میخواهید بسته را حذف کنید:\n"
 
 msgid "Do you want to remove the package:\n"
 msgstr "آیا میخواهید بسته را حذف کنید:\n"
@@ -4123,6 +4129,10 @@ msgstr "مراجعه به 0"
 msgid "Goto X"
 msgstr "مراجعه به X"
 
+#, fuzzy
+msgid "Goto down service"
+msgstr "مراجعه به آخرین کانال"
+
 msgid "Goto index position"
 msgstr ""
 
@@ -4146,6 +4156,10 @@ msgstr ""
 
 msgid "Goto specific date/time"
 msgstr ""
+
+#, fuzzy
+msgid "Goto up service"
+msgstr "مراجعه به آخرین کانال"
 
 msgid "Goto:"
 msgstr "مراجعه به:"
@@ -5452,9 +5466,6 @@ msgstr ""
 
 msgid "NOW"
 msgstr "اکنون"
-
-msgid "NTP"
-msgstr ""
 
 msgid "NTSC"
 msgstr "NTSC"
@@ -6819,6 +6830,10 @@ msgstr "دستگاه شما به روز رسانی و هم اکنون راه ا�
 
 msgid "Reboot"
 msgstr "راه اندازی مجدد"
+
+#, fuzzy
+msgid "Rec"
+msgstr "ضبط"
 
 msgid "Recall to previous service"
 msgstr ""
@@ -8340,6 +8355,9 @@ msgstr "نمایش نوار اطلاعات دوم"
 msgid "Show service list"
 msgstr ""
 
+msgid "Show service name and event description among each other instead of side by side."
+msgstr ""
+
 msgid "Show service type icons"
 msgstr "نمایش آیکون نوع کانال"
 
@@ -8374,6 +8392,9 @@ msgid "Show the tv player..."
 msgstr "نمایش پخش کننده تلوزیون"
 
 msgid "Show transponder info"
+msgstr ""
+
+msgid "Show two lines per entry"
 msgstr ""
 
 msgid "Show underline characters in filenames"
@@ -9059,13 +9080,13 @@ msgstr ""
 msgid "Switch channel up"
 msgstr ""
 
-msgid "Switch off the display during Standby Mode"
+msgid "Switch on the display during Standby Mode"
 msgstr ""
 
-msgid "Switch off the display during Suspend Mode"
+msgid "Switch on the display during Suspend Mode"
 msgstr ""
 
-msgid "Switch off the display during operation."
+msgid "Switch on the display during operation."
 msgstr ""
 
 msgid "Switch to TV mode"
@@ -9804,9 +9825,6 @@ msgstr ""
 msgid "Transponder"
 msgstr ""
 
-msgid "Transponder time"
-msgstr ""
-
 msgid "Transport Stream Type"
 msgstr ""
 
@@ -10088,6 +10106,9 @@ msgid "Updating software catalog"
 msgstr ""
 
 msgid "Upper case"
+msgstr ""
+
+msgid "Uptime"
 msgstr ""
 
 msgid "Uruguay"
@@ -10761,13 +10782,13 @@ msgstr ""
 msgid "With popup"
 msgstr ""
 
-msgid "With this option you can switch off the display during operation."
+msgid "With this option you can switch on the display during operation."
 msgstr ""
 
-msgid "With this option you can switch off the display in Deep Standby Mode."
+msgid "With this option you can switch on the display in Deep Standby Mode."
 msgstr ""
 
-msgid "With this option you can switch off the display in Standby Mode."
+msgid "With this option you can switch on the display in Standby Mode."
 msgstr ""
 
 msgid "With this option you can switch the LED color or deactivate the LED."

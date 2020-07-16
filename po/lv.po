@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-19 21:50+0200\n"
+"POT-Creation-Date: 2020-07-16 00:59+0200\n"
 "PO-Revision-Date: 2014-11-12 00:49+0200\n"
 "Last-Translator: Taapat <taapat@gmail.com>\n"
 "Language-Team: Taapat <taapat@gmail.com>\n"
@@ -210,6 +210,13 @@ msgid_plural "%d cores"
 msgstr[0] "%d kodols"
 msgstr[1] "%d kodoli"
 msgstr[2] "%d kodoli"
+
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #, python-format
 msgid "%d file"
@@ -3036,7 +3043,8 @@ msgstr "Vai tiešām vēlaties iziet no šī veidņa?"
 msgid "Do you want to reboot your receiver?"
 msgstr "Vai vēlaties pārstartēt uztvērēju?"
 
-msgid "Do you want to remove all the crahs logfiles"
+#, fuzzy
+msgid "Do you want to remove all the crash logfiles"
 msgstr "Vai vēlaties dzēst visus žurnāla failus"
 
 msgid "Do you want to remove the package:\n"
@@ -4063,6 +4071,10 @@ msgstr "Iet uz 0"
 msgid "Goto X"
 msgstr "Iet uz X"
 
+#, fuzzy
+msgid "Goto down service"
+msgstr "Iet uz pēdējo kanālu"
+
 msgid "Goto index position"
 msgstr "Iet uz indeksa pozīciju"
 
@@ -4086,6 +4098,10 @@ msgstr "Iet uz brīvo laiku / pašreiz"
 
 msgid "Goto specific date/time"
 msgstr "Iet uz noteiktu datumu/laiku"
+
+#, fuzzy
+msgid "Goto up service"
+msgstr "Iet uz pēdējo kanālu"
 
 msgid "Goto:"
 msgstr "Iet uz:"
@@ -5352,9 +5368,6 @@ msgstr "NĒ"
 
 msgid "NOW"
 msgstr "PAŠREIZ"
-
-msgid "NTP"
-msgstr ""
 
 msgid "NTSC"
 msgstr "NTSC"
@@ -6680,6 +6693,10 @@ msgstr "Vai tiešām atjaunot uztvērēju un pārstartēt tagad?"
 
 msgid "Reboot"
 msgstr "Pārstartēt"
+
+#, fuzzy
+msgid "Rec"
+msgstr "Sarkanā"
 
 msgid "Recall to previous service"
 msgstr "Atgriezties uz iepriekšējo kanālu"
@@ -8135,6 +8152,9 @@ msgstr "Rādīt otro infojoslu"
 msgid "Show service list"
 msgstr "Atvērt kanālu sarakstu"
 
+msgid "Show service name and event description among each other instead of side by side."
+msgstr ""
+
 msgid "Show service type icons"
 msgstr "Rādīt kanālu tipu ikonas"
 
@@ -8170,6 +8190,9 @@ msgstr "Skatīties TV..."
 
 msgid "Show transponder info"
 msgstr "Rādīt transpondera informāciju"
+
+msgid "Show two lines per entry"
+msgstr ""
 
 #, fuzzy
 msgid "Show underline characters in filenames"
@@ -8822,14 +8845,16 @@ msgstr "Pārslēgt kanālu uz leju"
 msgid "Switch channel up"
 msgstr "Pārslēgt kanālu uz augšu"
 
-msgid "Switch off the display during Standby Mode"
-msgstr ""
-
-msgid "Switch off the display during Suspend Mode"
-msgstr ""
+#, fuzzy
+msgid "Switch on the display during Standby Mode"
+msgstr "Skatīt sarakstu ar pieejamiem attēla un lietotāja interfeisa paplašinājumiem."
 
 #, fuzzy
-msgid "Switch off the display during operation."
+msgid "Switch on the display during Suspend Mode"
+msgstr "Skatīt sarakstu ar pieejamiem attēla un lietotāja interfeisa paplašinājumiem."
+
+#, fuzzy
+msgid "Switch on the display during operation."
 msgstr "Skatīt sarakstu ar pieejamiem attēla un lietotāja interfeisa paplašinājumiem."
 
 msgid "Switch to TV mode"
@@ -9601,10 +9626,6 @@ msgstr "Pārraides režīms"
 msgid "Transponder"
 msgstr "Transponderis"
 
-#, fuzzy
-msgid "Transponder time"
-msgstr "Transponderis"
-
 msgid "Transport Stream Type"
 msgstr "Transporta plūsmas veids"
 
@@ -9893,6 +9914,10 @@ msgstr "Atjauno programmatūras katalogu"
 
 msgid "Upper case"
 msgstr "Lieli burti"
+
+#, fuzzy
+msgid "Uptime"
+msgstr "Miega taimeris"
 
 msgid "Uruguay"
 msgstr "Urugvaja"
@@ -10585,14 +10610,15 @@ msgid "With popup"
 msgstr "Ar uznirstošo logu"
 
 #, fuzzy
-msgid "With this option you can switch off the display during operation."
+msgid "With this option you can switch on the display during operation."
 msgstr "Atļauj izslēgt displeju."
 
-msgid "With this option you can switch off the display in Deep Standby Mode."
-msgstr ""
+#, fuzzy
+msgid "With this option you can switch on the display in Deep Standby Mode."
+msgstr "Atļauj izslēgt displeju."
 
 #, fuzzy
-msgid "With this option you can switch off the display in Standby Mode."
+msgid "With this option you can switch on the display in Standby Mode."
 msgstr "Atļauj izslēgt displeju."
 
 msgid "With this option you can switch the LED color or deactivate the LED."

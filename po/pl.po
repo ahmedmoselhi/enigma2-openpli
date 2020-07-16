@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-19 21:50+0200\n"
+"POT-Creation-Date: 2020-07-16 00:59+0200\n"
 "PO-Revision-Date: 2019-12-03 20:02+0100\n"
 "Last-Translator: blzr <blzr@o2.pl>\n"
 "Language-Team: \n"
@@ -208,6 +208,13 @@ msgid_plural "%d cores"
 msgstr[0] "%d rdzeń"
 msgstr[1] "%d rdzenie"
 msgstr[2] "%d rdzeni"
+
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #, python-format
 msgid "%d file"
@@ -3038,7 +3045,8 @@ msgstr "Jesteś pewien, że chcesz wyjść?"
 msgid "Do you want to reboot your receiver?"
 msgstr "Chcesz uruchomić ponownie odbiornik?"
 
-msgid "Do you want to remove all the crahs logfiles"
+#, fuzzy
+msgid "Do you want to remove all the crash logfiles"
 msgstr "Czy chcesz usunąć wszystkie crash logi?"
 
 msgid "Do you want to remove the package:\n"
@@ -4058,6 +4066,10 @@ msgstr "Idź do 0"
 msgid "Goto X"
 msgstr "Idź do X"
 
+#, fuzzy
+msgid "Goto down service"
+msgstr "Idż do ostatniego kanału"
+
 msgid "Goto index position"
 msgstr "Idź do indeksu"
 
@@ -4081,6 +4093,10 @@ msgstr "Idź do prime time / teraz"
 
 msgid "Goto specific date/time"
 msgstr "Idź do konkretnej daty/godziny"
+
+#, fuzzy
+msgid "Goto up service"
+msgstr "Idż do ostatniego kanału"
 
 msgid "Goto:"
 msgstr "Idź do:"
@@ -5347,9 +5363,6 @@ msgstr "Nie"
 
 msgid "NOW"
 msgstr "Teraz"
-
-msgid "NTP"
-msgstr ""
 
 msgid "NTSC"
 msgstr ""
@@ -6669,6 +6682,10 @@ msgstr "Wykonać update odbiornika i zrestartować?"
 
 msgid "Reboot"
 msgstr ""
+
+#, fuzzy
+msgid "Rec"
+msgstr "Czerwony"
 
 msgid "Recall to previous service"
 msgstr "Powróć do poprzedniego kanału"
@@ -8123,6 +8140,9 @@ msgstr "Wyświetlanie SecondInfobar"
 msgid "Show service list"
 msgstr "Wyświetl listę kanałów"
 
+msgid "Show service name and event description among each other instead of side by side."
+msgstr ""
+
 msgid "Show service type icons"
 msgstr "Ikony typu kanału"
 
@@ -8158,6 +8178,9 @@ msgstr "Przejdź w tryb TV..."
 
 msgid "Show transponder info"
 msgstr "Pokaż info transpondera"
+
+msgid "Show two lines per entry"
+msgstr ""
 
 msgid "Show underline characters in filenames"
 msgstr "Wyświetlaj podkreślniki w nazwach plików"
@@ -8809,14 +8832,16 @@ msgstr "Podświetl kanał niżej"
 msgid "Switch channel up"
 msgstr "Podświetl kanał wyżej"
 
-msgid "Switch off the display during Standby Mode"
-msgstr ""
-
-msgid "Switch off the display during Suspend Mode"
-msgstr ""
+#, fuzzy
+msgid "Switch on the display during Standby Mode"
+msgstr "Zobacz listę dostępnych rozszerzeń dla wyświetlacza i GUI"
 
 #, fuzzy
-msgid "Switch off the display during operation."
+msgid "Switch on the display during Suspend Mode"
+msgstr "Zobacz listę dostępnych rozszerzeń dla wyświetlacza i GUI"
+
+#, fuzzy
+msgid "Switch on the display during operation."
 msgstr "Zobacz listę dostępnych rozszerzeń dla wyświetlacza i GUI"
 
 msgid "Switch to TV mode"
@@ -9590,10 +9615,6 @@ msgstr "Tryb transmisji"
 msgid "Transponder"
 msgstr ""
 
-#, fuzzy
-msgid "Transponder time"
-msgstr "Pokaż info transpondera"
-
 msgid "Transport Stream Type"
 msgstr ""
 
@@ -9881,6 +9902,10 @@ msgstr "Aktualizowanie katalogu oprogramowania"
 
 msgid "Upper case"
 msgstr "Wielkie litery"
+
+#, fuzzy
+msgid "Uptime"
+msgstr "Wyłącznik czasowy"
 
 msgid "Uruguay"
 msgstr "Urugwaj"
@@ -10572,14 +10597,15 @@ msgid "With popup"
 msgstr "Wyświetl popup"
 
 #, fuzzy
-msgid "With this option you can switch off the display during operation."
+msgid "With this option you can switch on the display during operation."
 msgstr "Ta opcja pozwala wyłączyć wyświetlacz."
 
-msgid "With this option you can switch off the display in Deep Standby Mode."
-msgstr ""
+#, fuzzy
+msgid "With this option you can switch on the display in Deep Standby Mode."
+msgstr "Ta opcja pozwala wyłączyć wyświetlacz."
 
 #, fuzzy
-msgid "With this option you can switch off the display in Standby Mode."
+msgid "With this option you can switch on the display in Standby Mode."
 msgstr "Ta opcja pozwala wyłączyć wyświetlacz."
 
 msgid "With this option you can switch the LED color or deactivate the LED."
