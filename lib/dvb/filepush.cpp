@@ -3,6 +3,7 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <sys/ioctl.h>
+#include <poll.h>
 
 #if defined(__sh__) // this allows filesystem tasks to be prioritised
 #include <sys/vfs.h>
@@ -385,6 +386,13 @@ void eFilePushThreadRecorder::thread()
 	/* m_stop must be evaluated after each syscall. */
 	while (!m_stop)
 	{
+		/* this works around the buggy Broadcom encoder that always returns even if there is no data */
+		/* (works like O_NONBLOCK even when not opened as such), prevent idle waiting for the data */
+		/* this won't ever hurt, because it will return immediately when there is data or an error condition */
+
+		struct pollfd pfd = { m_fd_source, POLLIN, 0 };
+		poll(&pfd, 1, 100);
+
 		ssize_t bytes = ::read(m_fd_source, m_buffer, m_buffersize);
 		if (bytes < 0)
 		{
@@ -419,7 +427,7 @@ void eFilePushThreadRecorder::thread()
 #endif
 		if (w < 0)
 		{
-			eDebug("[eFilePushThreadRecorder] WRITE ERROR, aborting thread: %m");
+			eWarning("[eFilePushThreadRecorder] WRITE ERROR, aborting thread: %m");
 			sendEvent(evtWriteError);
 			break;
 		}
