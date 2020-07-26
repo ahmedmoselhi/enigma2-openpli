@@ -170,6 +170,7 @@ def getHotkeyFunctions():
 	hotkey.functions.append((_("Show servicelist or movies"), "Infobar/showServiceListOrMovies", "InfoBar"))
 	hotkey.functions.append((_("Show favourites list"), "Infobar/openFavouritesList", "InfoBar"))
 	hotkey.functions.append((_("History back"), "Infobar/historyBack", "InfoBar"))
+	hotkey.functions.append((_("Show satellites list"), "Infobar/openSatellites", "InfoBar"))
 	hotkey.functions.append((_("History next"), "Infobar/historyNext", "InfoBar"))
 	hotkey.functions.append((_("Recall to previous service"), "Infobar/servicelist/recallPrevService", "InfoBar"))
 	hotkey.functions.append((_("Show eventinfo plugins"), "Infobar/showEventInfoPlugins", "EPG"))
