@@ -4054,9 +4054,8 @@ msgstr "Idi na 0"
 msgid "Goto X"
 msgstr "Idi na Х"
 
-#, fuzzy
 msgid "Goto down service"
-msgstr "Idite na zadnju uslugu"
+msgstr "Idite na donju uslugu"
 
 msgid "Goto index position"
 msgstr "Idi na poziciju mjesta"
@@ -4082,9 +4081,8 @@ msgstr "Idi na trenutno vrijeme / sada"
 msgid "Goto specific date/time"
 msgstr "Idite na određeni datum/vrijeme"
 
-#, fuzzy
 msgid "Goto up service"
-msgstr "Idite na zadnju uslugu"
+msgstr "Idite na gornju uslugu"
 
 msgid "Goto:"
 msgstr "Idi na:"
@@ -8120,7 +8118,7 @@ msgid "Show service list"
 msgstr "Prikažite popis usluga"
 
 msgid "Show service name and event description among each other instead of side by side."
-msgstr ""
+msgstr "Prikažite naziv kanala i opis događaja jedan ispod drugog, a ne u jednom retku."
 
 msgid "Show service type icons"
 msgstr "Prikažite ikone vrste usluga"
@@ -8159,7 +8157,7 @@ msgid "Show transponder info"
 msgstr "Prikaži informacije o transponderu"
 
 msgid "Show two lines per entry"
-msgstr ""
+msgstr "Prikažite dva retka po unosu"
 
 msgid "Show underline characters in filenames"
 msgstr "Prikažite podcrtane znakove u nazivima datoteka"

@@ -4051,9 +4051,8 @@ msgstr "Eiti į 0"
 msgid "Goto X"
 msgstr "Eiti į X"
 
-#, fuzzy
 msgid "Goto down service"
-msgstr "Į paskutinį kanalą"
+msgstr "Į apatinį kanalą"
 
 msgid "Goto index position"
 msgstr "Į žymės poziciją"
@@ -4079,15 +4078,14 @@ msgstr "Į geriausią laiką / dabar"
 msgid "Goto specific date/time"
 msgstr "Į konkrečią datą/laiką"
 
-#, fuzzy
 msgid "Goto up service"
-msgstr "Į paskutinį kanalą"
+msgstr "Į viršutinį kanalą"
 
 msgid "Goto:"
 msgstr "Eiti į:"
 
 msgid "GotoX calibration"
-msgstr "Eiti į X kalibravimą"
+msgstr "Į X kalibravimą"
 
 msgid "GraphMultiEpg Settings"
 msgstr "Grafinio daugiakanalio EPG nustatymai"
