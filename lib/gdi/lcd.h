@@ -6,17 +6,25 @@
 #include <lib/gdi/erect.h>
 #include "gpixmap.h"
 
+#ifdef HAVE_GRAPHLCD
+#include <glcdgraphics/bitmap.h>
+#include <glcdgraphics/glcd.h>
+#include <glcdgraphics/image.h>
+#include <glcddrivers/config.h>
+#include <glcddrivers/driver.h>
+#include <glcddrivers/drivers.h>
+#include <glcdgraphics/extformats.h>
+#include <byteswap.h>
+#endif
+
+#ifdef NO_LCD
+#include <lib/driver/vfd.h>
+#endif
+
 #define LCD_CONTRAST_MIN 0
 #define LCD_CONTRAST_MAX 63
 #define LCD_BRIGHTNESS_MIN 0
 #define LCD_BRIGHTNESS_MAX 255
-
-enum op { LED_BRIGHTNESS = 0, LED_DEEPSTANDBY, LED_BLINKINGTIME };
-
-#define LED_IOCTL_BRIGHTNESS_NORMAL 0X10
-#define LED_IOCTL_BRIGHTNESS_DEEPSTANDBY 0X11
-#define LED_IOCTL_BLINKING_TIME 0X12
-#define LED_IOCTL_SET_DEFAULT 0x13
 
 class eLCD
 {
@@ -33,6 +41,9 @@ protected:
 	int locked;
 	static eLCD *instance;
 	void setSize(int xres, int yres, int bpp);
+#ifdef NO_LCD
+	evfd *vfd;
+#endif
 #endif
 public:
 	static eLCD *getInstance();
@@ -56,8 +67,12 @@ public:
 	int stride() { return _stride; };
 	virtual eSize size() { return res; };
 	virtual void update()=0;
+#ifndef NO_LCD
 #ifdef HAVE_TEXTLCD
 	virtual void renderText(ePoint start, const char *text);
+#endif
+#else
+	virtual void renderText(const char *text);
 #endif
 #endif
 };
@@ -66,6 +81,13 @@ class eDBoxLCD: public eLCD
 {
 	unsigned char inverted;
 	bool flipped;
+#ifdef HAVE_GRAPHLCD
+	GLCD::cDriver * lcd;
+	GLCD::cBitmap * bitmap;
+	int displayNumber;
+	int depth;
+	int width, height;
+#endif
 #ifdef SWIG
 	eDBoxLCD();
 	~eDBoxLCD();
@@ -77,7 +99,6 @@ public:
 #endif
 	int setLCDContrast(int contrast);
 	int setLCDBrightness(int brightness);
-	int setLED(int value, int option);
 	void setInverted( unsigned char );
 	void setFlipped(bool);
 	void dumpLCD(bool);

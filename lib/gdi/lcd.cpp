@@ -57,6 +57,7 @@ void eLCD::unlock()
 	locked = 0;
 }
 
+#ifndef NO_LCD
 #ifdef HAVE_TEXTLCD
 void eLCD::renderText(ePoint start, const char *text)
 {
@@ -71,10 +72,18 @@ void eLCD::renderText(ePoint start, const char *text)
 	}
 }
 #endif
+#else
+void eLCD::renderText(const char *text)
+{
+	//eDebug("[LCD] text: %s", text);
+	vfd->vfd_write_string(text, true);
+}
+#endif
 
+#ifndef HAVE_GRAPHLCD
 eDBoxLCD::eDBoxLCD()
 {
-	int xres = 132, yres = 64, bpp = 8;
+	int xres = 32, yres = 32, bpp = 8;
 	flipped = false;
 	inverted = 0;
 	lcd_type = 0;
@@ -132,6 +141,12 @@ eDBoxLCD::eDBoxLCD()
 		instance = this;
 		setSize(xres, yres, bpp);
 	}
+#endif
+	instance = this;
+
+	setSize(xres, yres, bpp);
+#ifdef NO_LCD
+	vfd = new evfd;
 #endif
 }
 
@@ -208,40 +223,22 @@ int eDBoxLCD::setLCDBrightness(int brightness)
 	return(0);
 }
 
-int eDBoxLCD::setLED(int value, int option)
-{
-	switch(option)
-	{
-		case LED_BRIGHTNESS:
-			eDebug("setLEDNormalState %d", value);
-			if(ioctl(lcdfd, LED_IOCTL_BRIGHTNESS_NORMAL, (unsigned char)value) < 0)
-				eDebug("[LED] can't set led brightness");
-			break;
-		case LED_DEEPSTANDBY:
-			eDebug("setLEDBlinkingTime %d", value);
-			if(ioctl(lcdfd, LED_IOCTL_BRIGHTNESS_DEEPSTANDBY, (unsigned char)value) < 0)
-				eDebug("[LED] can't set led deep standby");
-			break;
-		case LED_BLINKINGTIME:
-			eDebug("setLEDBlinkingTime %d", value);
-			if(ioctl(lcdfd, LED_IOCTL_BLINKING_TIME, (unsigned char)value) < 0)
-				eDebug("[LED] can't set led blinking time");
-			break;
-	}
-	return(0);
-}
-
 eDBoxLCD::~eDBoxLCD()
 {
+#ifndef NO_LCD
 	if (lcdfd >= 0)
 	{
 		close(lcdfd);
 		lcdfd = -1;
 	}
+#else
+	delete vfd;
+#endif
 }
 
 void eDBoxLCD::update()
 {
+#ifndef NO_LCD
 #ifndef HAVE_TEXTLCD
 	if (lcdfd < 0)
 		return;
@@ -321,9 +318,148 @@ void eDBoxLCD::update()
 		write(lcdfd, raw, 64 * 64);
 	}
 #endif
+#endif
 }
 
 void eDBoxLCD::dumpLCD(bool png)
 {
 	return;
 }
+
+#else
+
+void eDBoxLCD::setFlipped(bool onoff)
+{
+	flipped = onoff;
+	update();
+}
+
+/* **************************************************************** */
+/* Pearl LCD */
+
+eDBoxLCD::eDBoxLCD()
+{
+	eDebug("eDBoxLCD::eDBoxLCD >");
+
+	displayNumber = 0;
+	lcd_type = 1;
+
+	instance = this;
+
+	if (GLCD::Config.Load("/etc/graphlcd.conf") == false)
+	{
+		eDebug("Error loading config file!\n");
+		return;
+	}
+	if (GLCD::Config.driverConfigs.size() <= 0)
+	{
+		eDebug("ERROR: No displays specified in config file!\n");
+	}
+
+	GLCD::Config.driverConfigs[displayNumber].upsideDown ^= 0;
+	GLCD::Config.driverConfigs[displayNumber].invert ^= 0;
+
+	lcd = GLCD::CreateDriver(GLCD::Config.driverConfigs[displayNumber].id, &GLCD::Config.driverConfigs[displayNumber]);
+
+	if (!lcd)
+	{
+		eDebug("ERROR: Failed creating display object\n");
+		return;
+	}
+	if (lcd->Init() != 0)
+	{
+#if 0
+	// Returning an error here will break the code at various other places
+		eDebug("ERROR: Failed initializing display\n");
+		delete lcd;
+		lcd = NULL;
+		return;
+#endif
+	}
+	lcd->SetBrightness(GLCD::Config.driverConfigs[displayNumber].brightness);
+
+	lcd->GetFeature((std::string) "depth", depth);
+	width = GLCD::Config.driverConfigs[displayNumber].width;
+	height = GLCD::Config.driverConfigs[displayNumber].height;
+
+	eDebug("config -> (w %d, h %d)", width, height);
+
+	bitmap = new GLCD::cBitmap(width, height);
+	bitmap->Clear();
+
+	lcd->SetScreen(bitmap->Data(), bitmap->Width(), bitmap->Height());
+	lcd->Refresh(true);
+
+	lcdfd = 1; //needed for detected()
+	setSize(width, height, depth);
+
+	eDebug("eDBoxLCD::eDBoxLCD (w %d, h %d, depth %d)<", width, height, depth);
+}
+
+void eDBoxLCD::setInverted(unsigned char inv)
+{
+	eDebug("eDBoxLCD::setInverted");
+	inverted = inv;
+	update();
+}
+
+int eDBoxLCD::setLCDContrast(int contrast)
+{
+	eDebug("[LCD] setLCDContrast not supported");
+	return(0);
+}
+
+int eDBoxLCD::setLCDBrightness(int brightness)
+{
+	eDebug("eDBoxLCD::setLCDBrightness");
+/* fixme range check */
+	lcd->SetBrightness(brightness);
+	return(0);
+}
+
+eDBoxLCD::~eDBoxLCD()
+{
+	eDebug("eDBoxLCD::~eDBoxLCD");
+}
+
+eDBoxLCD *eDBoxLCD::getInstance()
+{
+	eDebug("eDBoxLCD::getInstance");
+	return instance;
+}
+
+void eDBoxLCD::update()
+{
+	if (lcdfd == 1)
+	{
+		bitmap->Clear();
+		for (int x = 0; x < width; x++)
+			for (int y = 0; y < height; y++)
+			{
+				__u16 *buf16  = (__u16 *) _buffer;
+#if BYTE_ORDER == LITTLE_ENDIAN
+				__u16 col16 = bswap_16(*((__u16 *)(((__u16*)buf16) + y * width + x)));
+#else
+				__u16 col16 = *((__u16*)(((__u16 *)buf16) + y * width + x));
+#endif
+				__u8 red, green, blue, alpha; 
+				__u32 color32;
+
+				/* BBBBB GGGGGG RRRRR */
+				blue  = ((col16 & 0xF800) >> 11) * ( 255 / 31);
+				green = ((col16 & 0x7E0) >> 5) * (255 / 63);
+				red   = (col16 & 0x1f) * (255 / 31);
+				alpha = 255;
+
+				color32 = alpha << 24 | red << 16 | green << 8 | blue;
+
+				if (inverted)
+					color32 = 0xFFFFFF - color32;
+
+				bitmap->DrawPixel(x, y, color32);
+			}
+		lcd->SetScreen(bitmap->Data(), bitmap->Width(), bitmap->Height());
+		lcd->Refresh(false); /* partial update */
+	}
+}
+#endif
