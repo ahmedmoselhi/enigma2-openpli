@@ -281,7 +281,7 @@ void *start_loop(void *arg)
 
 	// display signon string
 	blocked = true;
-	char str[] = "PLI";
+	char str[] = "E2";
 	int vfddev = open ("/dev/vfd", O_WRONLY);
 	write(vfddev, str, strlen(str));
 	close(vfddev);

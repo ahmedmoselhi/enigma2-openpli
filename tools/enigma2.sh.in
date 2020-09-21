@@ -5,7 +5,7 @@ exec_prefix=@exec_prefix@
 datarootdir=@datarootdir@
 
 # write -E2- on vfd display
-echo "-E2-" > /dev/vfd
+echo "OPENPLI" > /dev/vfd
 
 if [ -d /home/root ]; then
 	export HOME=/home/root
