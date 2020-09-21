@@ -1666,6 +1666,9 @@ msgstr "Cayman Islands"
 msgid "Center DVB subtitles"
 msgstr "Субтитры DVB по центру"
 
+msgid "Center text"
+msgstr "Текст  по центру"
+
 msgid "Center time-labels and remove date"
 msgstr "Отметка времени по центру без даты"
 
@@ -4706,11 +4709,17 @@ msgstr "Адаптер LAN"
 msgid "LAN connection"
 msgstr "Подключение LAN"
 
-msgid "LED on VFD display"
-msgstr "Светодиоды в рабочем режиме"
+msgid "LED display"
+msgstr "VFD экран"
 
-msgid "LED on VFD in standby"
-msgstr "Светодиоды в режиме ожидания"
+msgid "LED display configuration"
+msgstr "Конфигурация VFD экрана"
+
+msgid "LED display configuration for Spark"
+msgstr "Конфигурация VFD экрана"
+
+msgid "LED SETUP"
+msgstr "Настройка  VFD экрана"
 
 msgid "LNB"
 msgstr "Номер LNB"
@@ -6672,6 +6681,15 @@ msgstr "Красная кнопка..."
 msgid "Red colored"
 msgstr "Название сервиса красного цвета"
 
+msgid "Red LED during recording"
+msgstr "Красный светодиод во время записи"
+
+msgid "Red LED on in deep standby"
+msgstr "Красный светодиод в глубоком режиме ожидания"
+
+msgid "Red LED on in standby"
+msgstr "Красный светодиод в режиме ожидания"
+
 msgid "Reenter PIN"
 msgstr "Повтор ввода PIN-кода"
 
@@ -7275,6 +7293,9 @@ msgstr "Сканировать lamedb по спутникам с подключ�
 
 msgid "Scroll delay"
 msgstr "Время задержки прокрутки"
+
+msgid "Scroll text"
+msgstr "Прокрутка текста"
 
 msgid "Scroll repeats"
 msgstr "Количество повторов"
@@ -8023,10 +8044,10 @@ msgstr "Показывать уведомление, когда импорт к�
 msgid "Show notification when import channels was successful"
 msgstr "Показывать уведомление, когда импорт каналов удался"
 
-msgid "Show on VFD display"
+msgid "Show on LED display"
 msgstr "Отображать в рабочем режиме"
 
-msgid "Show on VFD in standby"
+msgid "Show on LED display in standby"
 msgstr "Отображать в режиме ожидания"
 
 msgid "Show packages to be upgraded"
@@ -8097,6 +8118,9 @@ msgstr "Показать радио плеер..."
 
 msgid "Show the tv player..."
 msgstr "Показать тв плеер..."
+
+msgid "Show this plugin in plugin menu"
+msgstr "Показать этот плагин в меню плагина"
 
 msgid "Show transponder info"
 msgstr "Показать инфо транспондера"
@@ -9776,6 +9800,9 @@ msgstr "Обновление каталога ПО"
 msgid "Upper case"
 msgstr "Верхний регистр"
 
+msgid "Uppercase letters only"
+msgstr "Только прописные буквы"
+
 #, fuzzy
 msgid "Uptime"
 msgstr "Таймер сна"
@@ -10968,6 +10995,9 @@ msgstr "черный список"
 msgid "blank"
 msgstr "ничего"
 
+msgid "blink"
+msgstr "мигать"
+
 msgid "blue"
 msgstr "синий"
 
@@ -10997,6 +11027,9 @@ msgstr "название канала"
 
 msgid "channel number"
 msgstr "номер канала"
+
+msgid "channel number and name"
+msgstr "номер канала и имя"
 
 msgid "chapters"
 msgstr "разделы"
@@ -11031,6 +11064,9 @@ msgstr "подтверждено"
 msgid "connected"
 msgstr "подключено"
 
+msgid "continuous"
+msgstr "постоянная"
+
 msgid "controlled by HDMI"
 msgstr "управляемый по HDMI"
 
@@ -11040,8 +11076,14 @@ msgstr "приготовление"
 msgid "daily"
 msgstr "ежедневно"
 
+msgid "date"
+msgstr "дата"
+
 msgid "day"
 msgstr "день"
+
+msgid "day and date"
+msgstr "день и дата"
 
 msgid "default"
 msgstr "по умолчанию"
@@ -11454,6 +11496,9 @@ msgstr "без теста"
 msgid "not_tested"
 msgstr "без теста"
 
+msgid "nothing"
+msgstr "ничего"
+
 msgid "nothing connected"
 msgstr "ничего не подключено"
 
@@ -11745,6 +11790,15 @@ msgstr "эта запись"
 
 msgid "this service is protected by a parental control pin"
 msgstr "этот сервис защищен PIN-кодом родительского контроля"
+
+msgid "time"
+msgstr "время"
+
+msgid "time and date"
+msgstr "время и дата"
+
+msgid "time, day and date"
+msgstr "время, день и дата"
 
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "переключение времени, главы, аудио, иформации субтитров"
