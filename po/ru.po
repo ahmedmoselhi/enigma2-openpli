@@ -3758,6 +3758,9 @@ msgstr "Скорость перемотки вперед"
 msgid "Favourites"
 msgstr "Фавориты"
 
+msgid "FFmpeg Version"
+msgstr "Версия FFmpeg"
+
 msgid "Fiji"
 msgstr "Fiji"
 
