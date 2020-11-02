@@ -47,6 +47,7 @@ class hotkey:
 		( "USB" + _("long"), "usb_long", ""),
 		( "Portal " ,"portal", ""),
 		( "Portal " + _("long"), "portal_long", ""),
+		("Fast", "fast", ""),
 		( "Timeshift", "time", ""),
 		( "Info", "info", "Infobar/openEventView"),
 		("Rec", "rec", ""),
