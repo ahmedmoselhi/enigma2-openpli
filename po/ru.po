@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-16 00:59+0200\n"
-"PO-Revision-Date: 2019-07-25 17:52+0300\n"
+"POT-Creation-Date: 2020-10-10 21:34+0200\n"
+"PO-Revision-Date: 2020-09-06 21:40+0300\n"
 "Last-Translator: Dimitrij <Dima-73@inbox.lv>\n"
 "Language-Team: openPLi Dimitrij\n"
 "Language: ru\n"
@@ -844,6 +844,9 @@ msgstr "Добавить в родительский контроль"
 msgid "Add/remove change timer for current event"
 msgstr "Добавить/удалить/изменить таймер для текущего события"
 
+msgid "Additional cable of motorized LNB"
+msgstr "Дополнительный кабель от LNB на моторе"
+
 msgid "Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move the dish from one satellite to another satellite."
 msgstr "Дополнительные опции позволяют вводить детали из спецификации вашего мотора, поэтому энигма может подсчитать, сколько времени потребуется, чтобы переместить тарелку с одного спутника на другой."
 
@@ -1253,6 +1256,9 @@ msgstr "Авто выбор языка"
 
 msgid "Auto play blu-ray file"
 msgstr "Авто проигрывание blu-ray файла"
+
+msgid "Auto play last service in radio mode"
+msgstr "Авто включение последнего сервиса в режиме радио"
 
 msgid "Auto scart switching"
 msgstr "Автоматическое переключение SCART"
@@ -1665,6 +1671,9 @@ msgstr "Cayman Islands"
 
 msgid "Center DVB subtitles"
 msgstr "Субтитры DVB по центру"
+
+msgid "Center text"
+msgstr "Текст  по центру"
 
 msgid "Center time-labels and remove date"
 msgstr "Отметка времени по центру без даты"
@@ -3755,6 +3764,9 @@ msgstr "Скорость перемотки вперед"
 msgid "Favourites"
 msgstr "Фавориты"
 
+msgid "FFmpeg version: "
+msgstr "Версия FFmpeg: "
+
 msgid "Fiji"
 msgstr "Fiji"
 
@@ -3827,7 +3839,7 @@ msgid "Following tasks will be done after you press OK!"
 msgstr "Выполнение процесса начнется после того, как вы нажмете ОК!"
 
 msgid "Force legacy signal stats"
-msgstr "Применять устаревшую статистику вывода сигналов"
+msgstr "Статистика уровня snr/db из E2(если поддерживается)"
 
 msgid "Format"
 msgstr "Формат"
@@ -3839,7 +3851,7 @@ msgid "Frame size in full view"
 msgstr "Размер рамки при просмотре во весь экран"
 
 msgid "France"
-msgstr "романс"
+msgstr "France"
 
 msgid "French"
 msgstr "French"
@@ -4003,9 +4015,8 @@ msgstr "Переход на позицию 0"
 msgid "Goto X"
 msgstr "Переход на позицию Х"
 
-#, fuzzy
 msgid "Goto down service"
-msgstr "Перейти на последний сервис"
+msgstr "Перейти на сервис ниже"
 
 msgid "Goto index position"
 msgstr "Переход на номер позиции"
@@ -4031,9 +4042,8 @@ msgstr "Переход прайм-тайм/сейчас"
 msgid "Goto specific date/time"
 msgstr "Переход на конкретную дату/время"
 
-#, fuzzy
 msgid "Goto up service"
-msgstr "Перейти на последний сервис"
+msgstr "Перейти на сервис выше"
 
 msgid "Goto:"
 msgstr "Куда:"
@@ -4708,11 +4718,17 @@ msgstr "Адаптер LAN"
 msgid "LAN connection"
 msgstr "Подключение LAN"
 
-msgid "LED on VFD display"
-msgstr "Светодиоды в рабочем режиме"
+msgid "LED display"
+msgstr "VFD экран"
 
-msgid "LED on VFD in standby"
-msgstr "Светодиоды в режиме ожидания"
+msgid "LED display configuration"
+msgstr "Конфигурация VFD экрана"
+
+msgid "LED display configuration for Spark"
+msgstr "Конфигурация VFD экрана"
+
+msgid "LED SETUP"
+msgstr "Настройка  VFD экрана"
 
 msgid "LNB"
 msgstr "Номер LNB"
@@ -5762,13 +5778,13 @@ msgid "Open the movie list"
 msgstr "Открыть список видео"
 
 msgid "Operating LED status in deep standby mode"
-msgstr ""
+msgstr "Состояние LED в режиме глубокого ожидания"
 
 msgid "Operating LED status in standby mode"
-msgstr ""
+msgstr "Состояние LED в режиме ожидания"
 
 msgid "Operating LED status while running."
-msgstr ""
+msgstr "Состояние LED в режиме работы"
 
 msgid "Opkg"
 msgstr "Opkg"
@@ -5823,6 +5839,9 @@ msgstr "PGS файл"
 
 msgid "PGS file"
 msgstr "PGS файл"
+
+msgid "PID Filtering"
+msgstr "PID фильтрация(для высокоскоростных частот)"
 
 msgid "PIN code needed"
 msgstr "Необходим PIN-код"
@@ -6674,6 +6693,15 @@ msgstr "Красная кнопка..."
 msgid "Red colored"
 msgstr "Название сервиса красного цвета"
 
+msgid "Red LED during recording"
+msgstr "Красный светодиод во время записи"
+
+msgid "Red LED on in deep standby"
+msgstr "Красный светодиод в глубоком режиме ожидания"
+
+msgid "Red LED on in standby"
+msgstr "Красный светодиод в режиме ожидания"
+
 msgid "Reenter PIN"
 msgstr "Повтор ввода PIN-кода"
 
@@ -6700,9 +6728,6 @@ msgstr "Регион"
 
 msgid "Relative"
 msgstr "относительная"
-
-msgid "Relevant PIDs routing"
-msgstr "Соответствующая маршрутизация PIDs"
 
 msgid "Reload"
 msgstr "Обновить"
@@ -7036,7 +7061,7 @@ msgid "SCPC optimized search range"
 msgstr "SCPC оптимизированный диапазон поиска"
 
 msgid "SCR (Unicable/JESS)"
-msgstr "SCR (Unicable/JESS"
+msgstr "SCR (Unicable/JESS)"
 
 msgid "SCR JESS"
 msgstr "SCR JESS"
@@ -7277,6 +7302,9 @@ msgstr "Сканировать lamedb по спутникам с подключ�
 
 msgid "Scroll delay"
 msgstr "Время задержки прокрутки"
+
+msgid "Scroll text"
+msgstr "Прокрутка текста"
 
 msgid "Scroll repeats"
 msgstr "Количество повторов"
@@ -7596,7 +7624,7 @@ msgid "Select video mode"
 msgstr "Выберите видеорежим"
 
 msgid "Select whether your SCR device is externally powered."
-msgstr ""
+msgstr "Выберите, имеет ли Ваше устройство SCR внешнее питание."
 
 msgid "Select wireless network"
 msgstr "Выберите беспроводную сеть"
@@ -7998,9 +8026,6 @@ msgstr "Показать медиаплеер в главном меню"
 msgid "Show menu or plugin numbers"
 msgstr "Показать номера меню или плагинов"
 
-msgid "Show menu paths"
-msgstr "Показывать путь к меню"
-
 msgid "Show message when recording starts"
 msgstr "Показать сообщение при начале записи"
 
@@ -8025,10 +8050,10 @@ msgstr "Показывать уведомление, когда импорт к�
 msgid "Show notification when import channels was successful"
 msgstr "Показывать уведомление, когда импорт каналов удался"
 
-msgid "Show on VFD display"
+msgid "Show on LED display"
 msgstr "Отображать в рабочем режиме"
 
-msgid "Show on VFD in standby"
+msgid "Show on LED display in standby"
 msgstr "Отображать в режиме ожидания"
 
 msgid "Show packages to be upgraded"
@@ -8052,6 +8077,10 @@ msgstr "Показать иконки записей"
 msgid "Show record indicator"
 msgstr "Показать индикатор записи"
 
+#, fuzzy
+msgid "Show screen path"
+msgstr "Показывать путь к меню"
+
 msgid "Show screensaver"
 msgstr "Запустить хранитель экрана через"
 
@@ -8063,9 +8092,6 @@ msgstr "Показать второй инфобар"
 
 msgid "Show service list"
 msgstr "Показать список сервисов"
-
-msgid "Show service name and event description among each other instead of side by side."
-msgstr ""
 
 msgid "Show service type icons"
 msgstr "Показать иконки типа сервиса"
@@ -8097,8 +8123,14 @@ msgstr "Показать символы на дисплее"
 msgid "Show the radio player..."
 msgstr "Показать радио плеер..."
 
+msgid "Show the service information on two lines in the channel selection screen. You can choose between the current event description below the channel name, or the current event description next to the channel name, and the next event description on the second line."
+msgstr ""
+
 msgid "Show the tv player..."
 msgstr "Показать тв плеер..."
+
+msgid "Show this plugin in plugin menu"
+msgstr "Показать этот плагин в меню плагина"
 
 msgid "Show transponder info"
 msgstr "Показать инфо транспондера"
@@ -8180,6 +8212,10 @@ msgstr "Одиночный"
 
 msgid "Single EPG"
 msgstr "Одиночное EPG"
+
+#, fuzzy
+msgid "Single line mode"
+msgstr "Выберите видеорежим"
 
 msgid "Single satellite"
 msgstr "Одиночный спутник"
@@ -8690,6 +8726,13 @@ msgstr "Вс"
 msgid "Sunday"
 msgstr "Воскресенье"
 
+msgid ""
+"Sundtek - hardware blind scan in progress.\n"
+"Please wait(3-20 min) for the scan to finish."
+msgstr ""
+"Sundtek - аппаратное слепое сканирование в процессе.\n"
+"Пожалуйста, подождите (около 3-20 мин), пока сканирование завершится."
+
 msgid "Suriname"
 msgstr "Suriname"
 
@@ -8820,11 +8863,11 @@ msgid "T2MI RAW Mode"
 msgstr "T2MI RAW режим"
 
 msgid "TEXT"
-msgstr ""
+msgstr "TEXT"
 
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
 msgid "TRANSLATOR_INFO"
-msgstr "Дмитрий - 11.04.2019"
+msgstr "Dimitrij - 23.08.2020"
 
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "TS файл слишком большой для ISO9660 level 1!"
@@ -9182,8 +9225,9 @@ msgstr "Эта опция позволяет Вам показывать все 
 msgid "This option allows you to show menu and/or plugin number quick links."
 msgstr "Эта опция позволяет показать номер меню и/или плагина, для быстрого перехода на него, через цифровые кнопки."
 
-msgid "This option allows you to show menu paths."
-msgstr "Эта опция позволяет показать путь к меню."
+#, fuzzy
+msgid "This option allows you to show the full screen path leading to the current screen."
+msgstr "Эта опция позволяет вам увеличивать зеленые тона изображения."
 
 msgid "This option allows you to view the old and new settings side by side."
 msgstr "Эта опция позволяет вам просматривать старые и новые настройки рядом друг с другом."
@@ -9609,6 +9653,14 @@ msgstr "Tuvalu"
 msgid "Two"
 msgstr "Два"
 
+#, fuzzy
+msgid "Two lines"
+msgstr "показать инфолинию"
+
+#, fuzzy
+msgid "Two lines and next event"
+msgstr "Перейти к следующему событию"
+
 msgid "Type"
 msgstr "Тип"
 
@@ -9777,6 +9829,9 @@ msgstr "Обновление каталога ПО"
 
 msgid "Upper case"
 msgstr "Верхний регистр"
+
+msgid "Uppercase letters only"
+msgstr "Только прописные буквы"
 
 #, fuzzy
 msgid "Uptime"
@@ -10363,6 +10418,9 @@ msgstr "Если это включено, то http стрим потоки де
 msgid "When enabled, it is possible to leave the movieplayer with exit."
 msgstr "Если включено, то можно закрыть видеоплеер с помощью кнопки выход."
 
+msgid "When enabled, it will automatically play to the last saved radio service when switching to radio mode."
+msgstr "Если это включено,то при переключении в режим радио автоматически произойдет воспроизведение последнего сохраненного радио сервиса."
+
 msgid "When enabled, measure power consumption to detect when the rotor stops turning (when supported by the tuner)."
 msgstr "Если включено, используется измерение мощности для обнаружения, когда ротор перестал поворачиваться (если есть поддержка в ресивере)."
 
@@ -10686,7 +10744,7 @@ msgid "You must switch to the service %s (%s - '%s')!\n"
 msgstr "Вам необходимо переключить на сервис %s (%s - '%s')!\n"
 
 msgid "You seem to be in timeshift!"
-msgstr ""
+msgstr "Внимание, таймшифт включен, идет сдвиг времени!"
 
 msgid "Your collection exceeds the size of a single layer medium, you will need a blank dual layer DVD!"
 msgstr "Ваша коллекция превышает размер однослойного диска. Вам необходим чистый двух слойный DVD!"
@@ -10876,6 +10934,9 @@ msgstr "активно"
 msgid "actual time only"
 msgstr "только фактическое время"
 
+msgid "additional cable of rotor"
+msgstr "дополнительный кабель от мотора"
+
 msgid "adult movie/drama"
 msgstr "эротический фтльм/драма"
 
@@ -10970,6 +11031,9 @@ msgstr "черный список"
 msgid "blank"
 msgstr "ничего"
 
+msgid "blink"
+msgstr "мигать"
+
 msgid "blue"
 msgstr "синий"
 
@@ -10999,6 +11063,9 @@ msgstr "название канала"
 
 msgid "channel number"
 msgstr "номер канала"
+
+msgid "channel number and name"
+msgstr "номер канала и имя"
 
 msgid "chapters"
 msgstr "разделы"
@@ -11033,6 +11100,9 @@ msgstr "подтверждено"
 msgid "connected"
 msgstr "подключено"
 
+msgid "continuous"
+msgstr "постоянная"
+
 msgid "controlled by HDMI"
 msgstr "управляемый по HDMI"
 
@@ -11042,8 +11112,14 @@ msgstr "приготовление"
 msgid "daily"
 msgstr "ежедневно"
 
+msgid "date"
+msgstr "дата"
+
 msgid "day"
 msgstr "день"
+
+msgid "day and date"
+msgstr "день и дата"
 
 msgid "default"
 msgstr "по умолчанию"
@@ -11456,6 +11532,9 @@ msgstr "без теста"
 msgid "not_tested"
 msgstr "без теста"
 
+msgid "nothing"
+msgstr "ничего"
+
 msgid "nothing connected"
 msgstr "ничего не подключено"
 
@@ -11572,6 +11651,9 @@ msgstr "рок/поп"
 
 msgid "romance"
 msgstr "романс"
+
+msgid "rotor"
+msgstr "мотор"
 
 msgid "running"
 msgstr "запущено"
@@ -11747,6 +11829,15 @@ msgstr "эта запись"
 
 msgid "this service is protected by a parental control pin"
 msgstr "этот сервис защищен PIN-кодом родительского контроля"
+
+msgid "time"
+msgstr "время"
+
+msgid "time and date"
+msgstr "время и дата"
+
+msgid "time, day and date"
+msgstr "время, день и дата"
 
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "переключение времени, главы, аудио, иформации субтитров"

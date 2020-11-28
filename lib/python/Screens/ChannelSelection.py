@@ -1724,7 +1724,7 @@ class ChannelSelectionBase(Screen):
 
 	def toggleTwoLines(self):
 		if config.usage.setup_level.index > 1 and not self.pathChangeDisabled and self.servicelist.mode == self.servicelist.MODE_FAVOURITES:
-			config.usage.servicelist_twolines.value = not config.usage.servicelist_twolines.value
+			config.usage.servicelist_twolines.selectNext()
 			config.usage.servicelist_twolines.save()
 		else:
 			return 0
@@ -2539,7 +2539,10 @@ class ChannelSelectionRadio(ChannelSelectionBase, ChannelSelectionEdit, ChannelS
 		lastservice = eServiceReference(config.radio.lastservice.value)
 		if lastservice.valid():
 			self.servicelist.setCurrent(lastservice)
-			self.session.nav.playService(lastservice)
+			if config.usage.e1like_radio_mode_last_play.value:
+				self.session.nav.playService(lastservice)
+			else:
+				self.session.nav.stopService()
 		else:
 			self.session.nav.stopService()
 		self.info.show()

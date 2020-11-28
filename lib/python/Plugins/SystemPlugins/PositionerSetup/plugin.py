@@ -1,4 +1,4 @@
-from enigma import eTimer, eDVBSatelliteEquipmentControl, eDVBResourceManager, eDVBDiseqcCommand, eDVBFrontendParametersSatellite, eDVBFrontendParameters, iDVBFrontend
+from enigma import eTimer, eDVBSatelliteEquipmentControl, eDVBResourceManager, eDVBDiseqcCommand, eDVBFrontendParametersSatellite, iDVBFrontend
 
 from Screens.Screen import Screen
 from Screens.MessageBox import MessageBox
@@ -108,9 +108,12 @@ class PositionerSetup(Screen):
 					self.oldref_stop = True
 				else:
 					for n in nimmanager.nim_slots:
-						if n.config_mode in ("loopthrough", "satposdepends"):
-							root_id = nimmanager.sec.getRoot(n.slot_id, int(n.config.connectedTo.value))
-							if int(n.config.connectedTo.value) == self.feid:
+						try:
+							advanced_satposdepends = n.config_mode == 'advanced' and int(n.config.advanced.sat[3607].lnb.value) != 0
+						except:
+							advanced_satposdepends = False
+						if n.config_mode in ("loopthrough", "satposdepends") or advanced_satposdepends:
+							if n.config.connectedTo.value and int(n.config.connectedTo.value) == self.feid:
 								self.oldref_stop = True
 				if self.oldref_stop:
 					self.session.nav.stopService() # try to disable foreground service
@@ -212,7 +215,7 @@ class PositionerSetup(Screen):
 		if self.rotor_pos:
 			if hasattr(eDVBSatelliteEquipmentControl.getInstance(), "getTargetOrbitalPosition"):
 				current_pos = eDVBSatelliteEquipmentControl.getInstance().getTargetOrbitalPosition()
-				if current_pos != 0 and current_pos != config.misc.lastrotorposition.value:
+				if current_pos in self.availablesats and current_pos != config.misc.lastrotorposition.value:
 					config.misc.lastrotorposition.value = current_pos
 					config.misc.lastrotorposition.save()
 			text = _("Current rotor position: ") + self.OrbToStr(config.misc.lastrotorposition.value)
@@ -701,7 +704,7 @@ class PositionerSetup(Screen):
 		elif entry == "storage":
 			if self.advanced and self.getUsals() is False:
 				self.printMsg(_("Allocate unused memory index"))
-				while(True):
+				while True:
 					if not len(self.allocatedIndices):
 						for sat in self.availablesats:
 							usals = self.advancedsats[sat].usals.value
@@ -1554,52 +1557,48 @@ class RotorNimSelection(Screen):
 			<widget name="nimlist" position="20,10" size="360,100" />
 		</screen>"""
 
-	def __init__(self, session):
+	def __init__(self, session, nimList):
 		Screen.__init__(self, session)
 		self.setTitle(_("Select slot"))
-		nimlist = nimmanager.getNimListOfType("DVB-S")
 		nimMenuList = []
-		for x in nimlist:
-			if len(nimmanager.getRotorSatListForNim(x)) != 0:
-				nimMenuList.append((nimmanager.nim_slots[x].friendly_full_description, x))
+		for nim in nimList:
+			nimMenuList.append((nimmanager.nim_slots[nim].friendly_full_description, nim))
 
 		self["nimlist"] = MenuList(nimMenuList)
 
 		self["actions"] = ActionMap(["OkCancelActions"],
 		{
-			"ok": self.okbuttonClick ,
+			"ok": self.okbuttonClick,
 			"cancel": self.close
 		}, -1)
 
 	def okbuttonClick(self):
-		selection = self["nimlist"].getCurrent()
-		self.session.open(PositionerSetup, selection[1])
+		self.session.openWithCallback(self.close, PositionerSetup, self["nimlist"].getCurrent()[1])
+
+def getUsableRotorNims(only_first=False):
+	usableRotorNims = []
+	nimList = nimmanager.getNimListOfType("DVB-S")
+	for nim in nimList:
+		if nimmanager.getRotorSatListForNim(nim):
+			usableRotorNims.append(nim)
+			if only_first:
+				break
+	return usableRotorNims
 
 def PositionerMain(session, **kwargs):
-	nimList = nimmanager.getNimListOfType("DVB-S")
-	if len(nimList) == 0:
-		session.open(MessageBox, _("No positioner capable frontend found."), MessageBox.TYPE_ERROR)
-	else:
-		usableNims = []
-		for x in nimList:
-			configured_rotor_sats = nimmanager.getRotorSatListForNim(x)
-			if len(configured_rotor_sats) != 0:
-				usableNims.append(x)
-		if len(usableNims) == 1:
-			session.open(PositionerSetup, usableNims[0])
-		elif len(usableNims) > 1:
-			session.open(RotorNimSelection)
-		else:
-			session.open(MessageBox, _("No tuner is configured for use with a diseqc positioner!"), MessageBox.TYPE_ERROR)
+	usableRotorNims = getUsableRotorNims()
+	if len(usableRotorNims) == 1:
+		session.open(PositionerSetup, usableRotorNims[0])
+	elif len(usableRotorNims) > 1:
+		session.open(RotorNimSelection, usableRotorNims)
 
 def PositionerSetupStart(menuid, **kwargs):
-	if menuid == "scan" and nimmanager.somethingConnected():
+	if menuid == "scan" and getUsableRotorNims(True):
 		return [(_("Positioner setup"), PositionerMain, "positioner_setup", None)]
-	else:
-		return []
+	return []
 
 def Plugins(**kwargs):
-	if (nimmanager.hasNimType("DVB-S")):
+	if nimmanager.hasNimType("DVB-S"):
 		return PluginDescriptor(name=_("Positioner setup"), description = _("Setup your positioner"), where = PluginDescriptor.WHERE_MENU, needsRestart = False, fnc = PositionerSetupStart)
 	else:
 		return []

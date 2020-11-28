@@ -297,6 +297,10 @@ eventData::~eventData()
 		if ( it != descriptors.end() )
 		{
 			DescriptorPair &p = it->second;
+			if (p.reference_count == 0)
+			{
+				eDebug("[eEPGCache] Eventdata reference count is already zero!");
+			}
 			if (!--p.reference_count) // no more used descriptor
 			{
 				CacheSize -= it->second.data[1];
@@ -383,7 +387,7 @@ static pthread_mutex_t channel_map_lock =
 DEFINE_REF(eEPGCache)
 
 eEPGCache::eEPGCache()
-	:messages(this,1), cleanTimer(eTimer::create(this)), m_running(false)
+	:messages(this,1), cleanTimer(eTimer::create(this)), m_running(false), m_timeQueryRef(nullptr)
 {
 	eDebug("[eEPGCache] Initialized EPGCache (wait for setCacheFile call now)");
 
@@ -1025,18 +1029,18 @@ next:
 		if ( servicemap.byEvent.size() != servicemap.byTime.size() )
 		{
 			{
-				CFile f("/hdd/event_map.txt", "w+");
+				CFile f("/media/hdd/event_map.txt", "w+");
 				int i = 0;
-				for (eventMap::iterator it(servicemap.first.begin()); it != servicemap.first.end(); ++it )
+				for (eventMap::iterator it(servicemap.byEvent.begin()); it != servicemap.byEvent.end(); ++it )
 				{
 					fprintf(f, "%d(key %d) -> time %d, event_id %d, data %p\n",
 					i++, (int)it->first, (int)it->second->getStartTime(), (int)it->second->getEventID(), it->second );
 				}
 			}
 			{
-				CFile f("/hdd/time_map.txt", "w+");
+				CFile f("/media/hdd/time_map.txt", "w+");
 				int i = 0;
-				for (timeMap::iterator it(servicemap.second.begin()); it != servicemap.second.end(); ++it )
+				for (timeMap::iterator it(servicemap.byTime.begin()); it != servicemap.byTime.end(); ++it )
 				{
 					fprintf(f, "%d(key %d) -> time %d, event_id %d, data %p\n",
 						i++, (int)it->first, (int)it->second->getStartTime(), (int)it->second->getEventID(), it->second );
@@ -1044,7 +1048,7 @@ next:
 			}
 			eFatal("[eEPGCache] (1)map sizes not equal :( sid %04x tsid %04x onid %04x size %zu size2 %zu",
 				service.sid, service.tsid, service.onid,
-				servicemap.first.size(), servicemap.second.size() );
+				servicemap.byEvent.size(), servicemap.byTime.size() );
 		}
 #endif
 		ptr += eit_event_size;
@@ -1052,12 +1056,35 @@ next:
 	}
 }
 
-void eEPGCache::flushEPG(const uniqueEPGKey & s)
+// epg cache needs to be locked(cache_lock) before calling the procedure
+void eEPGCache::clearCompleteEPGCache()
+{
+	// cache_lock needs to be set in calling procedure!
+	for (eventCache::iterator it(eventDB.begin()); it != eventDB.end(); ++it)
+	{
+		eventMap &evMap = it->second.byEvent;
+		timeMap &tmMap = it->second.byTime;
+		for (eventMap::iterator i = evMap.begin(); i != evMap.end(); ++i)
+			delete i->second;
+		evMap.clear();
+		tmMap.clear();
+	}
+	eventDB.clear();
+#ifdef ENABLE_PRIVATE_EPG
+	content_time_tables.clear();
+#endif
+	channelLastUpdated.clear();
+	singleLock m(channel_map_lock);
+	for (ChannelMap::const_iterator it(m_knownChannels.begin()); it != m_knownChannels.end(); ++it)
+		it->second->startEPG();
+}
+
+void eEPGCache::flushEPG(const uniqueEPGKey & s, bool lock) // lock only affects complete flush
 {
 	eDebug("[eEPGCache] flushEPG %d", (int)(bool)s);
-	singleLock l(cache_lock);
 	if (s)  // clear only this service
 	{
+		singleLock l(cache_lock);
 		eventCache::iterator it = eventDB.find(s);
 		if ( it != eventDB.end() )
 		{
@@ -1083,24 +1110,13 @@ void eEPGCache::flushEPG(const uniqueEPGKey & s)
 	}
 	else // clear complete EPG Cache
 	{
-		for (eventCache::iterator it(eventDB.begin());
-			it != eventDB.end(); ++it)
+		if (lock)
 		{
-			eventMap &evMap = it->second.byEvent;
-			timeMap &tmMap = it->second.byTime;
-			for (eventMap::iterator i = evMap.begin(); i != evMap.end(); ++i)
-				delete i->second;
-			evMap.clear();
-			tmMap.clear();
+			singleLock l(cache_lock);
+			clearCompleteEPGCache();
 		}
-		eventDB.clear();
-#ifdef ENABLE_PRIVATE_EPG
-		content_time_tables.clear();
-#endif
-		channelLastUpdated.clear();
-		singleLock m(channel_map_lock);
-		for (ChannelMap::const_iterator it(m_knownChannels.begin()); it != m_knownChannels.end(); ++it)
-			it->second->startEPG();
+		else
+			clearCompleteEPGCache();
 	}
 }
 
@@ -1323,7 +1339,7 @@ static const char* EPGDAT_IN_FLASH = "/epg.dat";
 void eEPGCache::load()
 {
 	if (m_filename.empty())
-		m_filename = "/hdd/epg.dat";
+		m_filename = "/media/hdd/epg.dat";
 	const char* EPGDAT = m_filename.c_str();
 	std::string filenamex = m_filename + ".loading";
 	const char* EPGDATX = filenamex.c_str();
@@ -1363,6 +1379,10 @@ void eEPGCache::load()
 		if ( !memcmp( text1, "ENIGMA_EPG_V7", 13) )
 		{
 			singleLock s(cache_lock);
+			if (eventDB.size() > 0)
+			{
+				clearCompleteEPGCache();
+			}
 			ret = fread( &size, sizeof(int), 1, f);
 			eventDB.rehash(size); /* Reserve buckets in advance */
 			while(size--)
@@ -1500,6 +1520,8 @@ void eEPGCache::save()
 	}
 
 	free(buf);
+
+	singleLock lockcache(cache_lock);
 
 	int cnt=0;
 	unsigned int magic = 0x98765432;
@@ -2238,9 +2260,12 @@ void eEPGCache::channel_data::OPENTV_SummariesSection(const uint8_t *d)
 void eEPGCache::channel_data::cleanupOPENTV()
 {
 	m_OPENTV_Timer->stop();
-	m_OPENTV_ChannelsReader->stop();
-	m_OPENTV_TitlesReader->stop();
-	m_OPENTV_SummariesReader->stop();
+	if (m_OPENTV_ChannelsReader)
+		m_OPENTV_ChannelsReader->stop();
+	if (m_OPENTV_TitlesReader)
+		m_OPENTV_TitlesReader->stop();
+	if (m_OPENTV_SummariesReader)
+		m_OPENTV_SummariesReader->stop();
 	m_OPENTV_ChannelsConn = NULL;
 	m_OPENTV_TitlesConn = NULL;
 	m_OPENTV_SummariesConn = NULL;
@@ -2965,56 +2990,136 @@ RESULT eEPGCache::lookupEventId(const eServiceReference &service, int event_id, 
 RESULT eEPGCache::startTimeQuery(const eServiceReference &service, time_t begin, int minutes)
 {
 	singleLock s(cache_lock);
-	const eServiceReferenceDVB &ref = (const eServiceReferenceDVB&)handleGroup(service);
+
+	if (m_timeQueryRef)
+		delete m_timeQueryRef;
+	m_timeQueryRef = (eServiceReferenceDVB*)new eServiceReference(handleGroup(service));
+
 	if (begin == -1)
 		begin = ::time(0);
-	eventCache::iterator It = eventDB.find(ref);
+
+	m_timeQueryBegin = begin;
+	m_timeQueryMinutes = minutes;
+	m_timeQueryCount = 0;
+
+	eventCache::iterator It = eventDB.find(*m_timeQueryRef);
 	if ( It != eventDB.end() && !It->second.byTime.empty() )
 	{
-		m_timemap_cursor = It->second.byTime.lower_bound(begin);
-		if ( m_timemap_cursor != It->second.byTime.end() )
+		timeMap::iterator timemap_it = It->second.byTime.lower_bound(m_timeQueryBegin);
+		if ( timemap_it != It->second.byTime.end() )
 		{
-			if ( m_timemap_cursor->first != begin )
+			if ( timemap_it->first != m_timeQueryBegin )
 			{
-				timeMap::iterator x = m_timemap_cursor;
+				timeMap::iterator x = timemap_it;
 				--x;
 				if ( x != It->second.byTime.end() )
 				{
 					time_t start_time = x->first;
-					if ( begin > start_time && begin < (start_time+x->second->getDuration()))
-						m_timemap_cursor = x;
+					if ( m_timeQueryBegin > start_time && m_timeQueryBegin < (start_time+x->second->getDuration()))
+						timemap_it = x;
 				}
 			}
 		}
 
-		if (minutes != -1)
-			m_timemap_end = It->second.byTime.lower_bound(begin+minutes*60);
+		timeMap::iterator timemap_end;
+		if (m_timeQueryMinutes != -1)
+			timemap_end = It->second.byTime.lower_bound(m_timeQueryBegin + m_timeQueryMinutes * 60);
 		else
-			m_timemap_end = It->second.byTime.end();
+			timemap_end = It->second.byTime.end();
 
-		currentQueryTsidOnid = (ref.getTransportStreamID().get()<<16) | ref.getOriginalNetworkID().get();
-		return m_timemap_cursor == m_timemap_end ? -1 : 0;
+		return timemap_it == timemap_end ? -1 : 0;
 	}
 	return -1;
 }
 
 RESULT eEPGCache::getNextTimeEntry(Event *&result)
 {
-	if ( m_timemap_cursor != m_timemap_end )
+	singleLock s(cache_lock);
+	eventCache::iterator It = eventDB.find(*m_timeQueryRef);
+	if ( It != eventDB.end() && !It->second.byTime.empty() )
 	{
-		result = new Event((uint8_t*)m_timemap_cursor++->second->get());
-		return 0;
+		timeMap::iterator timemap_it = It->second.byTime.lower_bound(m_timeQueryBegin);
+		if ( timemap_it != It->second.byTime.end() )
+		{
+			if ( timemap_it->first != m_timeQueryBegin )
+			{
+				timeMap::iterator x = timemap_it;
+				--x;
+				if ( x != It->second.byTime.end() )
+				{
+					time_t start_time = x->first;
+					if ( m_timeQueryBegin > start_time && m_timeQueryBegin < (start_time+x->second->getDuration()))
+						timemap_it = x;
+				}
+			}
+		}
+
+		timeMap::iterator timemap_end;
+		if (m_timeQueryMinutes != -1)
+			timemap_end = It->second.byTime.lower_bound(m_timeQueryBegin + m_timeQueryMinutes * 60);
+		else
+			timemap_end = It->second.byTime.end();
+
+		for (int i = 0; i < m_timeQueryCount; i++)
+		{
+			if ( timemap_it == timemap_end )
+				return -1;
+			else
+				timemap_it++;
+		}
+		if ( timemap_it != timemap_end )
+		{
+			result = new Event((uint8_t*)timemap_it->second->get());
+			m_timeQueryCount++;
+			return 0;
+		}
 	}
 	return -1;
 }
 
 RESULT eEPGCache::getNextTimeEntry(ePtr<eServiceEvent> &result)
 {
-	if ( m_timemap_cursor != m_timemap_end )
+	singleLock s(cache_lock);
+	eventCache::iterator It = eventDB.find(*m_timeQueryRef);
+	if ( It != eventDB.end() && !It->second.byTime.empty() )
 	{
-		Event ev((uint8_t*)m_timemap_cursor++->second->get());
-		result = new eServiceEvent();
-		return result->parseFrom(&ev, currentQueryTsidOnid);
+		timeMap::iterator timemap_it = It->second.byTime.lower_bound(m_timeQueryBegin);
+		if ( timemap_it != It->second.byTime.end() )
+		{
+			if ( timemap_it->first != m_timeQueryBegin )
+			{
+				timeMap::iterator x = timemap_it;
+				--x;
+				if ( x != It->second.byTime.end() )
+				{
+					time_t start_time = x->first;
+					if ( m_timeQueryBegin > start_time && m_timeQueryBegin < (start_time+x->second->getDuration()))
+						timemap_it = x;
+				}
+			}
+		}
+
+		timeMap::iterator timemap_end;
+		if (m_timeQueryMinutes != -1)
+			timemap_end = It->second.byTime.lower_bound(m_timeQueryBegin + m_timeQueryMinutes * 60);
+		else
+			timemap_end = It->second.byTime.end();
+
+		for (int i = 0; i < m_timeQueryCount; i++)
+		{
+			if ( timemap_it == timemap_end )
+				return -1;
+			else
+				timemap_it++;
+		}
+		if ( timemap_it != timemap_end )
+		{
+			Event ev((uint8_t*)timemap_it->second->get());
+			result = new eServiceEvent();
+			int currentQueryTsidOnid = (m_timeQueryRef->getTransportStreamID().get()<<16) | m_timeQueryRef->getOriginalNetworkID().get();
+			m_timeQueryCount++;
+			return result->parseFrom(&ev, currentQueryTsidOnid);
+		}
 	}
 	return -1;
 }
@@ -3313,15 +3418,12 @@ PyObject *eEPGCache::lookupEvent(ePyObject list, ePyObject convertFunc)
 			}
 			if (minutes)
 			{
-				singleLock s(cache_lock);
 				if (!startTimeQuery(ref, stime, minutes))
 				{
-					while ( m_timemap_cursor != m_timemap_end )
+					ePtr<eServiceEvent> evt;
+					while ( getNextTimeEntry(evt) != -1 )
 					{
-						Event ev((uint8_t*)m_timemap_cursor++->second->get());
-						eServiceEvent evt;
-						evt.parseFrom(&ev, currentQueryTsidOnid);
-						if (handleEvent(&evt, dest_list, argstring, argcount, service, nowTime, service_name, convertFunc, convertFuncArgs))
+						if (handleEvent(evt, dest_list, argstring, argcount, service, nowTime, service_name, convertFunc, convertFuncArgs))
 							return 0;  // error
 					}
 				}

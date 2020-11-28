@@ -777,6 +777,15 @@ int eDVBFrontend::closeFrontend(bool force, bool no_delayed)
 	if (m_fd >= 0)
 	{
 		eDebugNoSimulate("[eDVBFrontend%d] close frontend", m_dvbid);
+
+		long link = m_data[ADVANCED_SATPOSDEPENDS_LINK];
+		if (link != -1)
+		{
+			m_data[ADVANCED_SATPOSDEPENDS_LINK] = -1;
+			if (m_sec && !m_simulate)
+				m_sec->resetAdvancedsatposdependsRoot(link);
+		}
+
 		if (m_data[SATCR] != -1)
 		{
 			if (!no_delayed)
@@ -1111,13 +1120,18 @@ void eDVBFrontend::calculateSignalQuality(int snr, int &signalquality, int &sign
 	{
 		ret = (snr * 240) >> 8;
 	}
+	else if (strstr(m_description, "Vuplus DVB-C NIM(BCM3158)")) // VU+ 4K FBC DVB-C
+	{
+		ret = (int)(snr / 15.61);
+		cab_max = 4200;
+	}
 	else if (strstr(m_description, "BCM4506") ||
 		strstr(m_description, "BCM4505") ||
 		strstr(m_description, "BCM45208") ||
 		strstr(m_description, "BCM45308") ||
 		strstr(m_description, "BCM4506 (internal)") ||
 		strstr(m_description, "BCM73625 (G3)") ||
-		strstr(m_description, "BCM3158"))
+		strstr(m_description, "BCM3158")) // DM9O0/DM920 FBC "BCM3158 (DVB-C)"
 	{
 		ret = (snr * 100) >> 8;
 	}
@@ -1220,10 +1234,10 @@ void eDVBFrontend::calculateSignalQuality(int snr, int &signalquality, int &sign
 		ret = (int)(snr / 40.5);
 		sat_max = 1900;
 	}
-	else if (strstr(m_description, "BCM3148"))
+	else if (strstr(m_description, "BCM3148")) // VU+ 4K FBC "Vuplus DVB-C NIM(BCM3148)"
 	{
 		ret = (int)(snr / 15.61);
-		sat_max = 4200;
+		cab_max = 4200;
 	}
 	else if(!strcmp(m_description, "TBS-5925") || !strcmp(m_description, "DVBS2BOX") || !strcmp(m_description, "TechniSat USB device"))
 	{
@@ -2773,7 +2787,7 @@ RESULT eDVBFrontend::setData(int num, long val)
 	return -EINVAL;
 }
 
-int eDVBFrontend::isCompatibleWith(ePtr<iDVBFrontendParameters> &feparm)
+int eDVBFrontend::isCompatibleWith(ePtr<iDVBFrontendParameters> &feparm, bool is_configured_sat)
 {
 	int type;
 	int score = 0;
@@ -2806,7 +2820,13 @@ int eDVBFrontend::isCompatibleWith(ePtr<iDVBFrontendParameters> &feparm)
 		{
 			return 0;
 		}
+
 		score = m_sec ? m_sec->canTune(parm, this, 1 << m_slotid) : 0;
+
+		/* additional check is orbital position configured for busy tuner use type SATPOS_DEPENDS_PTR/ADVANCED_SATPOSDEPENDS_ROOT(LINK) */
+		if (is_configured_sat && !score && m_sec && m_sec->isOrbitalPositionConfigured(parm.orbital_position))
+			score = 1;
+
 		if (score > 1 && parm.system == eDVBFrontendParametersSatellite::System_DVB_S && can_handle_dvbs2)
 		{
 			/* prefer to use an S tuner, try to keep S2 free for S2 transponders */

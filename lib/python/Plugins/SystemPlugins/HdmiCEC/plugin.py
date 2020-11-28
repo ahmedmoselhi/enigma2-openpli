@@ -59,12 +59,15 @@ class HdmiCECSetupScreen(Screen, ConfigListScreen):
 		if config.hdmicec.enabled.value:
 			self.list.append(getConfigListEntry(_("Put TV in standby"), config.hdmicec.control_tv_standby))
 			self.list.append(getConfigListEntry(_("Wakeup TV from standby"), config.hdmicec.control_tv_wakeup))
+			if config.hdmicec.control_tv_wakeup.value:
+				self.list.append(getConfigListEntry(_("Wakeup command for TV"), config.hdmicec.tv_wakeup_command))
 			self.list.append(getConfigListEntry(_("Regard deep standby as standby"), config.hdmicec.handle_deepstandby_events))
 			self.list.append(getConfigListEntry(_("Switch TV to correct input"), config.hdmicec.report_active_source))
 			self.list.append(getConfigListEntry(_("Use TV remote control"), config.hdmicec.report_active_menu))
 			self.list.append(getConfigListEntry(_("Handle standby from TV"), config.hdmicec.handle_tv_standby))
 			self.list.append(getConfigListEntry(_("Handle wakeup from TV"), config.hdmicec.handle_tv_wakeup))
-			self.list.append(getConfigListEntry(_("Wakeup signal from TV"), config.hdmicec.tv_wakeup_detection))
+			if config.hdmicec.handle_tv_wakeup.value:
+				self.list.append(getConfigListEntry(_("Wakeup signal from TV"), config.hdmicec.tv_wakeup_detection))
 			self.list.append(getConfigListEntry(_("Forward volume keys"), config.hdmicec.volume_forwarding))
 			self.list.append(getConfigListEntry(_("Put receiver in standby"), config.hdmicec.control_receiver_standby))
 			self.list.append(getConfigListEntry(_("Wakeup receiver from standby"), config.hdmicec.control_receiver_wakeup))
@@ -141,13 +144,13 @@ def main(session, **kwargs):
 
 def startSetup(menuid):
 	# only show in the menu when set to intermediate or higher
-	if menuid == "video" and config.av.videoport.value == "HDMI" and config.usage.setup_level.index >= 1:
+	if menuid == "video" and config.usage.setup_level.index >= 1:
 		return [(_("HDMI-CEC setup"), main, "hdmi_cec_setup", 0)]
 	return []
 
 def Plugins(**kwargs):
 	from os import path
-	if path.exists("/dev/hdmi_cec") or path.exists("/dev/misc/hdmi_cec0"):
+	if path.exists("/dev/hdmi_cec") or path.exists("/dev/misc/hdmi_cec0") or path.exists("/proc/stb/cec"):
 		import Components.HdmiCec
 		from Plugins.Plugin import PluginDescriptor
 		return [PluginDescriptor(where = PluginDescriptor.WHERE_MENU, fnc = startSetup)]

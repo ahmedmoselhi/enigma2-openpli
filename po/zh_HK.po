@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-16 00:59+0200\n"
+"POT-Creation-Date: 2020-10-10 21:34+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: 王彪 <satfan@163.com>\n"
 "Language-Team: 中國\n"
@@ -46,9 +46,6 @@ msgstr ""
 msgid ""
 "\n"
 "Timer '%s' disabled!"
-msgstr ""
-
-msgid " "
 msgstr ""
 
 msgid " (0 - all networks)"
@@ -241,7 +238,7 @@ msgstr ""
 msgid "%d min"
 msgstr "%d 分鐘"
 
-#, python-format
+#, fuzzy, python-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d menit"
@@ -313,10 +310,6 @@ msgstr ""
 msgid "%k:%M %e/%m"
 msgstr ""
 
-#, python-format
-msgid "%s"
-msgstr ""
-
 #, fuzzy, python-format
 msgid ""
 "%s\n"
@@ -372,10 +365,6 @@ msgstr ""
 
 #, python-format
 msgid "%s:%s"
-msgstr ""
-
-#, python-format
-msgid "%s?"
 msgstr ""
 
 msgid "(VU+ type)"
@@ -522,10 +511,6 @@ msgstr ""
 msgid "444"
 msgstr ""
 
-#, fuzzy
-msgid "450 (default)"
-msgstr "預設"
-
 msgid "4:3"
 msgstr "4:3"
 
@@ -544,10 +529,6 @@ msgstr "5"
 
 msgid "50 MB/s"
 msgstr ""
-
-#, fuzzy
-msgid "540 (default)"
-msgstr "預設"
 
 msgid "6"
 msgstr "6"
@@ -835,6 +816,9 @@ msgstr "添加到家長控制"
 msgid "Add/remove change timer for current event"
 msgstr ""
 
+msgid "Additional cable of motorized LNB"
+msgstr ""
+
 msgid "Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move the dish from one satellite to another satellite."
 msgstr ""
 
@@ -1002,10 +986,6 @@ msgstr ""
 msgid "Always include ECM messages in recordings. This overrides the individual timer settings globally. It allows recordings to be always decrypted afterwards (sometimes called offline decoding), if supported by your receiver. Default: off."
 msgstr ""
 
-#, fuzzy
-msgid "Always off"
-msgstr "始終"
-
 msgid "American Samoa"
 msgstr ""
 
@@ -1070,14 +1050,6 @@ msgstr ""
 
 msgid "Are you sure to restore all deleted images"
 msgstr ""
-
-#, fuzzy
-msgid ""
-"Are you sure to save the current configuration and reboot your receiver?\n"
-"\n"
-msgstr ""
-"確定要啟動此網路配置？\n"
-"\n"
 
 msgid ""
 "Are you sure you want to activate this network configuration?\n"
@@ -1251,6 +1223,10 @@ msgstr ""
 
 msgid "Auto play blu-ray file"
 msgstr ""
+
+#, fuzzy
+msgid "Auto play last service in radio mode"
+msgstr " 是否開始頻道掃描?"
 
 msgid "Auto scart switching"
 msgstr "自動切換錄影機"
@@ -1444,9 +1420,6 @@ msgstr ""
 #, fuzzy
 msgid "Boost green"
 msgstr "最新"
-
-msgid "Booster Control"
-msgstr ""
 
 msgid "Boot to Android image"
 msgstr ""
@@ -1725,28 +1698,13 @@ msgstr "頻道:"
 msgid "Channellist menu"
 msgstr "頻道列表功能表"
 
-msgid "Channelname in Standby Clock"
-msgstr ""
-
-msgid "Channelname in Standby off"
-msgstr ""
-
 msgid "Channelnumber and picon"
 msgstr ""
 
 msgid "Channelnumber and servicename"
 msgstr ""
 
-msgid "Channelnumber in Standby Clock"
-msgstr ""
-
-msgid "Channelnumber in Standby off"
-msgstr ""
-
 msgid "Channelnumber, picon and servicename"
-msgstr ""
-
-msgid "Channelnumber/Clock in Standby Clock"
 msgstr ""
 
 #, fuzzy
@@ -1847,10 +1805,6 @@ msgstr ""
 
 msgid "Client is streaming from this box!"
 msgstr ""
-
-#, fuzzy
-msgid "Clock always"
-msgstr "始終"
 
 msgid "Clone TV screen to LCD"
 msgstr ""
@@ -3013,9 +2967,8 @@ msgstr ""
 msgid "Do you want to reboot your receiver?"
 msgstr ""
 
-#, fuzzy
 msgid "Do you want to remove all the crash logfiles"
-msgstr " 是否移出套裝軟體:\n"
+msgstr ""
 
 msgid "Do you want to remove the package:\n"
 msgstr " 是否移出套裝軟體:\n"
@@ -3312,10 +3265,6 @@ msgstr ""
 msgid "Enabled"
 msgstr "啟用的"
 
-#, fuzzy
-msgid "Encrypted TV"
-msgstr "加密系統: "
-
 msgid "Encrypted: "
 msgstr "加密系統: "
 
@@ -3490,6 +3439,9 @@ msgstr "愛沙尼亞語"
 msgid "Estonian"
 msgstr "愛沙尼亞語"
 
+msgid "EtPortal"
+msgstr ""
+
 msgid "Ethernet network interface"
 msgstr ""
 
@@ -3639,6 +3591,12 @@ msgstr ""
 msgid "Extra start time to ignore inactivity sleeptimer"
 msgstr ""
 
+msgid "F"
+msgstr ""
+
+msgid "F1/F3/F4/F4-TURBO"
+msgstr ""
+
 msgid "FAILED"
 msgstr ""
 
@@ -3670,17 +3628,10 @@ msgstr "FEC"
 msgid "FEC:"
 msgstr ""
 
-#, fuzzy
-msgid "FFmpeg version: "
-msgstr "反向:"
-
 msgid "FHD"
 msgstr ""
 
 msgid "FTA"
-msgstr ""
-
-msgid "FTA TV"
 msgstr ""
 
 msgid "Factory reset"
@@ -3740,6 +3691,14 @@ msgstr ""
 #, python-format
 msgid "Fan %d"
 msgstr "風扇 %d"
+
+#, python-format
+msgid "Fan %d PWM"
+msgstr "Fan %d PWM"
+
+#, python-format
+msgid "Fan %d voltage"
+msgstr ""
 
 msgid "Fan operation"
 msgstr ""
@@ -3880,10 +3839,6 @@ msgstr ""
 msgid "Frequency & Polarization"
 msgstr ""
 
-#, fuzzy
-msgid "Frequency (kHz)"
-msgstr "頻率"
-
 msgid "Frequency bands"
 msgstr "頻帶"
 
@@ -3926,6 +3881,9 @@ msgid "Further Options"
 msgstr ""
 
 msgid "Further options"
+msgstr ""
+
+msgid "G"
 msgstr ""
 
 #, fuzzy
@@ -4110,11 +4068,20 @@ msgstr ""
 msgid "Guyana"
 msgstr ""
 
+msgid "H"
+msgstr ""
+
 #, fuzzy
 msgid "HD"
 msgstr "D"
 
 msgid "HD list"
+msgstr ""
+
+msgid "HD2400"
+msgstr ""
+
+msgid "HD60"
 msgstr ""
 
 msgid "HDMI"
@@ -4145,6 +4112,9 @@ msgid "HDR10"
 msgstr ""
 
 msgid "HDR10 support"
+msgstr ""
+
+msgid "HDx1/HD1xxx/HD5x0C/VS1x00/et7x00/et8500/et7000mini"
 msgstr ""
 
 msgid "HELP"
@@ -4192,9 +4162,6 @@ msgid "Hebrew"
 msgstr ""
 
 msgid "Helps setting up your antenna"
-msgstr ""
-
-msgid "Here you can change the screen positions with the arrow buttons on your remote control!"
 msgstr ""
 
 msgid "Hidden network"
@@ -4291,6 +4258,9 @@ msgstr "匈牙利語"
 #, fuzzy
 msgid "Hungary"
 msgstr "匈牙利語"
+
+msgid "I"
+msgstr ""
 
 #, fuzzy
 msgid "I do not want to perform any service scans"
@@ -4636,6 +4606,9 @@ msgstr ""
 msgid "Items per page for list screen"
 msgstr ""
 
+msgid "J"
+msgstr ""
+
 msgid "Jamaica"
 msgstr ""
 
@@ -4719,9 +4692,6 @@ msgid "LAN adapter"
 msgstr ""
 
 msgid "LAN connection"
-msgstr ""
-
-msgid "LED Display Setup"
 msgstr ""
 
 msgid "LNB"
@@ -5632,9 +5602,6 @@ msgstr "格式化"
 msgid "Normal mode"
 msgstr ""
 
-msgid "Normal running frequency"
-msgstr ""
-
 msgid "North"
 msgstr "北"
 
@@ -5694,12 +5661,6 @@ msgstr ""
 msgid "Now playing"
 msgstr ""
 
-msgid "Now you can change the position of the lower and right side. Press blue button to switch..."
-msgstr ""
-
-msgid "Now you can change the position of the upper and left side. Press blue button to switch..."
-msgstr ""
-
 msgid "Now, use the contrast setting to turn up the brightness of the background as much as possible, but make sure that you can still see the difference between the two brightest levels of shades.If you have done that, press OK."
 msgstr "現在，盡可能使用對比度設定出現的亮度背景，但是請確保您仍然可以看到色調的兩個最亮等級之間的不同。如果您已經完成了，按OK。"
 
@@ -5720,13 +5681,6 @@ msgstr ""
 
 msgid "OSD 3D setup"
 msgstr ""
-
-msgid "OSD Adjustment"
-msgstr ""
-
-#, fuzzy
-msgid "OSD Position setup"
-msgstr "極軸設定(DiSEqC 1.2)"
 
 msgid "OSD name request"
 msgstr ""
@@ -5864,6 +5818,9 @@ msgid "PGS File"
 msgstr ""
 
 msgid "PGS file"
+msgstr ""
+
+msgid "PID Filtering"
 msgstr ""
 
 msgid "PIN code needed"
@@ -6612,6 +6569,9 @@ msgstr "快速"
 msgid "Quick zap"
 msgstr ""
 
+msgid "REC"
+msgstr ""
+
 msgid "RF output"
 msgstr "RF-輸出"
 
@@ -6672,9 +6632,8 @@ msgstr ""
 msgid "Reboot"
 msgstr "重新啟動"
 
-#, fuzzy
 msgid "Rec"
-msgstr "錄製"
+msgstr ""
 
 msgid "Recall to previous service"
 msgstr ""
@@ -6683,10 +6642,6 @@ msgid "Reception settings"
 msgstr ""
 
 msgid "Record"
-msgstr "錄製"
-
-#, fuzzy
-msgid "Record only"
 msgstr "錄製"
 
 #, python-format
@@ -6755,9 +6710,6 @@ msgid "Region"
 msgstr ""
 
 msgid "Relative"
-msgstr ""
-
-msgid "Relevant PIDs routing"
 msgstr ""
 
 msgid "Reload"
@@ -7784,10 +7736,6 @@ msgstr ""
 "頻道無效!\n"
 "(讀取PMT超時)"
 
-#, fuzzy
-msgid "Service list"
-msgstr "子服務列表..."
-
 msgid "Service name"
 msgstr ""
 
@@ -8041,9 +7989,6 @@ msgstr ""
 msgid "Show favourites list"
 msgstr ""
 
-msgid "Show green LED on VFD"
-msgstr ""
-
 msgid "Show help"
 msgstr ""
 
@@ -8080,9 +8025,6 @@ msgstr ""
 msgid "Show menu or plugin numbers"
 msgstr ""
 
-msgid "Show menu paths"
-msgstr ""
-
 msgid "Show message when recording starts"
 msgstr ""
 
@@ -8107,9 +8049,6 @@ msgstr ""
 msgid "Show notification when import channels was successful"
 msgstr ""
 
-msgid "Show on VFD"
-msgstr ""
-
 msgid "Show packages to be updated"
 msgstr ""
 
@@ -8131,7 +8070,7 @@ msgstr ""
 msgid "Show record indicator"
 msgstr ""
 
-msgid "Show red LED on VFD"
+msgid "Show screen path"
 msgstr ""
 
 msgid "Show screensaver"
@@ -8144,9 +8083,6 @@ msgid "Show second infobar"
 msgstr ""
 
 msgid "Show service list"
-msgstr ""
-
-msgid "Show service name and event description among each other instead of side by side."
 msgstr ""
 
 msgid "Show service type icons"
@@ -8179,6 +8115,9 @@ msgstr "無視頻輸出"
 
 msgid "Show the radio player..."
 msgstr "廣播重播模式下..."
+
+msgid "Show the service information on two lines in the channel selection screen. You can choose between the current event description below the channel name, or the current event description next to the channel name, and the next event description on the second line."
+msgstr ""
 
 msgid "Show the tv player..."
 msgstr "電視重播模式下..."
@@ -8265,6 +8204,10 @@ msgstr "單個"
 
 msgid "Single EPG"
 msgstr "單個-EPG"
+
+#, fuzzy
+msgid "Single line mode"
+msgstr "設定視頻模式"
 
 msgid "Single satellite"
 msgstr "單個衛星"
@@ -8478,9 +8421,6 @@ msgstr "西班牙"
 msgid "Spanish"
 msgstr "西班牙語"
 
-msgid "Spark7162 select tuner mode"
-msgstr ""
-
 msgid "Special 1"
 msgstr ""
 
@@ -8548,21 +8488,15 @@ msgstr "待機"
 msgid "Standby after current event"
 msgstr ""
 
+#, python-format
+msgid "Standby fan %d PWM"
+msgstr ""
+
+#, python-format
+msgid "Standby fan %d voltage"
+msgstr ""
+
 msgid "Standby in "
-msgstr ""
-
-#, fuzzy
-msgid "Standby only"
-msgstr "待機"
-
-msgid "Standby saver frequency"
-msgstr ""
-
-#, fuzzy
-msgid "Start Boot Frequency"
-msgstr "頻率"
-
-msgid "Start boot frequency"
 msgstr ""
 
 msgid "Start directory"
@@ -8804,6 +8738,11 @@ msgstr "星期日"
 msgid "Sunday"
 msgstr "星期日"
 
+msgid ""
+"Sundtek - hardware blind scan in progress.\n"
+"Please wait(3-20 min) for the scan to finish."
+msgstr ""
+
 #, fuzzy
 msgid "Suriname"
 msgstr "重命名"
@@ -8946,6 +8885,9 @@ msgstr "TS文件太大！"
 msgid "TSID"
 msgstr ""
 
+msgid "TUNER:"
+msgstr ""
+
 msgid "TUNING"
 msgstr ""
 
@@ -8976,12 +8918,11 @@ msgstr ""
 msgid "Teletext subtitle color"
 msgstr ""
 
+msgid "Temperature and fan control"
+msgstr ""
+
 msgid "Terrestrial"
 msgstr "地面波"
-
-#, fuzzy
-msgid "Test"
-msgstr "測驗模式"
 
 msgid "Test DiSEqC settings"
 msgstr "測驗DiSEqC設定"
@@ -9268,7 +9209,7 @@ msgstr ""
 msgid "This option allows you to show menu and/or plugin number quick links."
 msgstr ""
 
-msgid "This option allows you to show menu paths."
+msgid "This option allows you to show the full screen path leading to the current screen."
 msgstr ""
 
 msgid "This option allows you to view the old and new settings side by side."
@@ -9391,10 +9332,6 @@ msgstr "星期四"
 
 msgid "Time"
 msgstr "時間"
-
-#, fuzzy
-msgid "Time mode"
-msgstr "22K模式"
 
 msgid "Time scale"
 msgstr ""
@@ -9696,6 +9633,12 @@ msgstr ""
 msgid "Two"
 msgstr "2"
 
+msgid "Two lines"
+msgstr ""
+
+msgid "Two lines and next event"
+msgstr ""
+
 msgid "Type"
 msgstr "類型"
 
@@ -9786,13 +9729,6 @@ msgstr ""
 msgid "Uninstall"
 msgstr "反安裝"
 
-msgid "UnionTunerType"
-msgstr ""
-
-#, fuzzy
-msgid "UnionTunerType config"
-msgstr "調諧器配置"
-
 #, fuzzy
 msgid "United Arab Emirates"
 msgstr "USA"
@@ -9832,9 +9768,6 @@ msgstr "下載中"
 
 msgid "Update"
 msgstr "更新"
-
-msgid "Update Date/Time"
-msgstr ""
 
 msgid "Update and ask to reboot"
 msgstr ""
@@ -10042,6 +9975,9 @@ msgid "VOB File"
 msgstr ""
 
 msgid "VOB file"
+msgstr ""
+
+msgid "VU+"
 msgstr ""
 
 #, fuzzy
@@ -10432,6 +10368,9 @@ msgid "When enabled, http streams are descrambled on the server side. The (remot
 msgstr ""
 
 msgid "When enabled, it is possible to leave the movieplayer with exit."
+msgstr ""
+
+msgid "When enabled, it will automatically play to the last saved radio service when switching to radio mode."
 msgstr ""
 
 msgid "When enabled, measure power consumption to detect when the rotor stops turning (when supported by the tuner)."
@@ -10870,7 +10809,22 @@ msgstr ""
 msgid "Zapped to timer service %s!"
 msgstr "編輯自動計時器服務"
 
+msgid "Zgemma H.S/H.2S/H.2H/H5/H7(old model)"
+msgstr ""
+
+msgid "Zgemma H7(new model)/H9(new model)/H9COMBO/H9TWIN/H10"
+msgstr ""
+
+msgid "Zgemma H9(old model)/I55Plus"
+msgstr ""
+
+msgid "Zgemma Star S/2S/H1/H2"
+msgstr ""
+
 msgid "Zimbabwe"
+msgstr ""
+
+msgid "[REC]"
 msgstr ""
 
 msgid "[alternative edit]"
@@ -10901,6 +10855,9 @@ msgid "active"
 msgstr ""
 
 msgid "actual time only"
+msgstr ""
+
+msgid "additional cable of rotor"
 msgstr ""
 
 msgid "adult movie/drama"
@@ -11006,14 +10963,6 @@ msgstr ""
 msgid "by date"
 msgstr ""
 
-#, fuzzy
-msgid "cable"
-msgstr "有線"
-
-#, fuzzy
-msgid "cancel"
-msgstr "取消"
-
 msgid "cartoon/puppets"
 msgstr ""
 
@@ -11025,14 +10974,6 @@ msgstr ""
 
 msgid "centered, wrapped"
 msgstr ""
-
-#, fuzzy
-msgid "change sides"
-msgstr "調整"
-
-#, fuzzy
-msgid "change the OSD screen size"
-msgstr "調整"
 
 msgid "chapters"
 msgstr "章節"
@@ -11160,6 +11101,21 @@ msgstr ""
 msgid "error while scanning"
 msgstr ""
 
+msgid "et4000"
+msgstr ""
+
+msgid "et5000/et6000"
+msgstr ""
+
+msgid "et8000/et10000"
+msgstr ""
+
+msgid "et9000/et9100"
+msgstr ""
+
+msgid "et9200/et9500/et6500"
+msgstr ""
+
 msgid "execute cuts (requires MovieCut plugin)"
 msgstr ""
 
@@ -11235,9 +11191,6 @@ msgstr "空閒"
 msgid "from"
 msgstr "來自"
 
-msgid "fs9000"
-msgstr ""
-
 msgid "further education"
 msgstr ""
 
@@ -11270,12 +11223,6 @@ msgstr "説明..."
 
 msgid "horizontal"
 msgstr "水準"
-
-msgid "hs7110"
-msgstr ""
-
-msgid "hs9510"
-msgstr ""
 
 #, fuzzy
 msgid "in menu and plugins"
@@ -11518,9 +11465,6 @@ msgstr ""
 msgid "only from standby"
 msgstr ""
 
-msgid "open Info..."
-msgstr ""
-
 msgid "open nameserver configuration"
 msgstr "打開DNS設定"
 
@@ -11606,12 +11550,12 @@ msgstr ""
 msgid "romance"
 msgstr ""
 
+msgid "rotor"
+msgstr ""
+
 #, fuzzy
 msgid "running"
 msgstr "正在運行"
-
-msgid "save"
-msgstr ""
 
 msgid "scan state"
 msgstr "掃描狀態"
@@ -11625,9 +11569,6 @@ msgstr "秒"
 msgid "select CAId's"
 msgstr "選擇 CAId's"
 
-msgid "select Info..."
-msgstr ""
-
 msgid "select menu entry"
 msgstr "選擇功能表專案"
 
@@ -11640,10 +11581,6 @@ msgstr ""
 #, fuzzy
 msgid "service off-air"
 msgstr "頻道密碼"
-
-#, fuzzy
-msgid "set default"
-msgstr "預設"
 
 msgid "show DVD main menu"
 msgstr "顯示DVD主功能表"
@@ -11727,9 +11664,6 @@ msgstr ""
 msgid "social/spiritual science"
 msgstr ""
 
-msgid "spark"
-msgstr ""
-
 msgid "special events"
 msgstr ""
 
@@ -11785,14 +11719,7 @@ msgstr ""
 msgid "tennis/squash"
 msgstr ""
 
-#, fuzzy
-msgid "terrestrial"
-msgstr "地面波"
-
 msgid "testing"
-msgstr ""
-
-msgid "tf7700"
 msgstr ""
 
 msgid "this bouquet is protected by a parental control pin"
@@ -11817,9 +11744,6 @@ msgid "true"
 msgstr ""
 
 msgid "type"
-msgstr ""
-
-msgid "ufs912"
 msgstr ""
 
 msgid "unavailable"
@@ -11922,6 +11846,9 @@ msgstr ""
 msgid "with_errors"
 msgstr ""
 
+msgid "xp1000"
+msgstr ""
+
 msgid "yellow"
 msgstr "黃色"
 
@@ -11942,3 +11869,6 @@ msgstr ""
 
 msgid "zapped"
 msgstr "轉自"
+
+msgid "®"
+msgstr ""

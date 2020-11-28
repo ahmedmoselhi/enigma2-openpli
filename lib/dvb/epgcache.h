@@ -338,14 +338,17 @@ private:
 	void gotMessage(const Message &message);
 	void cleanLoop();
 	void submitEventData(const std::vector<int>& sids, const std::vector<eDVBChannelID>& chids, long start, long duration, const char* title, const char* short_summary, const char* long_description, char event_type, int source);
+	void clearCompleteEPGCache();
 
 // called from main thread
 	void DVBChannelAdded(eDVBChannel*);
 	void DVBChannelStateChanged(iDVBChannel*);
 	void DVBChannelRunning(iDVBChannel *);
 
-	timeMap::iterator m_timemap_cursor, m_timemap_end;
-	int currentQueryTsidOnid; // needed for getNextTimeEntry.. only valid until next startTimeQuery call
+	eServiceReferenceDVB *m_timeQueryRef;
+	time_t m_timeQueryBegin;
+	int m_timeQueryMinutes;
+	int m_timeQueryCount;  // counts the returned events; getNextTimeEntry returns always the m_timeQueryCount'th event
 #else
 	eEPGCache();
 	~eEPGCache();
@@ -356,7 +359,7 @@ public:
 	void save();
 	void load();
 	void timeUpdated();
-	void flushEPG(const uniqueEPGKey & s=uniqueEPGKey());
+	void flushEPG(const uniqueEPGKey & s=uniqueEPGKey(), bool lock = true);
 #ifndef SWIG
 	eEPGCache();
 	~eEPGCache();

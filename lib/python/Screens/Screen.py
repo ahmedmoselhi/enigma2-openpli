@@ -16,11 +16,12 @@ class Screen(dict):
 	ALLOW_SUSPEND = NO_SUSPEND
 	globalScreen = None
 
-	def __init__(self, session, parent=None):
+	def __init__(self, session, parent=None, mandatoryWidgets=[]):
 		dict.__init__(self)
 		self.skinName = self.__class__.__name__
 		self.session = session
 		self.parent = parent
+		self.mandatoryWidgets = mandatoryWidgets
 		self.onClose = []
 		self.onFirstExecBegin = []
 		self.onExecBegin = []
@@ -45,7 +46,6 @@ class Screen(dict):
 		self.instance = None
 		self.summaries = CList()
 		self["Title"] = StaticText()
-		self["SummaryTitle"] = StaticText()
 		self["ScreenPath"] = StaticText()
 		self["screen_path"] = StaticText()  # Support legacy screen history skins.
 		self.screenPath = ""  # This is the current screen path without the title.
@@ -169,7 +169,6 @@ class Screen(dict):
 		self["ScreenPath"].text = screenPath
 		self["screen_path"].text = screenPath  # Support legacy screen history skins.
 		self["Title"].text = screenTitle
-		self["SummaryTitle"].text = self.screenTitle
 
 	def getTitle(self):
 		return self.screenTitle
