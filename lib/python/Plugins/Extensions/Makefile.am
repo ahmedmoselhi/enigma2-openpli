@@ -6,11 +6,11 @@ if HAVE_LIBDDVD
 SUBDIRS += DVDPlayer
 endif
 
-if SPARK
+if spark
 SUBDIRS += SparkVFD
 endif
 
-if SPARK7162
+if spark7162
 SUBDIRS += spark7162VFD
 endif
 
